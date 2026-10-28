@@ -1,6 +1,32 @@
 const DATA_URL = "https://raw.githubusercontent.com/pavel9213/crypto-news-radar/main/data/news.json";
 const $ = (selector) => document.querySelector(selector);
-const state = { events: [], query: "", topic: "", signal: "", language: "" };
+const state = { events: [], query: "", project: "", topic: "", signal: "", language: "" };
+
+const PROJECT_RULES = [
+  ["INK", /(?:\\$INK|\\binkonchain\\b|\\bink network\\b)/i],
+  ["Soneium", /\\bsoneium\\b/i],
+  ["Base", /(?:\\bbase chain\\b|\\bbase network\\b|\\bon base\\b|\\bbase blockchain\\b)/i],
+  ["Linea", /\\blinea\\b/i],
+  ["Ethereum", /\\bethereum\\b|\\beth\\b/i],
+  ["Bitcoin", /\\bbitcoin\\b|\\bbtc\\b/i],
+  ["Solana", /\\bsolana\\b|\\bsol\\b/i],
+  ["Arbitrum", /\\barbitrum\\b/i],
+  ["Optimism", /\\boptimism\\b|\\bop mainnet\\b/i],
+  ["Polygon", /\\bpolygon\\b|\\bpol token\\b/i],
+  ["Avalanche", /\\bavalanche\\b|\\bavax\\b/i],
+  ["Canton", /\\bcanton network\\b|\\bcanton blockchain\\b/i],
+  ["Plume", /\\bplume network\\b|\\bplume blockchain\\b/i],
+  ["Stable", /\\bstablecoin\\b|\\bstable chain\\b|\\bstable network\\b/i],
+  ["Somnia", /\\bsomnia\\b/i],
+  ["Kite AI", /\\bkite ai\\b/i],
+  ["Malda", /\\bmalda\\b/i],
+  ["MYID", /\\bmyid\\b/i]
+];
+
+function getProjects(event) {
+  const text = [event.title, event.summary, event.source_name].join(" ");
+  return PROJECT_RULES.filter(([, pattern]) => pattern.test(text)).map(([name]) => name);
+}
 
 const SIGNAL_RULES = [
   ["tge", /\b(tge|token generation event|token launch|launch(?:es|ed|ing)? (?:its )?(?:native )?token|token goes live)\b/i],
@@ -53,6 +79,7 @@ function getFilteredEvents() {
   return state.events.filter((event) => {
     const text = [event.title, event.summary, event.source_name, ...(event.topics || [])].join(" ").toLowerCase();
     return (!state.query || text.includes(state.query.toLowerCase()))
+      && (!state.project || getProjects(event).includes(state.project))
       && (!state.topic || (event.topics || []).includes(state.topic))
       && (!state.signal || getSignals(event).includes(state.signal))
       && (!state.language || event.language === state.language);
@@ -66,7 +93,11 @@ function render() {
     const topic = (event.topics || ["other"])[0] || "other";
     const published = safeDate(event.published_at);
     const summary = event.summary ? `<p class="story-summary">${escapeHtml(event.summary)}</p>` : "";
+    const projects = getProjects(event);
     const signals = getSignals(event);
+    const projectBadges = projects.slice(0, 2).map((project) =>
+      `<span class="project-pill">${escapeHtml(project)}</span>`
+    ).join("");
     const trustLabel = event.source_trust === "primary" ? "Primary source" : "Media report";
     const trustClass = event.source_trust === "primary" ? "trust-primary" : "trust-media";
     const signalBadges = signals.slice(0, 2).map((signal) =>
@@ -74,6 +105,7 @@ function render() {
     ).join("");
     return `<article class="story">
       <div class="story-meta"><span class="topic-pill">${escapeHtml(topic)}</span><span>${escapeHtml(published)}</span></div>
+      ${projectBadges ? `<div class="project-row">${projectBadges}</div>` : ""}
       ${signalBadges ? `<div class="signal-row">${signalBadges}</div>` : ""}
       <h3><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></h3>
       ${summary}
@@ -103,6 +135,7 @@ async function loadNews() {
     const payload = await response.json();
     if (!Array.isArray(payload.events)) throw new Error("The news data has an unexpected format.");
     state.events = payload.events;
+    fillSelect($("#project"), state.events.flatMap((event) => getProjects(event)), "All projects");
     fillSelect($("#topic"), state.events.flatMap((event) => event.topics || []), "All topics");
     fillSelect($("#language"), state.events.map((event) => event.language), "All languages");
     updateStats(payload);
@@ -125,13 +158,14 @@ async function loadNews() {
 }
 
 $("#search").addEventListener("input", (event) => { state.query = event.target.value.trim(); render(); });
+$("#project").addEventListener("change", (event) => { state.project = event.target.value; render(); });
 $("#topic").addEventListener("change", (event) => { state.topic = event.target.value; render(); });
 $("#signal").addEventListener("change", (event) => { state.signal = event.target.value; render(); });
 $("#language").addEventListener("change", (event) => { state.language = event.target.value; render(); });
 $("#refresh").addEventListener("click", loadNews);
 $("#clear-filters").addEventListener("click", () => {
-  state.query = ""; state.topic = ""; state.signal = ""; state.language = "";
-  $("#search").value = ""; $("#topic").value = ""; $("#signal").value = ""; $("#language").value = "";
+  state.query = ""; state.project = ""; state.topic = ""; state.signal = ""; state.language = "";
+  $("#search").value = ""; $("#project").value = ""; $("#topic").value = ""; $("#signal").value = ""; $("#language").value = "";
   render();
 });
 
