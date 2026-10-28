@@ -1,6 +1,6 @@
 const DATA_URL = "https://raw.githubusercontent.com/pavel9213/crypto-news-radar/main/data/news.json";
 const $ = (selector) => document.querySelector(selector);
-const state = { events: [], query: "", project: "", topic: "", signal: "", language: "" };
+const state = { events: [], query: "", project: "", topic: "", signal: "", language: "", trust: "" };
 const WATCHED_PROJECTS = [
   "INK", "Soneium", "Base", "Linea", "Ethereum", "Bitcoin", "Solana",
   "Arbitrum", "Optimism", "Polygon", "Avalanche", "Canton", "Plume",
@@ -87,7 +87,8 @@ function getFilteredEvents() {
       && (!state.project || getProjects(event).includes(state.project))
       && (!state.topic || (event.topics || []).includes(state.topic))
       && (!state.signal || getSignals(event).includes(state.signal))
-      && (!state.language || event.language === state.language);
+      && (!state.language || event.language === state.language)
+      && (!state.trust || event.source_trust === state.trust);
   });
 }
 
@@ -167,10 +168,11 @@ $("#project").addEventListener("change", (event) => { state.project = event.targ
 $("#topic").addEventListener("change", (event) => { state.topic = event.target.value; render(); });
 $("#signal").addEventListener("change", (event) => { state.signal = event.target.value; render(); });
 $("#language").addEventListener("change", (event) => { state.language = event.target.value; render(); });
+$("#trust").addEventListener("change", (event) => { state.trust = event.target.value; render(); });
 $("#refresh").addEventListener("click", loadNews);
 $("#clear-filters").addEventListener("click", () => {
-  state.query = ""; state.project = ""; state.topic = ""; state.signal = ""; state.language = "";
-  $("#search").value = ""; $("#project").value = ""; $("#topic").value = ""; $("#signal").value = ""; $("#language").value = "";
+  state.query = ""; state.project = ""; state.topic = ""; state.signal = ""; state.language = ""; state.trust = "";
+  $("#search").value = ""; $("#project").value = ""; $("#topic").value = ""; $("#signal").value = ""; $("#language").value = ""; $("#trust").value = "";
   render();
 });
 
