@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-28T04:09:24+00:00",
+  "generated_at": "2026-10-28T04:24:18+00:00",
   "event_count": 150,
-  "source_count": 6,
+  "source_count": 9,
   "sources": [
     {
       "source_id": "coindesk",
@@ -45,9 +45,48 @@
       "items": 10,
       "items_available": 10,
       "items_limited": false
+    },
+    {
+      "source_id": "soneium-official-blog",
+      "ok": true,
+      "items": 0,
+      "items_available": 0,
+      "items_limited": false
+    },
+    {
+      "source_id": "base-official-blog",
+      "ok": true,
+      "items": 0,
+      "items_available": 0,
+      "items_limited": false
+    },
+    {
+      "source_id": "linea-official-blog",
+      "ok": true,
+      "items": 0,
+      "items_available": 0,
+      "items_limited": false
     }
   ],
   "events": [
+    {
+      "id": "a2a10e8cdf4f8fbeb657",
+      "title": "Bitcoin nears $81,000 ahead of Fed decision as ZEC jumps 8%",
+      "url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-nears-usd81-000-ahead-of-fed-decision-as-zec-jumps-8",
+      "source_id": "coindesk",
+      "source_name": "CoinDesk",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "regulation"
+      ],
+      "published_at": "2026-10-28T04:15:20+00:00",
+      "summary": "Majors outpaced bitcoin across the board as tech stocks extended a climb.",
+      "status": "unreviewed",
+      "collected_at": "2026-10-28T04:24:15+00:00"
+    },
     {
       "id": "4a5119b531a5ba3d6503",
       "title": "Robinhood’s Tenev warns US tokenization uncertainty deters ‘serious assets’",
@@ -65,7 +104,7 @@
       "published_at": "2026-10-28T03:55:57+00:00",
       "summary": "Robinhood CEO Vlad Tenev says tokenized equities need more than a temporary SEC exemption to flourish in the US.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "a16e3e891ea482ce5d71",
@@ -83,7 +122,7 @@
       "published_at": "2026-10-28T03:11:14+00:00",
       "summary": "The crypto exchange says an incident at analytics firm Amplitude exposed some customer contact information, but insists its own systems were not breached.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "3b24279e730053bb31ec",
@@ -102,7 +141,7 @@
       "published_at": "2026-10-28T02:18:47+00:00",
       "summary": "The breach impacted its in-house mobile system, used by employees for work and information sharing.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "c515f1ba21bb03f20541",
@@ -121,7 +160,7 @@
       "published_at": "2026-10-28T00:47:04+00:00",
       "summary": "Discord conversations on large public servers will soon reach audiences far beyond their communities, raising privacy concerns.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "850b4ba1bad3c14b70cd",
@@ -140,7 +179,7 @@
       "published_at": "2026-10-27T21:28:22+00:00",
       "summary": "VanEck’s new Wealth Builder ETF targets a 2% Bitcoin allocation, with a permitted range of 1% to 5%, gaining exposure through a spot Bitcoin ETP.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "09d78f13decf52e54415",
@@ -159,7 +198,7 @@
       "published_at": "2026-10-27T21:26:41+00:00",
       "summary": "More than 40% of the companies initially proposed to have their stocks listed in tokenized form have asked to opt-out.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "003f22b880245dc68773",
@@ -178,7 +217,7 @@
       "published_at": "2026-10-27T21:16:02+00:00",
       "summary": "Stocks on China's mainland have shed about $2.4 trillion since May as investors doubt AI companies can turn a profit, while U.S. restrictions and high U.S. interest rates add pressure.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "674abc5d6b9b1ba782db",
@@ -197,7 +236,7 @@
       "published_at": "2026-10-27T20:42:11+00:00",
       "summary": "Robinhood posted record revenue of $1.42 billion but earned $0.51 per share, short of the $0.55 expected, as bets on sports and elections grew to $173 million and crypto edged up.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "3264e2f7ad04cea6144e",
@@ -215,7 +254,7 @@
       "published_at": "2026-10-27T20:41:33+00:00",
       "summary": "Speaking at Ripple's conference, the U.S. Treasury Secretary said the SEC and CFTC action could help fill the gap left by the Clarity Act's failure, while curbing crypto debanking.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "1dc8908f87dcae2f9e84",
@@ -234,7 +273,7 @@
       "published_at": "2026-10-27T20:33:19+00:00",
       "summary": "Speaking on Cointelegraph’s Chain Reaction podcast, Muneeb Ali warned that uncertainty over Bitcoin’s quantum security could deter institutional investors.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "3ad8c5d1505f9bfec197",
@@ -252,7 +291,7 @@
       "published_at": "2026-10-27T20:32:21+00:00",
       "summary": "Crypto trading volume fell 38% from year-ago levels, but the firm's overall blockchain business gained traction.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "b879517cb75732081d28",
@@ -271,7 +310,7 @@
       "published_at": "2026-10-27T20:16:02+00:00",
       "summary": "Ripple's RLUSD stablecoin is live on Robinhood Chain and Bitstamp, and heads to the Robinhood app later this year as the companies deepen ties in treasury and institutional trading.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "df6a22855a4cc935ba71",
@@ -290,7 +329,7 @@
       "published_at": "2026-10-27T19:54:05+00:00",
       "summary": "Ripple also expanded its collaboration with BNY on digital asset custody and partnered with C2FO to bring trade finance settlement onto the XRP Ledger.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "176f737ccee9703ac001",
@@ -308,7 +347,7 @@
       "published_at": "2026-10-27T19:48:48+00:00",
       "summary": "Bitcoin Magazine Bitcoin Price Rests Near $80,500 as Midterms, Fed Decision Loom Bitcoin price recovered from an early-morning low near $79,400 to trade around $80,500 on Tuesday, holding above $80,000 ahead of this week’s Fed decision and the November midterms. This post Bitcoin Price Rests Near $80,500 as Midterms, Fed Decision Loom first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "ecb280fdd941ee1090bf",
@@ -327,7 +366,7 @@
       "published_at": "2026-10-27T19:46:02+00:00",
       "summary": "An expanded deal with Bitso puts Anchorage Digital Bank’s custody beneath both sides of the US-Mexico remittance route.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "458fdcffb7b7b6a29641",
@@ -346,7 +385,7 @@
       "published_at": "2026-10-27T19:36:13+00:00",
       "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "5a4670983e5b50ff3b27",
@@ -365,7 +404,7 @@
       "published_at": "2026-10-27T19:21:59+00:00",
       "summary": "The US state filed a lawsuit against Kalshi last week, seeking to recover up to $60 million in profits related to event contracts on prediction markets.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "40ac5307e210225494ff",
@@ -383,7 +422,7 @@
       "published_at": "2026-10-27T19:18:06+00:00",
       "summary": "Bitcoin Magazine VanEck Launches All-in-One Wealth Builder ETF With Bitcoin Exposure VanEck launched its Wealth Builder ETF (WBMO) on the NYSE, bundling stocks, bonds, gold and indirect bitcoin exposure into one fund for 0.26% a year. This post VanEck Launches All-in-One Wealth Builder ETF With Bitcoin Exposure first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "196df28c43b779e3f718",
@@ -402,7 +441,7 @@
       "published_at": "2026-10-27T19:16:03+00:00",
       "summary": "Akamai launched a locked box for AI agents on Tuesday. It joins Palo Alto, Cisco, CrowdStrike, Okta and Zscaler in selling protection for software that now acts on its own.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "eb3bcec7a443b7f4616d",
@@ -420,7 +459,7 @@
       "published_at": "2026-10-27T19:07:59+00:00",
       "summary": "The U.S. Commodity Futures Trading Commission has pursued more than a dozen legal actions to protect what its chief sees as its sole power over prediction markets.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "a11fba1555534d994061",
@@ -438,7 +477,7 @@
       "published_at": "2026-10-27T18:53:09+00:00",
       "summary": "Bitcoin Magazine 27-Year-Old Missouri Man Admits Role in Failed Bitcoin Kidnapping Plot A St. Louis man pleaded guilty in Hartford to conspiracy to commit Hobbs Act robbery over a failed August 2024 plot to steal bitcoin from a Connecticut family. This post 27-Year-Old Missouri Man Admits Role in Failed Bitcoin Kidnapping Plot first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "c6a7556c6173bb894e29",
@@ -457,7 +496,7 @@
       "published_at": "2026-10-27T18:46:02+00:00",
       "summary": "Intel, Oracle, IBM, and IonQ became the latest companies to object to trading of their shares on the planned OKX-ICE tokenized stock venue, bringing the total to 26.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "f127c0524d69a5f7dd50",
@@ -475,7 +514,7 @@
       "published_at": "2026-10-27T18:29:16+00:00",
       "summary": "Bitcoin Magazine CFTC Again Probes Polymarket Over Whether It Let Americans Trade The CFTC is reportedly probing whether Polymarket broke its 2022 settlement by letting US users onto its offshore platform. This post CFTC Again Probes Polymarket Over Whether It Let Americans Trade first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "f8c3d364818f3af3bdff",
@@ -494,7 +533,7 @@
       "published_at": "2026-10-27T18:16:02+00:00",
       "summary": "Attackers obtained the factory key that proves Keystone's hardware wallets are genuine, and 25,964 buyer records were affected. The company says recovery phrases and private keys were not involved.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "3076150be191a3da078d",
@@ -512,7 +551,7 @@
       "published_at": "2026-10-27T18:13:02+00:00",
       "summary": "The latest notice added four objections, bringing the total to 26 as the joint venture prepares to test the SEC’s new framework for blockchain-based stock trading.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "bc2ffcd7e22b7f95cf27",
@@ -531,7 +570,7 @@
       "published_at": "2026-10-27T18:08:00+00:00",
       "summary": "The September survey offered a possible window into US voters who could consider fintech and digital asset policies on Election Day.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "4046402a391653351c7c",
@@ -549,7 +588,7 @@
       "published_at": "2026-10-27T17:48:18+00:00",
       "summary": "Bitcoin Magazine Next Week&#8217;s Midterms Could Stall the CLARITY Act and Test Crypto’s Political Clout: TD Cowen TD Cowen says a Democratic sweep would stall the CLARITY Act, while regulators keep advancing rules that favor the crypto sector. This post Next Week&#8217;s Midterms Could Stall the CLARITY Act and Test Crypto’s Political Clout: TD Cowen first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "bbd3ffcbe49a3f6f4fe7",
@@ -568,7 +607,7 @@
       "published_at": "2026-10-27T17:45:18+00:00",
       "summary": "A collaboration with payments-tech firm ACI Worldwide will pilot folding USDC settlement into Colombia’s instant-payments network.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "92bb2ed9c045352e7e65",
@@ -586,7 +625,7 @@
       "published_at": "2026-10-27T16:59:07+00:00",
       "summary": "USDT volume on crypto exchange Mercado Bitcoin jumped nearly 800% and bitcoin volume surged 865%. Binance’s USDT/BRL market tripled while the global BTC/USDT pair fell.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "7f2ba2bac9dc98add1cd",
@@ -605,7 +644,7 @@
       "published_at": "2026-10-27T16:53:44+00:00",
       "summary": "Chuck Todd called markets a \"fact checker\" for journalism, as Kalshi, Polymarket and Robinhood pitched contracts well beyond elections.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "18ca101333ea3746781d",
@@ -624,7 +663,7 @@
       "published_at": "2026-10-27T16:53:13+00:00",
       "summary": "A new OpenAI paper declares ETH false, a claim that hundreds of research papers lean on. Crypto Twitter degens and serious mathematicians are abuzz.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "dd2f1f836f8d0315b31e",
@@ -642,7 +681,7 @@
       "published_at": "2026-10-27T16:42:23+00:00",
       "summary": "Bitcoin Magazine Ten Decrees: Old Masters, New Money Lucho Poletti on redrawing Hieronymus Bosch and Pieter Bruegel the Elder around money, Nixon’s 1971 decree, and why bitcoin art keeps returning to the old masters. This post Ten Decrees: Old Masters, New Money first appeared on Bitcoin Magazine and is written by Dennis Koch .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "ff2686bad6130223de6e",
@@ -661,7 +700,7 @@
       "published_at": "2026-10-27T16:37:15+00:00",
       "summary": "The blockchain-based fund offers eligible non-US investors exposure to the Nasdaq-100 as Janus Henderson expands its institutional tokenization business.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "d6b24686cba60744dbc3",
@@ -679,7 +718,7 @@
       "published_at": "2026-10-27T16:35:29+00:00",
       "summary": "Robinhood helped launch a rival dollar-backed token, USDG, but will also offer Ripple's stablecoin to retail customers later this year.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "6cf08eaa164af4ef272c",
@@ -698,7 +737,7 @@
       "published_at": "2026-10-27T15:59:58+00:00",
       "summary": "USDC’s share of euro stablecoin trading has climbed to 56% since January 2024, with deeper liquidity as exchanges restrict USDT under MiCA.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "23f17cda09a38ed3bc57",
@@ -716,7 +755,7 @@
       "published_at": "2026-10-27T15:56:57+00:00",
       "summary": "Bitcoin Magazine SoFi Stock (SOFI) Soars 15% on Record Quarter, Crypto Reaches 503,000 Products SoFi shares jumped 14.6% to $16.56 after a record third quarter, with crypto reaching 503,070 products and adjusted EPS of $0.18 beating estimates. This post SoFi Stock (SOFI) Soars 15% on Record Quarter, Crypto Reaches 503,000 Products first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "f3ae0ec6ce8517a24e6e",
@@ -734,7 +773,7 @@
       "published_at": "2026-10-27T14:34:47+00:00",
       "summary": "Bitcoin Magazine Crypto Midterm Election Spending Reaches $176 Million as Industry Builds for the Next Congress The crypto industry has spent about $176 million on more than 100 midterm races to build a bipartisan bloc in Congress that can protect its interests after Trump leaves office. This post Crypto Midterm Election Spending Reaches $176 Million as Industry Builds for the Next Congress first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "465df959f4cf99a9ef19",
@@ -753,7 +792,7 @@
       "published_at": "2026-10-27T14:31:02+00:00",
       "summary": "Crypto traders think the McRib’s return to McDonald's means a Bitcoin pump is coming. Experts say there is \"no correlation at all.\"",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "b3cf923d6c2edc98a3b9",
@@ -771,7 +810,7 @@
       "published_at": "2026-10-27T14:21:10+00:00",
       "summary": "The $500 billion asset manager is launching an issuer-sponsored fund on Stellar, taking a different approach from third-party stock tokens.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "c44035e8d21ec18cb2a9",
@@ -789,7 +828,7 @@
       "published_at": "2026-10-27T14:00:00+00:00",
       "summary": "The new service could help developers build blockchain-based index funds, tokenized portfolios and derivatives using established financial benchmarks.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "b9253f84f42db9960c42",
@@ -807,7 +846,7 @@
       "published_at": "2026-10-27T13:53:32+00:00",
       "summary": "Bitcoin Magazine Bitcoin Mining Firm Luxor Raises $16 Million to Scale AI Compute Trading and Hardware Luxor, a bitcoin miner turned AI compute firm, raised $16 million led by CMT Digital to expand its AI hardware brokerage and compute trading business. This post Bitcoin Mining Firm Luxor Raises $16 Million to Scale AI Compute Trading and Hardware first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "7bedc6e123e93781f52e",
@@ -826,7 +865,7 @@
       "published_at": "2026-10-27T13:52:58+00:00",
       "summary": "The firm's new head of investigations says its surveillance system flags hundreds of alerts a day, with at least two cases sent to the CFTC.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "e6998f390d3facc27ce6",
@@ -845,7 +884,7 @@
       "published_at": "2026-10-27T13:30:00+00:00",
       "summary": "Former Morgan Stanley and Weiss executive Jordi Visser says AI agents are boosting demand for crypto as he expands his holdings beyond Bitcoin, Ether and Solana.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "f39655ab04b6a5f9dc9e",
@@ -863,7 +902,7 @@
       "published_at": "2026-10-27T13:22:05+00:00",
       "summary": "&#9654; Bitcoin Magazine Deloitte’s Rob Massey: What Bitcoin Investors Need to Know About The Changing IRS Tax Guidance Deloitte's Rob Massey explains crypto tax compliance, realization events in wallet moves, why 1099s fall short, and what Bitcoiners should advocate for. This post Deloitte’s Rob Massey: What Bitcoin Investors Need to Know About The Changing IRS Tax Guidance first appeared on Bitcoin Magazine and is written by Patrick Green .",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "022172989da7c84a3747",
@@ -881,7 +920,7 @@
       "published_at": "2026-10-27T13:13:50+00:00",
       "summary": "Luxor raised $16 million to expand into AI hardware and trading, betting that computing power will become a market where companies can hedge costs and prices.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "63eee45620931cd509d8",
@@ -900,7 +939,7 @@
       "published_at": "2026-10-27T13:01:10+00:00",
       "summary": "Arthur Hayes revealed the derivatives market design for Flop Network and how he expects its native token could transform AI compute into a tradable commodity.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "666e062b9f2ad76ec882",
@@ -919,7 +958,7 @@
       "published_at": "2026-10-27T13:01:08+00:00",
       "summary": "The CMT Digital-led round, which drew mining-hardware makers Canaan and MicroBT, will fund Luxor’s expansion into AI compute trading, hardware and derivatives.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "59b12505b61fb80cd4ac",
@@ -938,7 +977,7 @@
       "published_at": "2026-10-27T13:01:00+00:00",
       "summary": "Luxor aims to use the proceeds to scale its existing AI infrastructure business and expand its GPU sourcing services as global chip supply chains become constrained.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "3ad4f7e295411d7ec88c",
@@ -957,7 +996,7 @@
       "published_at": "2026-10-27T12:59:58+00:00",
       "summary": "One of crypto’s primary growth sectors for this upcoming cycle is under attack. Will Vlad Tenev speak up on today’s Robinhood earnings call?",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "0576a282c34f78f1a81a",
@@ -976,7 +1015,7 @@
       "published_at": "2026-10-27T12:18:24+00:00",
       "summary": "A decline in the share of Bitcoin’s realized cap held by coins unmoved for 18 months or longer points to the ‘early stages’ of a bull market, analysis says.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "ba05e749f9782a3d0ddf",
@@ -994,7 +1033,7 @@
       "published_at": "2026-10-27T12:00:39+00:00",
       "summary": "Your day-ahead look for Oct. 27, 2026",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "753f8e41b38ea0e1827f",
@@ -1013,7 +1052,7 @@
       "published_at": "2026-10-27T11:46:51+00:00",
       "summary": "NIP Group says Bitcoin mining has “earned its place” as the esports giant swaps 247 million shares for more machines.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "5426b5f3fe369fb57177",
@@ -1031,7 +1070,7 @@
       "published_at": "2026-10-27T11:40:50+00:00",
       "summary": "The Fed is expected to hold rates steady on Wednesday, but markets will be looking for clues about future policy moves.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "a13fed44b595f05e7654",
@@ -1049,7 +1088,7 @@
       "published_at": "2026-10-27T11:37:52+00:00",
       "summary": "CEO Noritaka Okabe blamed a 1 million yen per-transaction cap for Type II funds transfer providers, which has slowed corporate adoption.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "69a7a3b3fc0f4d5bdb30",
@@ -1067,7 +1106,7 @@
       "published_at": "2026-10-27T11:32:45+00:00",
       "summary": "Bitcoin fell 0.4% to around $79,700 since midnight UTC while Asian tech stocks rallied. The DeFi index dropped 1.8%, and the Fed is set to begin a two-day meeting.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "e159c9d94ba7de001791",
@@ -1085,7 +1124,7 @@
       "published_at": "2026-10-27T11:13:54+00:00",
       "summary": "The breach exposed 25,964 buyer records, some kept past Keystone’s 180-day deletion policy after an automated tool failed without the firm noticing.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "7e0930588d2097382fa3",
@@ -1103,7 +1142,7 @@
       "published_at": "2026-10-27T10:57:51+00:00",
       "summary": "Jason Calacanis wants investors to sell bitcoin and back artificial intelligence. He is also holding TAO, the cryptocurrency behind AI network Bittensor.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "5221f1ce5feb4dc305fa",
@@ -1122,7 +1161,7 @@
       "published_at": "2026-10-27T10:16:46+00:00",
       "summary": "The federally supervised bank will manage RLUSD's reserves and offer custody, as banking groups fight crypto charters in court.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "da418d961a67aa2d73e8",
@@ -1141,7 +1180,7 @@
       "published_at": "2026-10-27T10:00:31+00:00",
       "summary": "Sean Bowe says ZCG has enough money to keep funding projects and wants its share of new ZEC redirected to a reserve for the network.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "e1ddb38dbad64af4f605",
@@ -1159,7 +1198,7 @@
       "published_at": "2026-10-27T09:42:46+00:00",
       "summary": "Galaxy argues improving price trends, resilient ETF demand and rising U.S. debt support bitcoin’s recovery towards its previous high.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "47cac5ceb3e066c7cd74",
@@ -1178,7 +1217,7 @@
       "published_at": "2026-10-27T09:07:37+00:00",
       "summary": "Bloom pledged to reimburse nine traders after $953,000 was drained from 48 wallets, saying no private keys were accessed or compromised.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "b15c65edcf0a18d1930f",
@@ -1196,7 +1235,7 @@
       "published_at": "2026-10-27T08:24:39+00:00",
       "summary": "As default insurance on several AI-linked firms hits record costs, companies must show they can finance investment, service the debt and eventually mint cash, JPMorgan says.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "b581ea5e9bb52fe3dfc0",
@@ -1215,7 +1254,7 @@
       "published_at": "2026-10-27T08:04:21+00:00",
       "summary": "The exchange is delisting 22 crypto assets for Brazilian users and hopes talks with the central bank will allow it to restore some services.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "ea6e172fb46ef027cfe4",
@@ -1233,7 +1272,7 @@
       "published_at": "2026-10-27T07:44:04+00:00",
       "summary": "Researchers must now permanently burn 1 SOL for every submission after a monthlong contest drew 809 reports, with AI believed to have helped generate or write nearly all of them.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "916792b1761de843ffe6",
@@ -1252,7 +1291,7 @@
       "published_at": "2026-10-27T07:35:37+00:00",
       "summary": "US spot Bitcoin ETFs remained in the red for October, with about $202 million in net outflows for the month despite Monday’s rebound.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "6b5e94957695da7b2285",
@@ -1270,7 +1309,7 @@
       "published_at": "2026-10-27T07:09:56+00:00",
       "summary": "Developers initially rejected the change before reversing course, as testing delays gave them more time to examine a flaw in Ethereum's upcoming Glamsterdam upgrade.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "1ad5d1960076023a9c19",
@@ -1288,7 +1327,7 @@
       "published_at": "2026-10-27T06:14:41+00:00",
       "summary": "Sean Bowe’s proposal would send the committee’s 8% share of newly created ZEC to a reserve for future miners. The committee would keep the money it has already received.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "1de552c94250b6f07da9",
@@ -1306,7 +1345,7 @@
       "published_at": "2026-10-27T04:28:49+00:00",
       "summary": "The Office of the Comptroller of the Currency has approved Ripple National Trust Bank (RNTB), Ripple's CEO Brad Garlinghouse announced on X.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "ceb4d887db86dd3f0f78",
@@ -1325,7 +1364,7 @@
       "published_at": "2026-10-27T04:26:51+00:00",
       "summary": "The stablecoin payments company previously disputed reports that its US listing had been delayed.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "84e73b643dd945eaff52",
@@ -1344,7 +1383,7 @@
       "published_at": "2026-10-27T01:55:03+00:00",
       "summary": "Keystone initially disclosed a leak of customer information but has since disclosed that hackers also stole a key that could allow counterfeit wallets to pass authenticity checks.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "14571e20d836f2af68fc",
@@ -1363,7 +1402,7 @@
       "published_at": "2026-10-27T00:06:41+00:00",
       "summary": "The approval clears the way for Ripple to manage reserves backing its RLUSD stablecoin and provide digital asset custody.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "a05fd4dfd93b138aab6b",
@@ -1382,7 +1421,7 @@
       "published_at": "2026-10-26T22:16:03+00:00",
       "summary": "Ottawa opened a 60-day consultation on draft rules requiring one-to-one reserves and fast redemption from stablecoin issuers, while keeping the ban on paying holders interest.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "650787f8d296d91aa6a8",
@@ -1401,7 +1440,7 @@
       "published_at": "2026-10-26T21:46:02+00:00",
       "summary": "OpenAI's mid-tier model now operates apps and screens more like a person would, with API prices 50% below GPT-5.6 Terra and an error rate that OpenAI says fell sharply.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "d39b7185e44ec14c10d6",
@@ -1420,7 +1459,7 @@
       "published_at": "2026-10-26T21:38:30+00:00",
       "summary": "The announcement followed the banking regulator finalizing its rules for the GENIUS Act, a stablecoin law to be implemented in January",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "91af3a74ba88ee66f57a",
@@ -1439,7 +1478,7 @@
       "published_at": "2026-10-26T21:23:32+00:00",
       "summary": "The new index tracks rental prices for five Nvidia GPUs, offering leveraged trading and potential hedging against fluctuations in AI computing costs.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "7bf951883b53bdfb1f32",
@@ -1458,7 +1497,7 @@
       "published_at": "2026-10-26T21:16:03+00:00",
       "summary": "Unitree's shares have jumped about 60% in under two weeks as investors bet OpenAI's GPT-6 Astra will give robots the brains they lack, turning the stock into an AI proxy.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "c434c94b3c19d16ae612",
@@ -1477,7 +1516,7 @@
       "published_at": "2026-10-26T20:36:03+00:00",
       "summary": "The agreement, which follows similar deals with MLB and NHL, establishes information-sharing to guard against insider trading as sports betting migrates to CFTC-regulated venues.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "b29e559ff5fe6cc6aa35",
@@ -1496,7 +1535,7 @@
       "published_at": "2026-10-26T20:06:02+00:00",
       "summary": "Police in Seoul say a 32-year-old with no IT background used AI tools to break into about 90 hospitals, schools and companies, then pressed victims for roughly $270,000 combined.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "97be7242287774ba9583",
@@ -1515,7 +1554,7 @@
       "published_at": "2026-10-26T19:47:40+00:00",
       "summary": "As part of the potential implementation of its Stablecoin Act, the Canadian government will hear from the public on a proposed framework for tokens from non-financial institutions.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "1456f9d2a75f03e43bf6",
@@ -1534,7 +1573,7 @@
       "published_at": "2026-10-26T19:31:02+00:00",
       "summary": "Cathedral, a startup founded by ex-DOGE staffers, says its AI agents found paths into Anthropic's sales, HR, and IT systems through third-party software.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "5f29cd85f28bb80da320",
@@ -1553,7 +1592,7 @@
       "published_at": "2026-10-26T18:46:03+00:00",
       "summary": "Experts say Brazil's prediction market ban left the odds in the hands of traders with little knowledge about the election.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "14361cf7cffb385fa725",
@@ -1572,7 +1611,7 @@
       "published_at": "2026-10-26T18:42:41+00:00",
       "summary": "The artificial intelligence company disclosed more than $16 billion in revenue and an $80 billion net loss for the first half of 2026.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "3c6eba2ead30ef5a60bd",
@@ -1591,7 +1630,7 @@
       "published_at": "2026-10-26T18:16:02+00:00",
       "summary": "Elon Musk says SpaceX closed a $40 billion chip deal with Apollo while lenders shut the door on smaller AI cloud firms, a split that could decide who controls computing.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "9217d6599d367581c750",
@@ -1610,7 +1649,7 @@
       "published_at": "2026-10-26T17:46:09+00:00",
       "summary": "The US professional basketball league is expanding into prediction markets with official data agreements and safeguards against insider trading.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "800d2d12ab7baaeb238f",
@@ -1629,7 +1668,7 @@
       "published_at": "2026-10-26T17:41:21+00:00",
       "summary": "A confirmed exploit let rogue servers replace Electrum’s pending transactions, tricking users into redirecting Bitcoin to attacker addresses.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "622caa9bc02fe60c1ec5",
@@ -1648,7 +1687,7 @@
       "published_at": "2026-10-26T16:36:03+00:00",
       "summary": "The Mumbai-based exchange says 15.99 million USDT was drained from wallets it retired after last year’s $44 million hack, bringing its combined losses to nearly $60 million—and it’s absorbing the hit.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "0ed0fd952951c4f7f04c",
@@ -1667,7 +1706,7 @@
       "published_at": "2026-10-26T16:18:09+00:00",
       "summary": "The Seoul government is reportedly weighing another delay for a 2020 income tax policy on digital assets, citing concerns with receiving data from US officials.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "277fecaee59336f01a35",
@@ -1685,7 +1724,7 @@
       "published_at": "2026-10-26T16:05:12+00:00",
       "summary": "The Ethereum treasury firm spent $46 million buying back shares as Chairman Tom Lee said crypto has held up better than AI stocks during the recent market pullback.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "b6c0ef66e49bc1934a8e",
@@ -1704,7 +1743,7 @@
       "published_at": "2026-10-26T16:04:51+00:00",
       "summary": "The iShares Brazil ETF fell as much as 26% after Lula da Silva beat Flávio Bolsonaro, who prediction markets had at 80%, while the dollar jumped as much as 12% against the real.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "c7fca40de3a80e48e50f",
@@ -1722,7 +1761,7 @@
       "published_at": "2026-10-26T15:59:55+00:00",
       "summary": "The U.S. derivatives regulator, which has championed the arrival of prediction market firms such as Kalshi, has been gathering allied sports leagues.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:15+00:00"
     },
     {
       "id": "4b504ef282fe472f22f0",
@@ -1741,25 +1780,7 @@
       "published_at": "2026-10-26T15:54:15+00:00",
       "summary": "The agreement adds S&P Dow Jones gauges to a growing list of Wall Street firms expanding their involvement in prediction markets.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
-    },
-    {
-      "id": "5eba59b186bec255ce58",
-      "title": "OCC calls on community banks to enter the stablecoin payments market",
-      "url": "https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market",
-      "source_id": "coindesk",
-      "source_name": "CoinDesk",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "regulation"
-      ],
-      "published_at": "2026-10-26T15:45:51+00:00",
-      "summary": "The U.S. banking regulator is encouraging smaller lenders to develop stablecoin services as new federal licensing requirements approach.",
-      "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:23+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "20ac4567aebc7c84b017",
@@ -1778,7 +1799,7 @@
       "published_at": "2026-10-26T15:36:03+00:00",
       "summary": "The firm added 10,452 ETH to reach 4.95% of supply, but its bigger move was repurchasing 2.04 million of its own shares—part of what it calls the largest equity buyback any crypto treasury company has run.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "ead43544ebaf530420b8",
@@ -1797,7 +1818,7 @@
       "published_at": "2026-10-26T15:00:02+00:00",
       "summary": "AI-powered reverse engineering could make it \"easier and faster\" for researchers to uncover and explain how devices collect and share data.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "253abaa2ffe0e3adc330",
@@ -1816,7 +1837,7 @@
       "published_at": "2026-10-26T13:50:22+00:00",
       "summary": "The S-1 shows revenue up from $1.2 billion a year earlier, and a share structure that leaves a trust and the co-founders in control.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "a818d7c9ddeab1761aea",
@@ -1835,7 +1856,7 @@
       "published_at": "2026-10-26T13:24:38+00:00",
       "summary": "The Bitcoin treasury firm's USD Cash balance fell to $242.4 million after its biggest weekly STRC buyback in more than a month.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "2bd3fe9cb93faf8e7376",
@@ -1854,7 +1875,7 @@
       "published_at": "2026-10-26T13:02:43+00:00",
       "summary": "Analysts point to a sell-off in AI stocks and ETF outflows, with HashKey's Tim Sun flagging $75,000 as the next key support level.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "559a9455e55323bd5815",
@@ -1873,7 +1894,7 @@
       "published_at": "2026-10-26T13:01:02+00:00",
       "summary": "Galaxy Research says Bitcoin’s bear market ended in June, pointing to a reclaimed 50-week moving average, fading selling pressure, and a strengthening debasement case.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "17f400759dadbdb5f614",
@@ -1892,7 +1913,7 @@
       "published_at": "2026-10-26T12:16:12+00:00",
       "summary": "Some relief is appearing this morning as oil and rates fall, with a big macro week ahead featuring major earnings, FOMC and key data drops.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "8f5f180306897b987107",
@@ -1911,7 +1932,7 @@
       "published_at": "2026-10-26T11:34:08+00:00",
       "summary": "Over 100 economists, including former governor Jacob Frenkel, warned of deeper isolation ahead of Israel's October 27 national election.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "c5b220ee62288fba840c",
@@ -1928,7 +1949,7 @@
       "published_at": "2026-10-22T04:01:00+00:00",
       "summary": "Emissions on both sides of the island are unusually high as human-set fires spread in a landscape parched by drought.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "9fe905956dd45b719c25",
@@ -1946,7 +1967,7 @@
       "published_at": "2026-10-22T00:00:00+00:00",
       "summary": "The Glamsterdam upgrade on Hoodi, previously scheduled for October 26, 2026 at 17:42:48 UTC (epoch 132,352), has been postponed. A new activation date has not been set. This update supersedes the schedule and activation instructions in the Hoodi testnet announcement....",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "c02b4a8f65149aabc47d",
@@ -1963,7 +1984,7 @@
       "published_at": "2026-10-21T12:17:58+00:00",
       "summary": "From orbit, today’s space-based laser instruments measure Earth’s forests and terrain one narrow line at a time. Between those lines are enormous gaps that include millions of acres of land scientists never directly measure. NASA’s CASALS instrument will blend machine learning with an ultra-compact lidar instrument to adaptively ‘sweep’ large swaths of Earth’s surface. This […]",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "d4799de2fda612bbfb5f",
@@ -1980,7 +2001,7 @@
       "published_at": "2026-10-21T04:01:00+00:00",
       "summary": "The powerful low-pressure system formed over the North Atlantic out of the remnants of Hurricane Isaias.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "d84f2255ba8f65011711",
@@ -1997,7 +2018,7 @@
       "published_at": "2026-10-20T18:11:33+00:00",
       "summary": "Destined for Mars and beyond, NASA’s Space Reactor-1 (SR-1) Freedom will be humanity’s first fission-powered spacecraft to travel outside Earth’s orbit. Announced during NASA’s “Ignition” event, this mission will demonstrate nuclear electric propulsion in deep space, and progress is underway on its key element: the nuclear power module. To expedite development of the spacecraft, NASA [&#8230;]",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "8a87901b5db2b4764582",
@@ -2015,7 +2036,7 @@
       "published_at": "2026-10-16T00:00:00+00:00",
       "summary": "Update — October 22, 2026: The October 26 Hoodi activation has been postponed, including the scheduled gas-limit increase to 200M. The schedule and activation instructions below have been superseded. See Glamsterdam on Hoodi Postponed for details and operator guidance. Following its activation on Sepolia on October 6, the Glamsterdam...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "5f2528424985d275b374",
@@ -2032,7 +2053,7 @@
       "published_at": "2026-10-15T04:01:00+00:00",
       "summary": "During El Niño, a cascade of fires across the tropics begins in equatorial Asia and continues in the central and eastern Amazon.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "47fad2329e7a41ac4a5a",
@@ -2049,7 +2070,7 @@
       "published_at": "2026-10-14T14:41:21+00:00",
       "summary": "If you’ve ever had your car start sluggishly, or not at all, on a particularly frigid winter morning, you know standard batteries do not like extreme cold. That’s why NASA researchers are working to develop a battery that could function in the brutal cold of the Moon’s South Pole, where nighttime temperatures plunge to minus [&#8230;]",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "9759b7394ace50610030",
@@ -2066,7 +2087,7 @@
       "published_at": "2026-10-14T04:01:00+00:00",
       "summary": "Though it remained offshore, the storm lashed coastal areas with high winds and flooding—and produced remarkable rippling patterns in the upper atmosphere.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "f87bbc10a483813738be",
@@ -2084,7 +2105,7 @@
       "published_at": "2026-10-05T00:00:00+00:00",
       "summary": "The Ethereum Foundation's Trillion Dollar Security initiative has identified blind signing and transaction uncertainty as a user experience risk, and is exploring native transaction assertions as a next step to enforce a transaction’s final outcome, alongside Clear Signing. This post covers why a valid signature doesn't always guarantee the...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "f38c5a86853151ed54c2",
@@ -2101,7 +2122,7 @@
       "published_at": "2026-10-02T04:01:00+00:00",
       "summary": "After days of torrential rain, the river rose to record-breaking levels in parts of Nepal and India.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "72648b76d1b32673b48b",
@@ -2119,7 +2140,7 @@
       "published_at": "2026-10-01T00:00:00+00:00",
       "summary": "tl;dr: zkAPI lets you pay for a metered API without being known. Deposit credits into an Ethereum vault once, then authorize bounded usage with zero-knowledge proofs instead of an identity. The provider sees the requests, and the payment layer sees the spend. Neither learns the link between them. The...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "7b80d485c9a5a57564e6",
@@ -2136,7 +2157,7 @@
       "published_at": "2026-09-30T04:01:00+00:00",
       "summary": "Hurricanes Polo and Nolo sent destructive effects ashore amid an active season in the northeastern and central Pacific.",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "cef4101e9d933eadd7fc",
@@ -2153,7 +2174,7 @@
       "published_at": "2026-09-28T10:00:00+00:00",
       "summary": "The idea of humans and robots working side-by-side in space was once the stuff of science fiction, but with NASA launching increasingly complex missions deeper into space, human-robot collaboration could become reality. Advanced robotic systems are critical for human spaceflight because they can enhance a crew’s performance and productivity while reducing risk and expanding the [&#8230;]",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:17+00:00"
     },
     {
       "id": "bc50945e3cbbceb91205",
@@ -2171,7 +2192,7 @@
       "published_at": "2026-09-28T00:00:00+00:00",
       "summary": "Glamsterdam follows the Fusaka upgrade, advancing Ethereum's L1 scaling roadmap with enshrined proposer-builder separation, block-level access lists, and changes to gas pricing that better reflect the cost of execution and state growth. The Glamsterdam network upgrade is scheduled to activate on Sepolia at epoch 353,024, slot 11,296,768 (October 6,...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "9d3ada0e5b894d5d968b",
@@ -2189,7 +2210,7 @@
       "published_at": "2026-09-09T00:00:00+00:00",
       "summary": "Every year since January 2019, teams from the Ethereum Foundation have spent an afternoon or two on r/ethereum answering questions from the community. The format hasn’t really changed: one thread, technical debates, detailed explanations, and community members asking whatever is on their mind. By now it is a tradition, and...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "47a6f39a69c0490ff975",
@@ -2207,7 +2228,7 @@
       "published_at": "2026-09-07T00:00:00+00:00",
       "summary": "This is the EF Protocol cluster’s tier list for Hegotá. We evaluated the 62 EIPs proposed for inclusion, each with a tier and a short note on the grade. It is the first time the cluster has published one unified view rather than per-team opinions. Geth, of course, being...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "967ee8436d41f8a1c8c8",
@@ -2225,7 +2246,7 @@
       "published_at": "2026-09-07T00:00:00+00:00",
       "summary": "In May, the Protocol cluster welcomed a trio of new cluster coordinators and promised updates to follow. After months of settling in and aligning with contributors cluster-wide, across the EF and across the Ethereum ecosystem, we are now happy to share Protocol's priorities: what Protocol is for, the commitments...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "89e8b96aea43c18e614d",
@@ -2243,7 +2264,7 @@
       "published_at": "2026-08-24T00:00:00+00:00",
       "summary": "...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "16f31916a05ea3b69565",
@@ -2261,7 +2282,7 @@
       "published_at": "2026-08-20T00:00:00+00:00",
       "summary": "better.codes, an open autoresearch challenge built by the Ethereum Foundation Formal Verification team in collaboration with Yukon and zkSecurity, is now live. better.codes takes a self-contained problem from the Proximity Prize research, formalized in Lean, and puts its soundness bound on a public leaderboard that anyone can push forward....",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "1b2a5eb57d534653afd5",
@@ -2279,7 +2300,7 @@
       "published_at": "2026-08-18T00:00:00+00:00",
       "summary": "Q2 2026 carried forward our focus on advancing Ethereum’s resilience and capabilities, supporting key work in zero-knowledge proofs, client diversity, formal verification, and open-source tooling. See the list below of the projects and ecosystem efforts supported this quarter as builders build and strengthen the network. Explore the full list...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "f75fbb25a9ffd601c259",
@@ -2297,7 +2318,7 @@
       "published_at": "2026-08-17T00:00:00+00:00",
       "summary": "tl;dr: Meet Platåberget: Glamsterdam's (Gloas + Amsterdam) early testing ground open to public participation. This upgrade comes with breaking changes for application developers. Notably, any tool that relies on a hardcapped maximum gas limit (think wallets, indexers and gas estimators) will break and needs to be updated. Please use this...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "bf6945162d68dc5a1887",
@@ -2315,7 +2336,7 @@
       "published_at": "2026-08-05T00:00:00+00:00",
       "summary": "The Ethereum Foundation’s Trillion Dollar Security (1TS) initiative is proud to announce a grant allocation to Freedom of the Press Foundation (FPF) to support the continued development of WEBCAT. WEBCAT is an open source tool that lets browsers verify that code served by an enrolled website matches what its developers...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "d6be24ba4c1a3beeadbc",
@@ -2333,7 +2354,7 @@
       "published_at": "2026-07-29T00:00:00+00:00",
       "summary": "We are pleased to share that pcaversaccio (pc) has joined the Ethereum Foundation Board. pc is a long time contributor to the Ethereum ecosystem, a co-founder and lead of SEAL 911, and has been a member of the EF's Silviculture Society, which provides informal counsel to EF aimed at...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "38c78d5920b799354c32",
@@ -2351,7 +2372,7 @@
       "published_at": "2026-07-14T00:00:00+00:00",
       "summary": "Devcon 8 tickets are live! 🇮🇳 This November, the Ethereum community will gather in Mumbai for a more focused and intimate Devcon. Devcon gathers minds from across Ethereum and beyond: builders, researchers, maintainers, organizers, and anyone curious about the future of open technology. Across four days, you can...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "7eefa1131a7ebdd0717a",
@@ -2369,7 +2390,7 @@
       "published_at": "2026-07-09T00:00:00+00:00",
       "summary": "Notes from the Ethereum Foundation's Protocol Security team on running coordinated AI agents against real protocol code, including how we organize the work, what holds up under scrutiny, and what client teams and security researchers can take from it. This post stands on its own; later posts will go deeper...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "54f4cb6cbcd363e0da38",
@@ -2387,7 +2408,7 @@
       "published_at": "2026-07-01T00:00:00+00:00",
       "summary": "Current global shifts clearly signal a critical need for shared, neutral digital public infrastructure outside the control of any single centralized actor. As a public, programmable network designed to operate without reliance on any single party, Ethereum was built to address precisely these needs. Today, the Ethereum Foundation Global...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "3f5b3fef2fea6b81e93c",
@@ -2405,7 +2426,7 @@
       "published_at": "2026-06-23T00:00:00+00:00",
       "summary": "Today, the EF is changing shape, concluding a months-long process of reorganization as part of the implementation of the Mandate and the Treasury Management Policy. We come out of this process with the structure, activities, and people necessary for execution on the critical tasks ahead of us, but also...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "fbddc555f2a12d38fbe8",
@@ -2423,7 +2444,7 @@
       "published_at": "2026-05-12T00:00:00+00:00",
       "summary": "An Ethereum Working Group consisting of wallet developers, security firms and the Ethereum Foundation’s Trillion Dollar Security Initiative today launched an open standard designed to end blind signing — a structural flaw that has contributed to billions in user losses, including the Bybit hack. Ethereum Foundation’s Trillion Dollar Security Initiative...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "d36831204140ca96bbd6",
@@ -2441,7 +2462,7 @@
       "published_at": "2026-05-11T00:00:00+00:00",
       "summary": "A semi-regular gathering of Ethereum core devs from various client teams, or interop, recently took place in Svalbard, Norway. Over the week-long event, teams focused on hardening and preparation for the next upgrade, Glamsterdam. Several important milestones came out of the week, including: 200M gas limit floor established:...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "5724c7a2322c4c9c546b",
@@ -2459,7 +2480,7 @@
       "published_at": "2026-05-02T00:00:00+00:00",
       "summary": "This past week, just over 100 Ethereum core contributors gathered above the Arctic Circle — in Longyearbyen, Svalbard — for the Soldøgn Interop: a week of intense work on the Glamsterdam network upgrade. Soldøgn followed last year's Berlinterop, but returned to the format used by Amphora 🏺, [Edelweiss 🏔️](https://blog.ethereum.org/2023/02/07/edelweiss-interop-recap...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "181df2ba6aaefb4cf764",
@@ -2477,7 +2498,7 @@
       "published_at": "2026-04-30T00:00:00+00:00",
       "summary": "TL;DR: 📝 Applications for EPF7 are open until May 13 🔎 Review the program details for EPF7 🎙️ An introductory town hall will be held on May 6 at 1500 UTC We are excited to announce that applications are now open for the seventh cohort of the [Ethereum...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "bc435490e21c2fd3b423",
@@ -2495,7 +2516,7 @@
       "published_at": "2026-04-29T00:00:00+00:00",
       "summary": "Q1 2026 continued our focus on strengthening Ethereum’s foundations, with sustained investment in core domains like cryptography, zero-knowledge proofs, security, and protocol research. See the list below of the projects and ecosystem efforts we supported this quarter as builders advance critical infrastructure, tools, and research across the network. Explore...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "cadc4cebd433e5d3c896",
@@ -2513,7 +2534,7 @@
       "published_at": "2026-04-16T00:00:00+00:00",
       "summary": "In late 2024, the Ethereum Foundation, together with Secureum, The Red Guild, and Security Alliance (SEAL), launched the ETH Rangers Program, an initiative to provide stipends for individuals doing public goods security work in the Ethereum ecosystem. The goal of the program was straightforward: to fund independent efforts that...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "84edff943f27583beb32",
@@ -2531,7 +2552,7 @@
       "published_at": "2026-04-10T00:00:00+00:00",
       "summary": "Ethereum's All Core Developer calls can be a lot to keep up with, so this \"Checkpoint\" series aims for periodic high-level updates, depending on what's happening in core development. See the previous update here. !image...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "d1d11e69b5da2bf0f04e",
@@ -2549,7 +2570,7 @@
       "published_at": "2026-03-23T00:00:00+00:00",
       "summary": "*The North Star of the Platform team is for Ethereum to scale as a cohesive system and enable confident adoption by all users. This post is intended to share our perspective on the L1 \\ L2 relationship, the roles of each layer, and how we (as an ecosystem) are leveraging...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "34a28f5df03584fb309f",
@@ -2567,7 +2588,7 @@
       "published_at": "2026-03-13T00:00:00+00:00",
       "summary": "Dearest Friends, Today we are publishing the EF Mandate, a document that serves as part constitution, part manifesto, and part guide for the Ethereum Foundation. It is written primarily for the EF itself: to be clear about what we are here to do, the principles by which we...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "d8cd7420c5781f3c10f6",
@@ -2585,7 +2606,7 @@
       "published_at": "2026-02-27T00:00:00+00:00",
       "summary": "The commons called. It wants a runway. Every so often, in the blockchain world’s usual cycle of funding scares, a team maintaining a widely used open source public good declares mayday. Libp2p is a core infrastructure stack that powers multiple Ethereum clients (among others) and a large part of...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "f0bf85ce98e4ca6c4cd6",
@@ -2603,7 +2624,7 @@
       "published_at": "2026-02-24T00:00:00+00:00",
       "summary": "The Ethereum Foundation has begun staking a portion of its treasury, in line with its Treasury Policy announced last year. Approximately 70,000 ETH is being staked with rewards directed back to the EF treasury....",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "0fdb974b911a5f5a0d8f",
@@ -2621,7 +2642,7 @@
       "published_at": "2026-02-23T00:00:00+00:00",
       "summary": "DeFi isn't a speculative bet on the future. It's the inevitable evolution of finance, driven by a fundamental truth: financial autonomy is a right, not a privilege. And it's been a critical driver of Ethereum's growth and adoption. We want to see DeFi thrive, but we're opinionated about what...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "0eab2a7fb5e7bfb55784",
@@ -2639,7 +2660,7 @@
       "published_at": "2026-02-18T00:00:00+00:00",
       "summary": "We introduced Protocol last June which organized our work around three strategic initiatives: Scale L1, Scale Blobs, and Improve UX. A lot has happened since then! In this post, we want to share what we accomplished last year, how our thinking has evolved, and where Protocol is headed in 2026....",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "eb7c24d699c249737b44",
@@ -2657,7 +2678,7 @@
       "published_at": "2026-02-17T00:00:00+00:00",
       "summary": "Platform is a new team inside the EF with one goal: Deliver the strongest possible Ethereum platform, where L1 and L2s are best positioned to support users, apps, and all organizations building on Ethereum. This requires improving the L1 \\ L2 relationship, so that we grow as a mutually...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "a60fe4c684fb422af5d5",
@@ -2675,7 +2696,7 @@
       "published_at": "2026-02-17T00:00:00+00:00",
       "summary": "tl;dr: Ethereum Protocol Studies returns for 2026 with new content tracks in cryptography, lean consensus and zkEVM, plus a new self-paced learning platform. The program kicks off February 23rd. Visit epf.wiki to get started. Ethereum Protocol Studies (EPS) is back. Since launching as a 10-week study group ahead of...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "f25d0badeb8b8810ebe9",
@@ -2693,7 +2714,7 @@
       "published_at": "2026-02-13T00:00:00+00:00",
       "summary": "Today, we are announcing a transition in the executive leadership team at the Ethereum Foundation. After extensive contributions to the Foundation’s mission and operations, Tomasz Stańczak has decided to step down from his role as Co-Executive Director. The Foundation’s Board has appointed Bastian Aue to serve as interim Co-Executive Director,...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "bffb5f9db71027bd5ed8",
@@ -2711,7 +2732,7 @@
       "published_at": "2026-02-13T00:00:00+00:00",
       "summary": "tl;dr I am stepping down from my co-ED role at the EF at the end of February 2026. Bastian Aue is taking over the co-ED role alongside Hsiao-Wei. The future is bright for builders, for Ethereum, for the EF, and for me....",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "875532250abff9286dca",
@@ -2729,7 +2750,7 @@
       "published_at": "2026-02-05T00:00:00+00:00",
       "summary": "The EF's Academic Secretariat team is proud to announce the launch of the inaugural PhD Fellowship Program, a pioneering initiative aimed at empowering and expanding the frontiers of Ethereum-related academic research, by supporting Ethereum-related academic work led by PhD students....",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "303653c34f06b549a63f",
@@ -2747,7 +2768,7 @@
       "published_at": "2026-02-03T00:00:00+00:00",
       "summary": "During Devconnect Buenos Aires, the Ethereum Foundation and Secureum TrustX brought together Ethereum security practitioners for Trillion Dollar Security Day, a focused event exploring what it would take to securely support a trillion-dollar Ethereum economy. The event brought together around eighty participants from across the Ethereum Security Ecosystem—spanning Infrastructure,...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "5efe64096adf61b9d470",
@@ -2765,7 +2786,7 @@
       "published_at": "2026-01-27T00:00:00+00:00",
       "summary": "Q4 2025 closed out the year with exciting growth across the ecosystem! Dive into the projects and community initiatives we supported this quarter and see what our grantees have been building:...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "6965916cdac43bfa1fa9",
@@ -2783,7 +2804,7 @@
       "published_at": "2026-01-20T00:00:00+00:00",
       "summary": "Ethereum’s All Core Developer calls are a lot to keep up with, so this \"Checkpoint\" series aims for high-level updates roughly every 4-8 weeks, depending on what’s happening in core development. See the previous update here. If you enjoy reading core development updates, you may also be...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     },
     {
       "id": "eebb3fef3b76a665857f",
@@ -2801,7 +2822,7 @@
       "published_at": "2025-12-23T00:00:00+00:00",
       "summary": "Devcon, the Ethereum community’s annual global gathering for builders, will take place from 3-6 November 2026 at the JIO World Center in Mumbai, India. This Devcon 8 update is not a full vision, but will help organizers and the wider ecosystem plan. More details on programming, tracks, and participation...",
       "status": "unreviewed",
-      "collected_at": "2026-10-28T04:09:24+00:00"
+      "collected_at": "2026-10-28T04:24:16+00:00"
     }
   ]
 }
