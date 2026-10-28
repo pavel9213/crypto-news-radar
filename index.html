@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="A source-first dashboard for cryptocurrency, blockchain, cryptography, security and policy news.">
+  <title>Crypto News Radar</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Crypto News Radar home">
+      <span class="brand-mark" aria-hidden="true">⌁</span>
+      <span>CRYPTO <strong>NEWS RADAR</strong></span>
+    </a>
+    <span class="live-indicator"><span></span> SOURCE-FIRST NEWS</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">THE SIGNAL THROUGH THE NOISE</p>
+      <h1>Know what moves <span>crypto.</span></h1>
+      <p class="hero-copy">A growing news radar for digital assets, blockchain research, cryptography, cybersecurity and policy — with source links attached to every story.</p>
+      <div class="stats" aria-live="polite">
+        <div><strong id="total-count">—</strong><span>Stories loaded</span></div>
+        <div><strong id="source-count">—</strong><span>Sources checked</span></div>
+        <div><strong id="updated-at">Waiting</strong><span>Last collection</span></div>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-label="News filters">
+      <label class="search-wrap"><span class="sr-only">Search stories</span><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search headlines, topics or sources…"></label>
+      <label><span class="sr-only">Filter by topic</span><select id="topic"><option value="">All topics</option></select></label>
+      <label><span class="sr-only">Filter by language</span><select id="language"><option value="">All languages</option></select></label>
+      <button id="refresh" type="button">↻ Refresh</button>
+    </section>
+
+    <div class="section-heading">
+      <div><p class="eyebrow">THE LATEST</p><h2>News feed</h2></div>
+      <span id="result-count" class="result-count">Preparing feed…</span>
+    </div>
+
+    <div id="status" class="status" role="status">Loading collected news…</div>
+    <section id="news-grid" class="news-grid" aria-label="Collected news stories"></section>
+    <div id="empty-state" class="empty-state" hidden>
+      <span aria-hidden="true">◌</span>
+      <h3>No stories match those filters</h3>
+      <p>Try a different search or clear one of the filters.</p>
+      <button id="clear-filters" type="button">Clear filters</button>
+    </div>
+
+    <section class="trust-note">
+      <span class="trust-icon" aria-hidden="true">◎</span>
+      <div><strong>Sources matter.</strong><p>Stories link to their original publishers. Collection and topic labels are automated; verify important claims against primary sources. This is a news tool, not financial advice.</p></div>
+    </section>
+  </main>
+
+  <footer><span>CRYPTO NEWS RADAR</span><span>Built in public · Open-source project</span><a href="https://github.com/pavel9213/crypto-news-radar">View on GitHub ↗</a></footer>
+</body>
+</html>
