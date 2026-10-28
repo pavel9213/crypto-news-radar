@@ -1,0 +1,52 @@
+name: Deploy dashboard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "app.js"
+      - "styles.css"
+      - "data/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Prepare static site
+        run: |
+          mkdir -p _site/data
+          cp index.html app.js styles.css _site/
+          if [ -f data/news.json ]; then
+            cp data/news.json _site/data/news.json
+          else
+            printf '{"schema_version":1,"generated_at":null,"event_count":0,"source_count":0,"sources":[],"events":[]}' > _site/data/news.json
+          fi
+          touch _site/.nojekyll
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
