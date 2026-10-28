@@ -93,14 +93,15 @@
         "token"
       ],
       "trust": "primary",
-      "enabled": true
+      "enabled": true,
+      "sitemap_url": "https://soneium.org/sitemap.xml"
     },
     {
       "id": "base-official-blog",
       "name": "Base Official Blog",
-      "url": "https://blog.base.org/",
+      "url": "https://www.base.org/blog",
       "format": "html",
-      "link_pattern": "^https://blog\\\\.base\\\\.org/[^/?#]+/?$",
+      "link_pattern": "^https://www[.]base[.]org/blog/[^/?#]+/?$",
       "language": "en",
       "topics": [
         "blockchain",
@@ -108,7 +109,8 @@
         "token"
       ],
       "trust": "primary",
-      "enabled": true
+      "enabled": true,
+      "sitemap_url": "https://www.base.org/sitemap.xml"
     },
     {
       "id": "linea-official-blog",
@@ -123,7 +125,8 @@
         "token"
       ],
       "trust": "primary",
-      "enabled": true
+      "enabled": true,
+      "sitemap_url": "https://linea.build/sitemap.xml"
     }
   ]
 }
