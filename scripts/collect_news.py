@@ -23,6 +23,7 @@ SOURCES_PATH = ROOT / "config" / "sources.json"
 OUTPUT_PATH = ROOT / "data" / "news.json"
 USER_AGENT = "CryptoNewsRadar/0.1 (+https://github.com/pavel9213/crypto-news-radar)"
 MAX_FEED_BYTES = 4 * 1024 * 1024
+MAX_ITEMS_PER_SOURCE = 40
 TIMEOUT_SECONDS = 20
 
 
@@ -159,13 +160,21 @@ def collect() -> dict[str, Any]:
         try:
             if not normalize_url(url):
                 raise ValueError("source URL must be HTTP(S)")
-            events = parse_feed(fetch_feed(url), source)
+            parsed_events = parse_feed(fetch_feed(url), source)
+            parsed_events.sort(key=lambda event: event.get("published_at") or "", reverse=True)
+            events = parsed_events[:MAX_ITEMS_PER_SOURCE]
             for event in events:
                 previous = events_by_id.get(event["id"])
                 if previous is None or (not previous.get("summary") and event.get("summary")):
                     events_by_id[event["id"]] = event
-            source_results.append({"source_id": source_id, "ok": True, "items": len(events)})
-            print(f"[ok] {source_id}: {len(events)} items")
+            source_results.append({
+                "source_id": source_id,
+                "ok": True,
+                "items": len(events),
+                "items_available": len(parsed_events),
+                "items_limited": len(parsed_events) > MAX_ITEMS_PER_SOURCE
+            })
+            print(f"[ok] {source_id}: kept {len(events)} of {len(parsed_events)} available items")
         except (urllib.error.URLError, TimeoutError, OSError, ET.ParseError, ValueError) as exc:
             source_results.append({"source_id": source_id, "ok": False, "error": str(exc)[:300]})
             print(f"[warn] {source_id}: {exc}", file=sys.stderr)
