@@ -6,7 +6,11 @@
       "name": "CoinDesk",
       "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
       "language": "en",
-      "topics": ["markets", "blockchain", "regulation"],
+      "topics": [
+        "markets",
+        "blockchain",
+        "regulation"
+      ],
       "trust": "media",
       "enabled": true
     },
@@ -15,7 +19,12 @@
       "name": "Cointelegraph",
       "url": "https://cointelegraph.com/rss",
       "language": "en",
-      "topics": ["markets", "blockchain", "security", "regulation"],
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "regulation"
+      ],
       "trust": "media",
       "enabled": true
     },
@@ -24,7 +33,11 @@
       "name": "Ethereum Foundation Blog",
       "url": "https://blog.ethereum.org/feed.xml",
       "language": "en",
-      "topics": ["blockchain", "cryptography", "research"],
+      "topics": [
+        "blockchain",
+        "cryptography",
+        "research"
+      ],
       "trust": "primary",
       "enabled": true
     },
@@ -33,7 +46,11 @@
       "name": "Bitcoin Magazine",
       "url": "https://bitcoinmagazine.com/.rss/full/",
       "language": "en",
-      "topics": ["markets", "bitcoin", "regulation"],
+      "topics": [
+        "markets",
+        "bitcoin",
+        "regulation"
+      ],
       "trust": "media",
       "enabled": true
     },
@@ -42,7 +59,12 @@
       "name": "Decrypt",
       "url": "https://decrypt.co/feed",
       "language": "en",
-      "topics": ["markets", "blockchain", "security", "research"],
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "research"
+      ],
       "trust": "media",
       "enabled": true
     },
@@ -51,7 +73,55 @@
       "name": "NASA Technology",
       "url": "https://www.nasa.gov/technology/feed/",
       "language": "en",
-      "topics": ["research", "cryptography"],
+      "topics": [
+        "research",
+        "cryptography"
+      ],
+      "trust": "primary",
+      "enabled": true
+    },
+    {
+      "id": "soneium-official-blog",
+      "name": "Soneium Official Blog",
+      "url": "https://soneium.org/en/blog",
+      "format": "html",
+      "link_pattern": "^https://soneium\\\\.org/en/blog/[^/?#]+/?$",
+      "language": "en",
+      "topics": [
+        "blockchain",
+        "ecosystem",
+        "token"
+      ],
+      "trust": "primary",
+      "enabled": true
+    },
+    {
+      "id": "base-official-blog",
+      "name": "Base Official Blog",
+      "url": "https://blog.base.org/",
+      "format": "html",
+      "link_pattern": "^https://blog\\\\.base\\\\.org/[^/?#]+/?$",
+      "language": "en",
+      "topics": [
+        "blockchain",
+        "ecosystem",
+        "token"
+      ],
+      "trust": "primary",
+      "enabled": true
+    },
+    {
+      "id": "linea-official-blog",
+      "name": "Linea Official Blog",
+      "url": "https://linea.build/blog",
+      "format": "html",
+      "link_pattern": "^https://linea\\\\.build/blog/[^/?#]+/?$",
+      "language": "en",
+      "topics": [
+        "blockchain",
+        "ecosystem",
+        "token"
+      ],
       "trust": "primary",
       "enabled": true
     }
