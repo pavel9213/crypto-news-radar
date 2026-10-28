@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "coindesk",
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+      "language": "en",
+      "topics": ["markets", "blockchain", "regulation"],
+      "trust": "media",
+      "enabled": true
+    },
+    {
+      "id": "cointelegraph",
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/rss",
+      "language": "en",
+      "topics": ["markets", "blockchain", "security", "regulation"],
+      "trust": "media",
+      "enabled": true
+    },
+    {
+      "id": "ethereum-blog",
+      "name": "Ethereum Foundation Blog",
+      "url": "https://blog.ethereum.org/feed.xml",
+      "language": "en",
+      "topics": ["blockchain", "cryptography", "research"],
+      "trust": "primary",
+      "enabled": true
+    },
+    {
+      "id": "bitcoin-magazine",
+      "name": "Bitcoin Magazine",
+      "url": "https://bitcoinmagazine.com/.rss/full/",
+      "language": "en",
+      "topics": ["markets", "bitcoin", "regulation"],
+      "trust": "media",
+      "enabled": true
+    },
+    {
+      "id": "decrypt",
+      "name": "Decrypt",
+      "url": "https://decrypt.co/feed",
+      "language": "en",
+      "topics": ["markets", "blockchain", "security", "research"],
+      "trust": "media",
+      "enabled": true
+    },
+    {
+      "id": "nasa-technology",
+      "name": "NASA Technology",
+      "url": "https://www.nasa.gov/technology/feed/",
+      "language": "en",
+      "topics": ["research", "cryptography"],
+      "trust": "primary",
+      "enabled": true
+    }
+  ]
+}
