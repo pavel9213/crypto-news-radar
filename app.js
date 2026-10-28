@@ -1,6 +1,11 @@
 const DATA_URL = "https://raw.githubusercontent.com/pavel9213/crypto-news-radar/main/data/news.json";
 const $ = (selector) => document.querySelector(selector);
 const state = { events: [], query: "", project: "", topic: "", signal: "", language: "" };
+const WATCHED_PROJECTS = [
+  "INK", "Soneium", "Base", "Linea", "Ethereum", "Bitcoin", "Solana",
+  "Arbitrum", "Optimism", "Polygon", "Avalanche", "Canton", "Plume",
+  "Stable", "Somnia", "Kite AI", "Malda", "MYID"
+];
 
 const PROJECT_RULES = [
   ["INK", /(?:\$INK|\binkonchain\b|\bink network\b)/i],
@@ -135,7 +140,7 @@ async function loadNews() {
     const payload = await response.json();
     if (!Array.isArray(payload.events)) throw new Error("The news data has an unexpected format.");
     state.events = payload.events;
-    fillSelect($("#project"), state.events.flatMap((event) => getProjects(event)), "All projects");
+    fillSelect($("#project"), [...WATCHED_PROJECTS, ...state.events.flatMap((event) => getProjects(event))], "All projects");
     fillSelect($("#topic"), state.events.flatMap((event) => event.topics || []), "All topics");
     fillSelect($("#language"), state.events.map((event) => event.language), "All languages");
     updateStats(payload);
