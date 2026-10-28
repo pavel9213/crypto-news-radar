@@ -3,24 +3,24 @@ const $ = (selector) => document.querySelector(selector);
 const state = { events: [], query: "", project: "", topic: "", signal: "", language: "" };
 
 const PROJECT_RULES = [
-  ["INK", /(?:\\$INK|\\binkonchain\\b|\\bink network\\b)/i],
-  ["Soneium", /\\bsoneium\\b/i],
-  ["Base", /(?:\\bbase chain\\b|\\bbase network\\b|\\bon base\\b|\\bbase blockchain\\b)/i],
-  ["Linea", /\\blinea\\b/i],
-  ["Ethereum", /\\bethereum\\b|\\beth\\b/i],
-  ["Bitcoin", /\\bbitcoin\\b|\\bbtc\\b/i],
-  ["Solana", /\\bsolana\\b|\\bsol\\b/i],
-  ["Arbitrum", /\\barbitrum\\b/i],
-  ["Optimism", /\\boptimism\\b|\\bop mainnet\\b/i],
-  ["Polygon", /\\bpolygon\\b|\\bpol token\\b/i],
-  ["Avalanche", /\\bavalanche\\b|\\bavax\\b/i],
-  ["Canton", /\\bcanton network\\b|\\bcanton blockchain\\b/i],
-  ["Plume", /\\bplume network\\b|\\bplume blockchain\\b/i],
-  ["Stable", /\\bstablecoin\\b|\\bstable chain\\b|\\bstable network\\b/i],
-  ["Somnia", /\\bsomnia\\b/i],
-  ["Kite AI", /\\bkite ai\\b/i],
-  ["Malda", /\\bmalda\\b/i],
-  ["MYID", /\\bmyid\\b/i]
+  ["INK", /(?:\$INK|\binkonchain\b|\bink network\b)/i],
+  ["Soneium", /\bsoneium\b/i],
+  ["Base", /(?:\bbase chain\b|\bbase network\b|\bon base\b|\bbase blockchain\b)/i],
+  ["Linea", /\blinea\b/i],
+  ["Ethereum", /\bethereum\b|\beth\b/i],
+  ["Bitcoin", /\bbitcoin\b|\bbtc\b/i],
+  ["Solana", /\bsolana\b|\bsol\b/i],
+  ["Arbitrum", /\barbitrum\b/i],
+  ["Optimism", /\boptimism\b|\bop mainnet\b/i],
+  ["Polygon", /\bpolygon\b|\bpol token\b/i],
+  ["Avalanche", /\bavalanche\b|\bavax\b/i],
+  ["Canton", /\bcanton network\b|\bcanton blockchain\b/i],
+  ["Plume", /\bplume network\b|\bplume blockchain\b/i],
+  ["Stable", /\bstablecoin\b|\bstable chain\b|\bstable network\b/i],
+  ["Somnia", /\bsomnia\b/i],
+  ["Kite AI", /\bkite ai\b/i],
+  ["Malda", /\bmalda\b/i],
+  ["MYID", /\bmyid\b/i]
 ];
 
 function getProjects(event) {
