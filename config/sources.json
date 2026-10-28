@@ -85,7 +85,7 @@
       "name": "Soneium Official Blog",
       "url": "https://soneium.org/en/blog",
       "format": "html",
-      "link_pattern": "^https://soneium\\\\.org/en/blog/[^/?#]+/?$",
+      "link_pattern": "^https://soneium[.]org/en/blog/[^/?#]+/?$",
       "language": "en",
       "topics": [
         "blockchain",
@@ -117,7 +117,7 @@
       "name": "Linea Official Blog",
       "url": "https://linea.build/blog",
       "format": "html",
-      "link_pattern": "^https://linea\\\\.build/blog/[^/?#]+/?$",
+      "link_pattern": "^https://linea[.]build/blog/[^/?#]+/?$",
       "language": "en",
       "topics": [
         "blockchain",
