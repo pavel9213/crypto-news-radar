@@ -228,6 +228,31 @@ def collect() -> dict[str, Any]:
             body = fetch_feed(url)
             if source.get("format") == "html":
                 parsed_events = parse_html_page(body, source)
+                if not parsed_events and source.get("sitemap_url"):
+                    try:
+                        sitemap_body = fetch_feed(source["sitemap_url"])
+                        sitemap_root = ET.fromstring(sitemap_body)
+                        pattern = re.compile(source.get("link_pattern", r"(?!)"), re.IGNORECASE)
+                        for node in sitemap_root.iter():
+                            if local_name(node.tag) != "loc" or not node.text:
+                                continue
+                            link = normalize_url(node.text.strip())
+                            if not link or not pattern.search(link):
+                                continue
+                            try:
+                                page = fetch_feed(link).decode("utf-8", errors="replace")
+                            except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+                                continue
+                            title_match = re.search(r"<title[^>]*>(.*?)</title>", page, re.IGNORECASE | re.DOTALL)
+                            title = clean_text(title_match.group(1)) if title_match else ""
+                            if not title:
+                                continue
+                            event_id = hashlib.sha256(link.encode("utf-8")).hexdigest()[:20]
+                            parsed_events.append({"id": event_id, "title": title[:500], "url": link, "source_id": source["id"], "source_name": source["name"], "source_trust": source.get("trust", "primary"), "language": source.get("language", "en"), "topics": source.get("topics", ["blockchain"]), "published_at": None, "summary": "", "status": "unreviewed", "collected_at": utc_now()})
+                            if len(parsed_events) >= MAX_ITEMS_PER_SOURCE:
+                                break
+                    except (urllib.error.URLError, TimeoutError, OSError, ET.ParseError, ValueError) as sitemap_exc:
+                        print(f"[warn] {source_id} sitemap fallback: {sitemap_exc}", file=sys.stderr)
             else:
                 parsed_events = parse_feed(body, source)
             parsed_events.sort(key=lambda event: event.get("published_at") or "", reverse=True)
@@ -238,12 +263,12 @@ def collect() -> dict[str, Any]:
                     events_by_id[event["id"]] = event
             source_results.append({
                 "source_id": source_id,
-                "ok": True,
+                "ok": bool(events),
                 "items": len(events),
                 "items_available": len(parsed_events),
                 "items_limited": len(parsed_events) > MAX_ITEMS_PER_SOURCE
             })
-            print(f"[ok] {source_id}: kept {len(events)} of {len(parsed_events)} available items")
+            print(f"[ok] {source_id}: kept {len(events)} of {len(parsed_events)} available items" if events else f"[warn] {source_id}: no article links extracted", file=None if events else sys.stderr)
         except (urllib.error.URLError, TimeoutError, OSError, ET.ParseError, ValueError) as exc:
             source_results.append({"source_id": source_id, "ok": False, "error": str(exc)[:300]})
             print(f"[warn] {source_id}: {exc}", file=sys.stderr)
