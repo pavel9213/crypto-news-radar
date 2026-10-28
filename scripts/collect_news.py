@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+from html.parser import HTMLParser
 import json
 import os
 import re
@@ -16,7 +17,7 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import urljoin, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_PATH = ROOT / "config" / "sources.json"
@@ -132,8 +133,72 @@ def parse_feed(xml_bytes: bytes, source: dict[str, Any]) -> list[dict[str, Any]]
     return events
 
 
+
+class LinkCollector(HTMLParser):
+    """Collect visible anchor text and hrefs from official announcement listing pages."""
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.links: list[dict[str, str]] = []
+        self._anchor: dict[str, str] | None = None
+        self._parts: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() == "a":
+            attrs_map = dict(attrs)
+            href = attrs_map.get("href") or ""
+            if href:
+                self._anchor = {"href": href}
+                self._parts = []
+
+    def handle_data(self, data: str) -> None:
+        if self._anchor is not None:
+            self._parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() == "a" and self._anchor is not None:
+            title = clean_text(" ".join(self._parts))
+            if title:
+                self.links.append({"href": self._anchor["href"], "title": title})
+            self._anchor = None
+            self._parts = []
+
+
+def parse_html_page(html_bytes: bytes, source: dict[str, Any]) -> list[dict[str, Any]]:
+    """Extract only links matching a source's explicitly configured article URL pattern."""
+    html = html_bytes.decode("utf-8", errors="replace")
+    collector = LinkCollector()
+    collector.feed(html)
+    pattern = re.compile(source.get("link_pattern", r"(?!)"), re.IGNORECASE)
+    base_url = source["url"]
+    events: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for item in collector.links:
+        link = normalize_url(urljoin(base_url, item["href"]))
+        title = clean_text(item["title"])
+        if not link or not title or not pattern.search(link) or link in seen:
+            continue
+        seen.add(link)
+        identity = link
+        event_id = hashlib.sha256(identity.encode("utf-8")).hexdigest()[:20]
+        events.append({
+            "id": event_id,
+            "title": title[:500],
+            "url": link,
+            "source_id": source["id"],
+            "source_name": source["name"],
+            "source_trust": source.get("trust", "primary"),
+            "language": source.get("language", "en"),
+            "topics": source.get("topics", ["blockchain"]),
+            "published_at": None,
+            "summary": "",
+            "status": "unreviewed",
+            "collected_at": utc_now()
+        })
+    return events
+
+
 def fetch_feed(url: str) -> bytes:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"})
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, text/html"})
     with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
         content_type = response.headers.get("Content-Type", "")
         body = response.read(MAX_FEED_BYTES + 1)
@@ -160,7 +225,11 @@ def collect() -> dict[str, Any]:
         try:
             if not normalize_url(url):
                 raise ValueError("source URL must be HTTP(S)")
-            parsed_events = parse_feed(fetch_feed(url), source)
+            body = fetch_feed(url)
+            if source.get("format") == "html":
+                parsed_events = parse_html_page(body, source)
+            else:
+                parsed_events = parse_feed(body, source)
             parsed_events.sort(key=lambda event: event.get("published_at") or "", reverse=True)
             events = parsed_events[:MAX_ITEMS_PER_SOURCE]
             for event in events:
