@@ -1,4 +1,4 @@
-const DATA_URL = "./data/news.json";
+const DATA_URL = "https://raw.githubusercontent.com/pavel9213/crypto-news-radar/main/data/news.json";
 const $ = (selector) => document.querySelector(selector);
 const state = { events: [], query: "", topic: "", language: "" };
 
@@ -79,7 +79,7 @@ async function loadNews() {
   } catch (error) {
     state.events = [];
     $("#status").hidden = false;
-    $("#status").textContent = `${error.message} The first scheduled collection will create data/news.json; run the “Collect crypto news” workflow in GitHub Actions to try it now.`;
+    $("#status").textContent = `${error.message} Run the “Collect crypto news” workflow in GitHub Actions, then refresh this page.`;
     $("#news-grid").innerHTML = "";
     $("#result-count").textContent = "Feed not loaded";
     $("#total-count").textContent = "0";
