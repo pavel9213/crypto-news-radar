@@ -9,6 +9,10 @@ on:
       - "styles.css"
       - "data/**"
       - ".github/workflows/pages.yml"
+  workflow_run:
+    workflows: ["Collect crypto news"]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -22,6 +26,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -35,6 +40,8 @@ jobs:
           else
             printf '{"schema_version":1,"generated_at":null,"event_count":0,"source_count":0,"sources":[],"events":[]}' > _site/data/news.json
           fi
+          if [ -f data/status.json ]; then cp data/status.json _site/data/status.json; fi
+          if [ -f data/updated.json ]; then cp data/updated.json _site/data/updated.json; fi
           touch _site/.nojekyll
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
