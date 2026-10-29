@@ -1,8 +1,17 @@
 # Crypto News Radar
 
+<p>
+  <a href="https://github.com/pavel9213/crypto-news-radar/actions/workflows/ci.yml"><img src="https://github.com/pavel9213/crypto-news-radar/actions/workflows/ci.yml/badge.svg" alt="CI status" /></a>
+  <a href="https://github.com/pavel9213/crypto-news-radar/actions/workflows/collect-news.yml"><img src="https://github.com/pavel9213/crypto-news-radar/actions/workflows/collect-news.yml/badge.svg" alt="News collector status" /></a>
+  <a href="https://github.com/pavel9213/crypto-news-radar/actions/workflows/pages.yml"><img src="https://github.com/pavel9213/crypto-news-radar/actions/workflows/pages.yml/badge.svg" alt="Dashboard deployment status" /></a>
+  <a href="https://pavel9213.github.io/crypto-news-radar/"><img src="https://img.shields.io/badge/live-dashboard-visit-7C3AED?style=flat" alt="Live dashboard" /></a>
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpavel9213%2Fcrypto-news-radar%2Fmain%2Fdata%2Fstatus.json" alt="Live stories and sources" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpavel9213%2Fcrypto-news-radar%2Fmain%2Fdata%2Fupdated.json" alt="Last data refresh" />
+</p>
+
 A source-first news intelligence dashboard for cryptocurrency markets, blockchain/Web3, cryptography, cybersecurity, regulation, and research.
 
-> **Project status:** Foundation phase. The roadmap is intentionally staged: first build a reliable collector and validated data pipeline, then ship the dashboard, then expand coverage and analysis.
+> **Project status:** Live dashboard with automated RSS/Atom collection, data validation, and scheduled updates. The project continues to expand source coverage and analysis.
 
 ## Goals
 
@@ -65,7 +74,7 @@ Coverage will expand over time; no aggregator can guarantee every news item worl
 
 ## Development
 
-The project is being built incrementally. The initial implementation will use Python's standard library where practical to keep CI simple and avoid unnecessary dependencies. See the documentation and tests as they are added.
+The collector and dashboard are implemented incrementally. Python's standard library is used where practical to keep CI simple and avoid unnecessary dependencies. Tests run in GitHub Actions.
 
 ## Contributing
 
