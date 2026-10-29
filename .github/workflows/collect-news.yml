@@ -64,7 +64,7 @@ jobs:
           ]:
               with open(path, "w", encoding="utf-8") as f:
                   json.dump(payload, f, ensure_ascii=False, indent=2)
-                  f.write("\\n")
+                  f.write("\n")
           PY
       - name: Stage and commit news data and status
         run: |
