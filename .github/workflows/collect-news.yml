@@ -29,14 +29,51 @@ jobs:
         run: python scripts/collect_news.py
       - name: Validate generated data
         run: python scripts/validate_data.py
-      - name: Stage and commit news data
+      - name: Generate live status badge data
         run: |
-          git add data/news.json
-          if git diff --cached --quiet -- data/news.json; then
-            echo "No news data changes to commit."
+          python - <<'PY'
+          import json
+          from datetime import datetime
+
+          with open("data/news.json", encoding="utf-8") as f:
+              data = json.load(f)
+
+          generated_at = data.get("generated_at")
+          try:
+              dt = datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
+              refreshed = dt.strftime("%Y-%m-%d %H:%M UTC")
+          except (AttributeError, ValueError):
+              refreshed = "not available"
+
+          status = {
+              "schemaVersion": 1,
+              "label": "live data",
+              "message": f'{data.get("event_count", 0)} stories · {data.get("source_count", 0)} sources',
+              "color": "blue"
+          }
+          updated = {
+              "schemaVersion": 1,
+              "label": "data refreshed",
+              "message": refreshed,
+              "color": "green"
+          }
+
+          for path, payload in [
+              ("data/status.json", status),
+              ("data/updated.json", updated),
+          ]:
+              with open(path, "w", encoding="utf-8") as f:
+                  json.dump(payload, f, ensure_ascii=False, indent=2)
+                  f.write("\\n")
+          PY
+      - name: Stage and commit news data and status
+        run: |
+          git add data/news.json data/status.json data/updated.json
+          if git diff --cached --quiet; then
+            echo "No news data or status changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "data: refresh collected crypto news"
+          git commit -m "data: refresh collected crypto news and status"
           git push
