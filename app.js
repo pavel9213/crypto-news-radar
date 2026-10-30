@@ -123,10 +123,47 @@ function render() {
   if (state.events.length) $("#status").hidden = true;
 }
 
+const SOURCE_NAMES = {
+  "coindesk": "CoinDesk", "cointelegraph": "Cointelegraph",
+  "ethereum-blog": "Ethereum Foundation", "bitcoin-magazine": "Bitcoin Magazine",
+  "decrypt": "Decrypt", "nasa-technology": "NASA Technology",
+  "soneium-official-blog": "Soneium", "base-official-blog": "Base",
+  "linea-official-blog": "Linea"
+};
+
+function renderSourceHealth(sources, generatedAt) {
+  const grid = $("#source-health-grid");
+  if (!Array.isArray(sources) || !sources.length) {
+    grid.innerHTML = '<p class="source-health-empty">No source health data is available in this collection.</p>';
+    $("#source-health-summary").textContent = "No checks available";
+    $("#source-health-updated").textContent = "";
+    return;
+  }
+  const healthy = sources.filter(source => source.ok && Number(source.items) > 0).length;
+  const warnings = sources.filter(source => !source.ok && !source.error).length;
+  const errors = sources.filter(source => Boolean(source.error)).length;
+  $("#source-health-summary").textContent = `${healthy}/${sources.length} sources healthy · ${warnings} warnings · ${errors} errors`;
+  grid.innerHTML = sources.map(source => {
+    const isHealthy = Boolean(source.ok && Number(source.items) > 0);
+    const hasError = Boolean(source.error);
+    const status = isHealthy ? "Operational" : hasError ? "Connection error" : "No stories found";
+    const statusClass = isHealthy ? "healthy" : hasError ? "failed" : "warning";
+    const name = SOURCE_NAMES[source.source_id] || source.source_id.replaceAll("-", " ");
+    const detail = isHealthy ? `${Number(source.items)} stories collected`
+      : hasError ? escapeHtml(source.error) : "Feed responded, but no article links were collected";
+    return `<article class="source-health-card">
+      <div class="source-health-card-top"><strong>${escapeHtml(name)}</strong><span class="health-dot ${statusClass}" aria-label="${status}"></span></div>
+      <span class="source-health-status ${statusClass}">${status}</span><p>${detail}</p>
+    </article>`;
+  }).join("");
+  $("#source-health-updated").textContent = generatedAt ? `Last checked: ${safeDate(generatedAt)}` : "Check time unavailable";
+}
+
 function updateStats(payload) {
   $("#total-count").textContent = String(payload.event_count ?? state.events.length);
   $("#source-count").textContent = String(payload.source_count ?? "—");
   $("#updated-at").textContent = payload.generated_at ? safeDate(payload.generated_at) : "Unknown";
+  renderSourceHealth(payload.sources, payload.generated_at);
 }
 
 async function loadNews() {
