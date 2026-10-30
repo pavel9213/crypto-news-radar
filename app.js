@@ -29,8 +29,15 @@ const PROJECT_RULES = [
 ];
 
 function getProjects(event) {
+  const sourceProjects = {
+    "soneium-official-blog": "Soneium",
+    "base-official-blog": "Base",
+    "linea-official-blog": "Linea"
+  };
+  const fromSource = sourceProjects[event.source_id];
   const text = [event.title, event.summary, event.source_name].join(" ");
-  return PROJECT_RULES.filter(([, pattern]) => pattern.test(text)).map(([name]) => name);
+  const detected = PROJECT_RULES.filter(([, pattern]) => pattern.test(text)).map(([name]) => name);
+  return [...new Set([...(fromSource ? [fromSource] : []), ...detected])];
 }
 
 const SIGNAL_RULES = [
@@ -159,7 +166,41 @@ function renderSourceHealth(sources, generatedAt) {
   $("#source-health-updated").textContent = generatedAt ? `Last checked: ${safeDate(generatedAt)}` : "Check time unavailable";
 }
 
+const PROJECT_MONITOR = [
+  { name: "INK", sourceId: null, url: "https://inkonchain.com/", note: "Official hub only · automated feed not connected" },
+  { name: "Soneium", sourceId: "soneium-official-blog", url: "https://soneium.org/en/blog" },
+  { name: "Base", sourceId: "base-official-blog", url: "https://www.base.org/blog" },
+  { name: "Linea", sourceId: "linea-official-blog", url: "https://linea.build/blog" }
+];
+
+function renderProjectMonitor(sources) {
+  const sourceMap = new Map((Array.isArray(sources) ? sources : []).map(source => [source.source_id, source]));
+  $("#project-monitor-grid").innerHTML = PROJECT_MONITOR.map(project => {
+    const source = project.sourceId ? sourceMap.get(project.sourceId) : null;
+    const stories = state.events.filter(event => getProjects(event).includes(project.name))
+      .sort((a, b) => new Date(b.published_at || b.collected_at || 0) - new Date(a.published_at || a.collected_at || 0));
+    const connected = Boolean(project.sourceId);
+    const healthy = Boolean(source && source.ok && Number(source.items) > 0);
+    const status = !connected ? "Official feed not connected" : healthy ? "Official feed operational" : source?.error ? "Source error" : "No recent stories";
+    const statusClass = !connected ? "not-connected" : healthy ? "healthy" : source?.error ? "failed" : "warning";
+    const latest = stories.slice(0, 2).map(event =>
+      `<li><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a><span>${escapeHtml(event.source_name || "Source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</span></li>`
+    ).join("");
+    const feedNote = connected
+      ? (source ? `${Number(source.items || 0)} items in latest collection` : "Waiting for collector data")
+      : "Only the official project hub is linked; no automated INK feed is configured yet.";
+    return `<article class="project-monitor-card project-${project.name.toLowerCase()}">
+      <div class="project-monitor-top"><h3>${escapeHtml(project.name)}</h3><span class="project-monitor-count">${stories.length} stories</span></div>
+      <span class="project-monitor-status ${statusClass}"><i></i>${status}</span>
+      <p class="project-monitor-note">${escapeHtml(feedNote)}</p>
+      ${latest ? `<ul class="project-monitor-latest">${latest}</ul>` : '<p class="project-monitor-empty">No matching stories in the current collection.</p>'}
+      <div class="project-monitor-actions"><button type="button" data-project-filter="${escapeHtml(project.name)}">View in news feed</button><a href="${escapeHtml(project.url)}" target="_blank" rel="noopener noreferrer">Official site ↗</a></div>
+    </article>`;
+  }).join("");
+}
+
 function updateStats(payload) {
+  renderProjectMonitor(payload.sources);
   $("#total-count").textContent = String(payload.event_count ?? state.events.length);
   $("#source-count").textContent = String(payload.source_count ?? "—");
   $("#updated-at").textContent = payload.generated_at ? safeDate(payload.generated_at) : "Unknown";
@@ -207,6 +248,14 @@ $("#signal").addEventListener("change", (event) => { state.signal = event.target
 $("#language").addEventListener("change", (event) => { state.language = event.target.value; render(); });
 $("#trust").addEventListener("change", (event) => { state.trust = event.target.value; render(); });
 $("#refresh").addEventListener("click", loadNews);
+$("#project-monitor-grid").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-project-filter]");
+  if (!button) return;
+  state.project = button.dataset.projectFilter;
+  $("#project").value = state.project;
+  render();
+  document.querySelector(".toolbar").scrollIntoView({ behavior: "smooth", block: "center" });
+});
 $("#clear-filters").addEventListener("click", () => {
   state.query = ""; state.project = ""; state.topic = ""; state.signal = ""; state.language = ""; state.trust = "";
   $("#search").value = ""; $("#project").value = ""; $("#topic").value = ""; $("#signal").value = ""; $("#language").value = ""; $("#trust").value = "";
