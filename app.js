@@ -32,7 +32,7 @@ function getProjects(event) {
   const sourceProjects = {
     "soneium-official-blog": "Soneium",
     "base-official-blog": "Base",
-    "linea-official-blog": "Linea"
+    "linea-official-blog": "Linea", "ink-kraken-blog": "INK"
   };
   const fromSource = sourceProjects[event.source_id];
   const text = [event.title, event.summary, event.source_name].join(" ");
@@ -135,7 +135,7 @@ const SOURCE_NAMES = {
   "ethereum-blog": "Ethereum Foundation", "bitcoin-magazine": "Bitcoin Magazine",
   "decrypt": "Decrypt", "nasa-technology": "NASA Technology",
   "soneium-official-blog": "Soneium", "base-official-blog": "Base",
-  "linea-official-blog": "Linea"
+  "linea-official-blog": "Linea", "ink-kraken-blog": "Kraken Blog — Ink"
 };
 
 function renderSourceHealth(sources, generatedAt) {
@@ -167,7 +167,7 @@ function renderSourceHealth(sources, generatedAt) {
 }
 
 const PROJECT_MONITOR = [
-  { name: "INK", sourceId: null, url: "https://inkonchain.com/", note: "Official hub only · automated feed not connected" },
+  { name: "INK", sourceId: "ink-kraken-blog", url: "https://inkonchain.com/", blogUrl: "https://blog.kraken.com/category/product/ink" },
   { name: "Soneium", sourceId: "soneium-official-blog", url: "https://soneium.org/en/blog" },
   { name: "Base", sourceId: "base-official-blog", url: "https://www.base.org/blog" },
   { name: "Linea", sourceId: "linea-official-blog", url: "https://linea.build/blog" }
@@ -194,7 +194,7 @@ function renderProjectMonitor(sources) {
       <span class="project-monitor-status ${statusClass}"><i></i>${status}</span>
       <p class="project-monitor-note">${escapeHtml(feedNote)}</p>
       ${latest ? `<ul class="project-monitor-latest">${latest}</ul>` : '<p class="project-monitor-empty">No matching stories in the current collection.</p>'}
-      <div class="project-monitor-actions"><button type="button" data-project-filter="${escapeHtml(project.name)}">View in news feed</button><a href="${escapeHtml(project.url)}" target="_blank" rel="noopener noreferrer">Official site ↗</a></div>
+      <div class="project-monitor-actions"><button type="button" data-project-filter="${escapeHtml(project.name)}">View in news feed</button><a href="${escapeHtml(project.url)}" target="_blank" rel="noopener noreferrer">Official site ↗</a>${project.blogUrl ? `<a href="${escapeHtml(project.blogUrl)}" target="_blank" rel="noopener noreferrer">Kraken Ink updates ↗</a>` : ""}</div>
     </article>`;
   }).join("");
 }
