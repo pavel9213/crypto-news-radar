@@ -187,8 +187,8 @@ function renderProjectMonitor(sources) {
       `<li><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a><span>${escapeHtml(event.source_name || "Source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</span></li>`
     ).join("");
     const feedNote = connected
-      ? (source ? `${Number(source.items || 0)} items in latest collection` : "Waiting for collector data")
-      : "Only the official project hub is linked; no automated INK feed is configured yet.";
+      ? (source ? `${Number(source.items || 0)} items in latest collection · Kraken official Ink category` : "Waiting for collector data")
+      : "No automated official feed is configured yet.";
     return `<article class="project-monitor-card project-${project.name.toLowerCase()}">
       <div class="project-monitor-top"><h3>${escapeHtml(project.name)}</h3><span class="project-monitor-count">${stories.length} stories</span></div>
       <span class="project-monitor-status ${statusClass}"><i></i>${status}</span>
