@@ -30,6 +30,7 @@ const PROJECT_RULES = [
 
 function getProjects(event) {
   const sourceProjects = {
+    "ink-kraken-blog": "INK",
     "soneium-official-blog": "Soneium",
     "base-official-blog": "Base",
     "linea-official-blog": "Linea", "ink-kraken-blog": "INK"
