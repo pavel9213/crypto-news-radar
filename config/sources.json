@@ -127,6 +127,22 @@
       "trust": "primary",
       "enabled": true,
       "sitemap_url": "https://linea.build/sitemap.xml"
+    },
+    {
+      "id": "ink-kraken-blog",
+      "name": "Kraken Blog — Ink",
+      "url": "https://blog.kraken.com/category/product/ink",
+      "format": "html",
+      "link_pattern": "^https://blog[.]kraken[.]com/(?:product/[^/?#]+/[^/?#]+|news/[^/?#]+)$",
+      "language": "en",
+      "topics": [
+        "blockchain",
+        "ecosystem",
+        "token",
+        "defi"
+      ],
+      "trust": "primary",
+      "enabled": true
     }
   ]
 }
