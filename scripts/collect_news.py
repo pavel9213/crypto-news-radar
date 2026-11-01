@@ -92,6 +92,30 @@ def child_text(element: ET.Element, names: set[str]) -> str:
     return ""
 
 
+def extract_feed_image(item: ET.Element, article_url: str) -> str:
+    """Extract publisher-supplied image URLs from common RSS/Atom media fields."""
+    candidates: list[tuple[int, str]] = []
+    for node in item.iter():
+        name = local_name(node.tag)
+        if name not in {"thumbnail", "content", "enclosure", "link"}:
+            continue
+        mime = node.attrib.get("type", "").lower()
+        rel = node.attrib.get("rel", "")
+        candidate = node.attrib.get("url") or node.attrib.get("href") or ""
+        if not candidate:
+            continue
+        if name == "link" and rel.lower() != "enclosure":
+            continue
+        if name in {"content", "enclosure", "link"} and not mime.startswith("image/"):
+            continue
+        priority = 0 if name == "thumbnail" else 1
+        candidates.append((priority, candidate))
+    for _, candidate in sorted(candidates, key=lambda pair: pair[0]):
+        image_url = normalize_url(urljoin(article_url, candidate))
+        if image_url:
+            return image_url
+    return ""
+
 def parse_feed(xml_bytes: bytes, source: dict[str, Any]) -> list[dict[str, Any]]:
     root = ET.fromstring(xml_bytes)
     items: list[ET.Element] = []
