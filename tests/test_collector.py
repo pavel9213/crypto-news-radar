@@ -44,6 +44,24 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(events[0]["url"], "https://example.org/research")
         self.assertEqual(events[0]["summary"], "Abstract")
 
+    def test_extracts_open_graph_image_and_resolves_relative_url(self):
+        html = b'<html><head><meta property="og:image" content="/images/cover.jpg"></head></html>'
+        self.assertEqual(
+            collector.extract_article_image(html, "https://example.org/story"),
+            "https://example.org/images/cover.jpg",
+        )
+
+    def test_prefers_open_graph_image_to_twitter_image(self):
+        html = b'<meta name="twitter:image" content="https://example.org/twitter.jpg"><meta property="og:image" content="https://example.org/og.jpg">'
+        self.assertEqual(
+            collector.extract_article_image(html, "https://example.org/story"),
+            "https://example.org/og.jpg",
+        )
+
+    def test_ignores_non_http_image_urls(self):
+        html = b'<meta property="og:image" content="javascript:alert(1)">'
+        self.assertEqual(collector.extract_article_image(html, "https://example.org/story"), "")
+
     def test_invalid_date_is_unknown_not_guessed(self):
         self.assertIsNone(collector.parse_date("not-a-date"))
 
