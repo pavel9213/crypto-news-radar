@@ -120,7 +120,7 @@ def parse_feed(xml_bytes: bytes, source: dict[str, Any]) -> list[dict[str, Any]]
         summary = clean_text(child_text(item, {"description", "summary", "content", "encoded"}))
         identity = link or f"{source['id']}:{title.casefold()}"
         event_id = hashlib.sha256(identity.encode("utf-8")).hexdigest()[:20]
-        events.append({
+        event = {
             "id": event_id,
             "title": title[:500],
             "url": link,
@@ -133,7 +133,11 @@ def parse_feed(xml_bytes: bytes, source: dict[str, Any]) -> list[dict[str, Any]]
             "summary": summary[:2000],
             "status": "unreviewed",
             "collected_at": utc_now()
-        })
+        }
+        image_url = extract_feed_image(item, link)
+        if image_url:
+            event["image_url"] = image_url
+        events.append(event)
     return events
 
 
