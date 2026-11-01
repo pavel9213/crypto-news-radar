@@ -3,98 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1020">
-  <meta name="description" content="A source-first dashboard for cryptocurrency, blockchain, cryptography, security and policy news.">
-  <title>Crypto News Radar</title>
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Crypto News Radar — independent coverage of digital assets, blockchain, DeFi and Web3.">
+  <title>Crypto News Radar — The crypto briefing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
 <body>
+  <div class="edition-bar"><div class="container edition-inner"><span>INDEPENDENT CRYPTO NEWS &amp; RESEARCH</span><span id="edition-date">THE DAILY BRIEFING</span><span class="edition-live"><i></i> LIVE RADAR</span></div></div>
   <header class="topbar">
-    <a class="brand" href="./" aria-label="Crypto News Radar home">
-      <span class="brand-mark" aria-hidden="true">⌁</span>
-      <span>CRYPTO <strong>NEWS RADAR</strong></span>
-    </a>
-    <span class="live-indicator"><span></span> SOURCE-FIRST NEWS</span>
+    <div class="container topbar-inner">
+      <a class="brand" href="./" aria-label="Crypto News Radar home"><span class="brand-mark">CR</span><span class="brand-name">CRYPTO<span>NEWS RADAR</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#top-stories">Top stories</a><a href="#news">Latest</a><a href="#project-monitor">Projects</a><a href="#sources">Sources</a>
+      </nav>
+      <div class="header-status"><span class="live-dot"></span><span>LIVE UPDATES</span></div>
+    </div>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <p class="eyebrow">THE SIGNAL THROUGH THE NOISE</p>
-      <h1>Know what moves <span>crypto.</span></h1>
-      <p class="hero-copy">A growing news radar for digital assets, blockchain research, cryptography, cybersecurity and policy — with source links attached to every story.</p>
+    <section class="masthead">
+      <div><p class="eyebrow">THE SIGNAL THROUGH THE NOISE</p><h1>Crypto moves.<br><span>We track what matters.</span></h1><p class="masthead-copy">A clear view of the stories shaping digital assets, blockchain, DeFi and Web3 — linked to their original sources.</p></div>
       <div class="stats" aria-live="polite">
-        <div><strong id="total-count">—</strong><span>Stories loaded</span></div>
-        <div><strong id="source-count">—</strong><span>Sources checked</span></div>
-        <div><strong id="updated-at">Waiting</strong><span>Last collection</span></div>
+        <div><strong id="total-count">—</strong><span>STORIES TRACKED</span></div>
+        <div><strong id="source-count">—</strong><span>SOURCES CHECKED</span></div>
+        <div><strong id="updated-at">Waiting</strong><span>LAST COLLECTION</span></div>
       </div>
-      <section class="source-health" aria-labelledby="source-health-heading">
-        <div class="source-health-heading">
-          <div><p class="eyebrow">COLLECTOR MONITOR</p><h2 id="source-health-heading">Source health</h2></div>
-          <span id="source-health-summary">Waiting for source checks…</span>
-        </div>
-        <div id="source-health-grid" class="source-health-grid" aria-live="polite">
-          <p class="source-health-empty">Source checks will appear after the news feed loads.</p>
-        </div>
-        <p id="source-health-updated" class="source-health-updated"></p>
-      </section>
+    </section>
+
+    <div class="ticker" aria-label="Newsroom note"><span class="ticker-label">RADAR BRIEF</span><span>Independent sources. Direct links. Signals clearly labelled.</span><span class="ticker-right">NOISE DOWN. SIGNAL UP.</span></div>
+
+    <section id="top-stories" class="top-stories-section" aria-labelledby="top-stories-heading">
+      <div class="section-kicker"><span>01 / EDITOR'S DESK</span><h2 id="top-stories-heading">Top stories</h2><span class="section-rule"></span></div>
+      <div id="top-stories" class="top-stories-grid"><p class="loading-note">The latest headlines will appear here.</p></div>
+    </section>
+
+    <section id="project-monitor" class="project-monitor-section" aria-labelledby="project-monitor-heading">
+      <div class="section-kicker"><span>02 / WATCHLIST</span><h2 id="project-monitor-heading">Web3 project monitor</h2><span class="section-rule"></span></div>
+      <p class="section-intro">Official-source health and the latest matching stories for projects on your watchlist.</p>
+      <div id="project-monitor-grid" class="project-monitor-grid" aria-live="polite"><p class="project-monitor-empty">Project data will appear after the news feed loads.</p></div>
+    </section>
+
+    <section id="sources" class="source-health-section" aria-labelledby="source-health-heading">
+      <div class="section-kicker"><span>03 / TRANSPARENCY</span><h2 id="source-health-heading">Source health</h2><span class="section-rule"></span><span id="source-health-summary" class="section-summary">Waiting for checks…</span></div>
+      <div id="source-health-grid" class="source-health-grid" aria-live="polite"><p class="source-health-empty">Source checks will appear after the feed loads.</p></div>
+      <p id="source-health-updated" class="source-health-updated"></p>
     </section>
 
     <section class="official-section" aria-labelledby="official-heading">
-      <div class="official-heading">
-        <div><p class="eyebrow">PRIMARY SOURCES</p><h2 id="official-heading">Official project hubs</h2></div>
-        <p>Check announcements at the source. A link here is a reference hub, not a claim that its posts are being automatically monitored.</p>
-      </div>
+      <div class="section-kicker"><span>04 / PRIMARY SOURCES</span><h2 id="official-heading">Go straight to the source</h2><span class="section-rule"></span></div>
       <div class="official-grid">
-        <a class="official-card" href="https://inkonchain.com/" target="_blank" rel="noopener noreferrer"><span class="official-name">INK</span><span>Official website ↗</span></a>
-        <a class="official-card" href="https://soneium.org/en/blog" target="_blank" rel="noopener noreferrer"><span class="official-name">Soneium</span><span>Official announcements ↗</span></a>
-        <a class="official-card" href="https://www.base.org/blog" target="_blank" rel="noopener noreferrer"><span class="official-name">Base</span><span>Official blog ↗</span></a>
-        <a class="official-card" href="https://linea.build/blog" target="_blank" rel="noopener noreferrer"><span class="official-name">Linea</span><span>Official blog ↗</span></a>
-        <a class="official-card" href="https://blog.ethereum.org/" target="_blank" rel="noopener noreferrer"><span class="official-name">Ethereum</span><span>Foundation blog ↗</span></a>
-        <a class="official-card" href="https://solana.com/news" target="_blank" rel="noopener noreferrer"><span class="official-name">Solana</span><span>Official news ↗</span></a>
+        <a class="official-card" href="https://inkonchain.com/" target="_blank" rel="noopener noreferrer"><strong>INK</strong><span>Official website ↗</span></a>
+        <a class="official-card" href="https://soneium.org/en/blog" target="_blank" rel="noopener noreferrer"><strong>Soneium</strong><span>Official blog ↗</span></a>
+        <a class="official-card" href="https://www.base.org/blog" target="_blank" rel="noopener noreferrer"><strong>Base</strong><span>Official blog ↗</span></a>
+        <a class="official-card" href="https://linea.build/blog" target="_blank" rel="noopener noreferrer"><strong>Linea</strong><span>Official blog ↗</span></a>
+        <a class="official-card" href="https://blog.ethereum.org/" target="_blank" rel="noopener noreferrer"><strong>Ethereum</strong><span>Foundation blog ↗</span></a>
+        <a class="official-card" href="https://solana.com/news" target="_blank" rel="noopener noreferrer"><strong>Solana</strong><span>Official news ↗</span></a>
       </div>
     </section>
 
-    <section class="project-monitor-section" aria-labelledby="project-monitor-heading">
-      <div class="project-monitor-heading">
-        <div><p class="eyebrow">WATCHLIST · LIVE DATA</p><h2 id="project-monitor-heading">Web3 Project Monitor</h2></div>
-        <p>Official-source health and latest matching stories for the projects on your watchlist. Counts reflect the current collected feed.</p>
-      </div>
-      <div id="project-monitor-grid" class="project-monitor-grid" aria-live="polite">
-        <p class="project-monitor-empty">Project data will appear after the news feed loads.</p>
-      </div>
+    <section id="news" class="news-section" aria-labelledby="news-heading">
+      <div class="section-kicker"><span>05 / NEWSROOM</span><h2 id="news-heading">Latest headlines</h2><span class="section-rule"></span><span id="result-count" class="section-summary">Preparing feed…</span></div>
+      <section class="toolbar" aria-label="News filters">
+        <label class="search-wrap"><span class="sr-only">Search stories</span><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search headlines, topics or sources…"></label>
+        <label><span class="sr-only">Filter by project</span><select id="project"><option value="">All projects</option></select></label>
+        <label><span class="sr-only">Filter by topic</span><select id="topic"><option value="">All topics</option></select></label>
+        <label><span class="sr-only">Filter by signal</span><select id="signal"><option value="">All signals</option><option value="tge">TGE / token launch</option><option value="airdrop">Airdrops</option><option value="snapshot">Snapshots</option><option value="security">Security alerts</option><option value="regulation">Regulation</option><option value="unconfirmed">Unconfirmed / rumors</option></select></label>
+        <label><span class="sr-only">Filter by source type</span><select id="trust"><option value="">All source types</option><option value="primary">Primary sources</option><option value="media">Media reports</option></select></label>
+        <label><span class="sr-only">Filter by language</span><select id="language"><option value="">All languages</option></select></label>
+        <button id="refresh" type="button">↻ Refresh</button>
+      </section>
+      <div id="status" class="status" role="status">Loading collected news…</div>
+      <section id="news-grid" class="news-grid" aria-label="Collected news stories"></section>
+      <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">◌</span><h3>No stories match those filters</h3><p>Try a different search or clear one of the filters.</p><button id="clear-filters" type="button">Clear filters</button></div>
     </section>
 
-    <section class="toolbar" aria-label="News filters">
-      <label class="search-wrap"><span class="sr-only">Search stories</span><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search headlines, topics or sources…"></label>
-      <label><span class="sr-only">Filter by project</span><select id="project"><option value="">All projects</option></select></label>
-      <label><span class="sr-only">Filter by topic</span><select id="topic"><option value="">All topics</option></select></label>
-      <label><span class="sr-only">Filter by signal</span><select id="signal"><option value="">All signals</option><option value="tge">TGE / token launch</option><option value="airdrop">Airdrops</option><option value="snapshot">Snapshots</option><option value="security">Security alerts</option><option value="regulation">Regulation</option><option value="unconfirmed">Unconfirmed / rumors</option></select></label>
-      <label><span class="sr-only">Filter by source type</span><select id="trust"><option value="">All source types</option><option value="primary">Primary sources</option><option value="media">Media reports</option></select></label>
-      <label><span class="sr-only">Filter by language</span><select id="language"><option value="">All languages</option></select></label>
-      <button id="refresh" type="button">↻ Refresh</button>
-    </section>
-
-    <div class="section-heading">
-      <div><p class="eyebrow">THE LATEST</p><h2>News feed</h2></div>
-      <span id="result-count" class="result-count">Preparing feed…</span>
-    </div>
-
-    <div id="status" class="status" role="status">Loading collected news…</div>
-    <section id="news-grid" class="news-grid" aria-label="Collected news stories"></section>
-    <div id="empty-state" class="empty-state" hidden>
-      <span aria-hidden="true">◌</span>
-      <h3>No stories match those filters</h3>
-      <p>Try a different search or clear one of the filters.</p>
-      <button id="clear-filters" type="button">Clear filters</button>
-    </div>
-
-    <section class="trust-note">
-      <span class="trust-icon" aria-hidden="true">◎</span>
-      <div><strong>Sources matter.</strong><p>Stories link to their original publishers. Signal labels are automated hints, not fact-checks. “Unconfirmed” is a keyword-based flag, not a judgment about truth. Verify important claims against primary sources. This is a news tool, not financial advice.</p></div>
-    </section>
+    <section class="trust-note"><span class="trust-icon" aria-hidden="true">!</span><div><strong>Good journalism starts with good sources.</strong><p>Stories link to original publishers. Signal labels are automated hints, not fact-checks. “Unconfirmed” is a keyword-based flag, not a judgment about truth. Verify important claims against primary sources. This is a news tool, not financial advice.</p></div></section>
   </main>
-
-  <footer><span>CRYPTO NEWS RADAR</span><span>Built in public · Open-source project</span><a href="https://github.com/pavel9213/crypto-news-radar">View on GitHub ↗</a></footer>
+  <footer><div class="container footer-inner"><span class="footer-brand">CRYPTO NEWS RADAR</span><span>Built in public · Open-source project</span><a href="https://github.com/pavel9213/crypto-news-radar">View on GitHub ↗</a></div></footer>
 </body>
 </html>
