@@ -44,6 +44,23 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(events[0]["url"], "https://example.org/research")
         self.assertEqual(events[0]["summary"], "Abstract")
 
+    def test_extracts_rss_media_thumbnail(self):
+        xml = b"""<rss><channel><item><title>Story</title><link>https://example.org/story</link>
+        <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/images/thumb.jpg" />
+        </item></channel></rss>"""
+        item = collector.ET.fromstring(xml).find("./channel/item")
+        self.assertEqual(collector.extract_feed_image(item, "https://example.org/story"), "https://example.org/images/thumb.jpg")
+
+    def test_extracts_atom_image_enclosure(self):
+        xml = b"""<entry xmlns="http://www.w3.org/2005/Atom"><link rel="enclosure" type="image/jpeg" href="https://example.org/cover.jpg" /></entry>"""
+        item = collector.ET.fromstring(xml)
+        self.assertEqual(collector.extract_feed_image(item, "https://example.org/story"), "https://example.org/cover.jpg")
+
+    def test_ignores_non_image_enclosures(self):
+        xml = b"""<entry><enclosure type="audio/mpeg" url="https://example.org/audio.mp3" /></entry>"""
+        item = collector.ET.fromstring(xml)
+        self.assertEqual(collector.extract_feed_image(item, "https://example.org/story"), "")
+
     def test_extracts_open_graph_image_and_resolves_relative_url(self):
         html = b'<html><head><meta property="og:image" content="/images/cover.jpg"></head></html>'
         self.assertEqual(
