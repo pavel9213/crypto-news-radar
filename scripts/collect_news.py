@@ -100,13 +100,14 @@ def extract_feed_image(item: ET.Element, article_url: str) -> str:
         if name not in {"thumbnail", "content", "enclosure", "link"}:
             continue
         mime = node.attrib.get("type", "").lower()
+        medium = node.attrib.get("medium", "").lower()
         rel = node.attrib.get("rel", "")
         candidate = node.attrib.get("url") or node.attrib.get("href") or ""
         if not candidate:
             continue
         if name == "link" and rel.lower() != "enclosure":
             continue
-        if name in {"content", "enclosure", "link"} and not mime.startswith("image/"):
+        if name in {"content", "enclosure", "link"} and not (mime.startswith("image/") or medium == "image"):
             continue
         priority = 0 if name == "thumbnail" else 1
         candidates.append((priority, candidate))
