@@ -100,6 +100,26 @@ function getFilteredEvents() {
   });
 }
 
+function renderMarketPulse(events) {
+  const host = $("#market-pulse-grid");
+  if (!events.length) {
+    host.innerHTML = '<p class="loading-note">No current data for this selection.</p>';
+    return;
+  }
+  const topicCounts = new Map();
+  const signalCounts = new Map();
+  events.forEach(event => {
+    (event.topics || []).forEach(topic => topicCounts.set(topic, (topicCounts.get(topic) || 0) + 1));
+    getSignals(event).forEach(signal => signalCounts.set(signal, (signalCounts.get(signal) || 0) + 1));
+  });
+  const topics = [...topicCounts.entries()].sort((a,b) => b[1]-a[1]).slice(0,4);
+  const signals = [...signalCounts.entries()].sort((a,b) => b[1]-a[1]).slice(0,3);
+  const primary = events.filter(event => event.source_trust === "primary").length;
+  const cards = topics.map(([name,count]) => `<article class="pulse-topic"><span class="pulse-label">TOPIC</span><strong>${escapeHtml(name)}</strong><span class="pulse-count">${count} <small>stories</small></span><span class="pulse-meter"><i style="width:${Math.max(8,Math.round(count/events.length*100))}%"></i></span></article>`).join("");
+  const alertText = signals.length ? signals.map(([name,count]) => `<span>${escapeHtml(signalLabel(name))} <b>${count}</b></span>`).join("") : '<span>No tracked signal keywords detected</span>';
+  host.innerHTML = `${cards}<article class="pulse-summary"><span class="pulse-label">SOURCE MIX</span><strong>${Math.round(primary/events.length*100)}%</strong><span class="pulse-caption">Primary-source coverage</span><div class="pulse-signal-list">${alertText}</div></article>`;
+}
+
 function renderTopStories(events) {
   const host = $("#top-stories-grid");
   if (!events.length) {
@@ -119,7 +139,7 @@ function renderTopStories(events) {
 
 function render() {
   const events = getFilteredEvents();
-  renderTopStories(events);
+  renderTopStories(events);\n  renderMarketPulse(events);
   $("#result-count").textContent = `${events.length} of ${state.events.length} stories`;
   $("#news-grid").innerHTML = events.map((event) => {
     const topic = (event.topics || ["other"])[0] || "other";
@@ -206,7 +226,7 @@ function renderProjectMonitor(sources) {
       `<li><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a><span>${escapeHtml(event.source_name || "Source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</span></li>`
     ).join("");
     const feedNote = connected
-      ? (source ? `${Number(source.items || 0)} items in latest collection · Kraken official Ink category` : "Waiting for collector data")
+      ? (source ? `${Number(source.items || 0)} items in latest collection · ${project.name === "INK" ? "Kraken official Ink category" : "official project source"}` : "Waiting for collector data")
       : "No automated official feed is configured yet.";
     return `<article class="project-monitor-card project-${project.name.toLowerCase()}">
       <div class="project-monitor-top"><h3>${escapeHtml(project.name)}</h3><span class="project-monitor-count">${stories.length} stories</span></div>
