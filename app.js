@@ -120,6 +120,44 @@ function renderMarketPulse(events) {
   host.innerHTML = `${cards}<article class="pulse-summary"><span class="pulse-label">SOURCE MIX</span><strong>${Math.round(primary/events.length*100)}%</strong><span class="pulse-caption">Primary-source coverage</span><div class="pulse-signal-list">${alertText}</div></article>`;
 }
 
+function radarPickScore(event) {
+  const timestamp = new Date(event.published_at || event.collected_at || 0).getTime();
+  const ageHours = Number.isFinite(timestamp) && timestamp > 0 ? Math.max(0, (Date.now() - timestamp) / 3600000) : Infinity;
+  const signals = getSignals(event);
+  return (event.source_trust === "primary" ? 3 : 0)
+    + Math.min(signals.length, 2) * 2
+    + (event.summary ? 1 : 0)
+    + (ageHours <= 24 ? 2 : ageHours <= 72 ? 1 : 0);
+}
+
+function renderRadarPicks(events) {
+  const host = $("#radar-picks-grid");
+  const unique = [...new Map(events.map(event => [event.url || event.id || event.title, event])).values()];
+  const picks = unique
+    .map(event => ({ event, score: radarPickScore(event) }))
+    .sort((a, b) => b.score - a.score
+      || new Date(b.event.published_at || b.event.collected_at || 0) - new Date(a.event.published_at || a.event.collected_at || 0))
+    .slice(0, 3);
+  if (!picks.length) {
+    host.innerHTML = '<p class="radar-picks-empty">No stories match the current filters.</p>';
+    return;
+  }
+  host.innerHTML = picks.map(({ event, score }, index) => {
+    const signals = getSignals(event);
+    const badges = signals.length
+      ? signals.map(signal => `<span class="signal-pill signal-${escapeHtml(signal)}">${escapeHtml(signalLabel(signal))}</span>`).join("")
+      : '<span class="signal-pill">General coverage</span>';
+    const trust = event.source_trust === "primary" ? "Primary source" : "Media report";
+    return `<article class="radar-pick">
+      <div class="radar-pick-rank"><span>RADAR PICK 0${index + 1}</span><span class="radar-pick-score">SIGNAL SCORE ${score}</span></div>
+      <h3><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></h3>
+      ${event.summary ? `<p class="radar-pick-summary">${escapeHtml(event.summary)}</p>` : ""}
+      <div class="radar-pick-signals">${badges}</div>
+      <div class="radar-pick-footer"><strong>${escapeHtml(event.source_name || "News source")}</strong><span>· ${trust}</span><span>· ${escapeHtml(safeDate(event.published_at || event.collected_at))}</span></div>
+    </article>`;
+  }).join("");
+}
+
 function renderTopStories(events) {
   const host = $("#top-stories-grid");
   if (!events.length) {
