@@ -51,6 +51,11 @@ class CollectorTests(unittest.TestCase):
         item = collector.ET.fromstring(xml).find("./channel/item")
         self.assertEqual(collector.extract_feed_image(item, "https://example.org/story"), "https://example.org/images/thumb.jpg")
 
+    def test_extracts_media_content_image(self):
+        xml = b"""<item xmlns:media="http://search.yahoo.com/mrss/"><media:content url="https://example.org/cover.webp" medium="image" /></item>"""
+        item = collector.ET.fromstring(xml)
+        self.assertEqual(collector.extract_feed_image(item, "https://example.org/story"), "https://example.org/cover.webp")
+
     def test_extracts_atom_image_enclosure(self):
         xml = b"""<entry xmlns="http://www.w3.org/2005/Atom"><link rel="enclosure" type="image/jpeg" href="https://example.org/cover.jpg" /></entry>"""
         item = collector.ET.fromstring(xml)
