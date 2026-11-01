@@ -33,7 +33,7 @@ function getProjects(event) {
     "ink-kraken-blog": "INK",
     "soneium-official-blog": "Soneium",
     "base-official-blog": "Base",
-    "linea-official-blog": "Linea", "ink-kraken-blog": "INK"
+    "linea-official-blog": "Linea"
   };
   const fromSource = sourceProjects[event.source_id];
   const text = [event.title, event.summary, event.source_name].join(" ");
@@ -100,8 +100,26 @@ function getFilteredEvents() {
   });
 }
 
+function renderTopStories(events) {
+  const host = $("#top-stories-grid");
+  if (!events.length) {
+    host.innerHTML = '<p class="loading-note">No headlines match the current filters.</p>';
+    return;
+  }
+  const top = events.slice(0, 4);
+  const lead = top[0];
+  const leadTopic = (lead.topics || ["Market"])[0] || "Market";
+  const leadSummary = lead.summary ? escapeHtml(lead.summary) : "Open the original report for the full story and source context.";
+  const side = top.slice(1).map((event) => {
+    const topic = (event.topics || ["Latest"])[0] || "Latest";
+    return `<article class="top-side-item"><span class="story-category">${escapeHtml(topic)}</span><h3><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></h3><p>${escapeHtml(event.source_name || "News source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</p></article>`;
+  }).join("");
+  host.innerHTML = `<article class="top-feature"><span class="story-category">${escapeHtml(leadTopic)} · TOP STORY</span><h3><a href="${escapeHtml(lead.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(lead.title)}</a></h3><p>${leadSummary}</p><div class="top-byline">${escapeHtml(lead.source_name || "News source")} · ${escapeHtml(safeDate(lead.published_at || lead.collected_at))} · <a href="${escapeHtml(lead.url)}" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div></article><div class="top-side">${side || '<p class="loading-note">More headlines are on the way.</p>'}</div>`;
+}
+
 function render() {
   const events = getFilteredEvents();
+  renderTopStories(events);
   $("#result-count").textContent = `${events.length} of ${state.events.length} stories`;
   $("#news-grid").innerHTML = events.map((event) => {
     const topic = (event.topics || ["other"])[0] || "other";
@@ -262,5 +280,8 @@ $("#clear-filters").addEventListener("click", () => {
   $("#search").value = ""; $("#project").value = ""; $("#topic").value = ""; $("#signal").value = ""; $("#language").value = ""; $("#trust").value = "";
   render();
 });
+
+const editionDate = $("#edition-date");
+if (editionDate) editionDate.textContent = new Intl.DateTimeFormat(undefined, { dateStyle: "full" }).format(new Date()).toUpperCase();
 
 loadNews();
