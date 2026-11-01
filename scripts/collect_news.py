@@ -26,6 +26,10 @@ USER_AGENT = "CryptoNewsRadar/0.1 (+https://github.com/pavel9213/crypto-news-rad
 MAX_FEED_BYTES = 4 * 1024 * 1024
 MAX_ITEMS_PER_SOURCE = 40
 TIMEOUT_SECONDS = 20
+ARTICLE_TIMEOUT_SECONDS = 6
+MAX_ARTICLE_BYTES = 512 * 1024
+MAX_IMAGE_LOOKUPS_PER_RUN = 16
+IMAGE_RECHECK_DAYS = 7
 
 
 def utc_now() -> str:
@@ -132,6 +136,103 @@ def parse_feed(xml_bytes: bytes, source: dict[str, Any]) -> list[dict[str, Any]]
         })
     return events
 
+
+
+
+class ArticleImageParser(HTMLParser):
+    """Read only image metadata from an article's HTML head."""
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.images: list[tuple[int, str]] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        values = {key.lower(): (value or "").strip() for key, value in attrs}
+        if tag.lower() == "meta":
+            key = (values.get("property") or values.get("name") or "").lower()
+            content = values.get("content", "")
+            if content and key in {"og:image", "og:image:url", "twitter:image", "twitter:image:src"}:
+                priority = 0 if key.startswith("og:") else 1
+                self.images.append((priority, content))
+        elif tag.lower() == "link" and "image_src" in values.get("rel", "").lower():
+            href = values.get("href", "")
+            if href:
+                self.images.append((2, href))
+
+
+def extract_article_image(html_bytes: bytes, article_url: str) -> str:
+    """Return a normalized HTTP(S) Open Graph/Twitter image URL, if present."""
+    parser = ArticleImageParser()
+    parser.feed(html_bytes.decode("utf-8", errors="replace"))
+    for _, candidate in sorted(parser.images, key=lambda item: item[0]):
+        image_url = normalize_url(urljoin(article_url, candidate))
+        if image_url:
+            parts = urlsplit(image_url)
+            if parts.scheme in {"http", "https"} and parts.netloc:
+                return image_url
+    return ""
+
+
+def fetch_article_image(article_url: str) -> str:
+    """Fetch a small HTML prefix and extract its social preview image."""
+    request = urllib.request.Request(
+        article_url,
+        headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml"},
+    )
+    with urllib.request.urlopen(request, timeout=ARTICLE_TIMEOUT_SECONDS) as response:
+        content_type = response.headers.get("Content-Type", "").lower()
+        if "html" not in content_type:
+            return ""
+        body = response.read(MAX_ARTICLE_BYTES + 1)
+    if len(body) > MAX_ARTICLE_BYTES:
+        return ""
+    return extract_article_image(body, article_url)
+
+
+def enrich_event_images(events: list[dict[str, Any]]) -> None:
+    """Reuse cached image metadata and enrich a bounded number of new articles."""
+    previous_by_id: dict[str, dict[str, Any]] = {}
+    try:
+        previous_payload = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+        previous_by_id = {
+            event.get("id"): event
+            for event in previous_payload.get("events", [])
+            if isinstance(event, dict) and event.get("id")
+        }
+    except (OSError, json.JSONDecodeError, AttributeError):
+        pass
+
+    now = datetime.now(timezone.utc)
+    for event in events:
+        previous = previous_by_id.get(event.get("id"), {})
+        for field in ("image_url", "image_checked_at"):
+            if previous.get(field):
+                event[field] = previous[field]
+
+    pending: list[dict[str, Any]] = []
+    for event in events:
+        if event.get("image_url"):
+            continue
+        checked_at = event.get("image_checked_at")
+        if checked_at:
+            try:
+                checked = datetime.fromisoformat(checked_at.replace("Z", "+00:00"))
+                if checked.tzinfo is None:
+                    checked = checked.replace(tzinfo=timezone.utc)
+                if (now - checked).total_seconds() < IMAGE_RECHECK_DAYS * 86400:
+                    continue
+            except (TypeError, ValueError):
+                pass
+        pending.append(event)
+
+    for event in pending[:MAX_IMAGE_LOOKUPS_PER_RUN]:
+        event["image_checked_at"] = utc_now()
+        try:
+            image_url = fetch_article_image(event["url"])
+            if image_url:
+                event["image_url"] = image_url
+                print(f"[image] found preview for {event['source_id']}: {event['title'][:80]}")
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
+            print(f"[image] skipped {event['source_id']}: {exc}", file=sys.stderr)
 
 
 class LinkCollector(HTMLParser):
@@ -275,6 +376,7 @@ def collect() -> dict[str, Any]:
 
     events = list(events_by_id.values())
     events.sort(key=lambda event: event.get("published_at") or "", reverse=True)
+    enrich_event_images(events)
     payload = {
         "schema_version": 1,
         "generated_at": utc_now(),
