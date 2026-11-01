@@ -79,6 +79,19 @@ function escapeHtml(value) {
   })[char]);
 }
 
+function renderStoryImage(event, variant = "") {
+  const image = event.image_url
+    ? `<img src="${escapeHtml(event.image_url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">`
+    : "";
+  return `<div class="story-image ${variant}"><span>CRYPTO NEWS RADAR</span>${image}</div>`;
+}
+
+document.addEventListener("error", (event) => {
+  if (event.target instanceof HTMLImageElement && event.target.closest(".story-image")) {
+    event.target.remove();
+  }
+}, true);
+
 function fillSelect(select, values, label) {
   const current = select.value;
   select.replaceChildren(new Option(label, ""));
@@ -149,6 +162,7 @@ function renderRadarPicks(events) {
       : '<span class="signal-pill">General coverage</span>';
     const trust = event.source_trust === "primary" ? "Primary source" : "Media report";
     return `<article class="radar-pick">
+      ${renderStoryImage(event, "story-image-pick")}
       <div class="radar-pick-rank"><span>RADAR PICK 0${index + 1}</span><span class="radar-pick-score">SIGNAL SCORE ${score}</span></div>
       <h3><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></h3>
       ${event.summary ? `<p class="radar-pick-summary">${escapeHtml(event.summary)}</p>` : ""}
@@ -170,9 +184,9 @@ function renderTopStories(events) {
   const leadSummary = lead.summary ? escapeHtml(lead.summary) : "Open the original report for the full story and source context.";
   const side = top.slice(1).map((event) => {
     const topic = (event.topics || ["Latest"])[0] || "Latest";
-    return `<article class="top-side-item"><span class="story-category">${escapeHtml(topic)}</span><h3><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></h3><p>${escapeHtml(event.source_name || "News source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</p></article>`;
+    return `<article class="top-side-item">${renderStoryImage(event, "story-image-side")}<div class="top-side-copy"><span class="story-category">${escapeHtml(topic)}</span><h3><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></h3><p>${escapeHtml(event.source_name || "News source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</p></div></article>`;
   }).join("");
-  host.innerHTML = `<article class="top-feature"><span class="story-category">${escapeHtml(leadTopic)} · TOP STORY</span><h3><a href="${escapeHtml(lead.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(lead.title)}</a></h3><p>${leadSummary}</p><div class="top-byline">${escapeHtml(lead.source_name || "News source")} · ${escapeHtml(safeDate(lead.published_at || lead.collected_at))} · <a href="${escapeHtml(lead.url)}" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div></article><div class="top-side">${side || '<p class="loading-note">More headlines are on the way.</p>'}</div>`;
+  host.innerHTML = `<article class="top-feature">${renderStoryImage(lead, "story-image-feature")}<span class="story-category">${escapeHtml(leadTopic)} · TOP STORY</span><h3><a href="${escapeHtml(lead.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(lead.title)}</a></h3><p>${leadSummary}</p><div class="top-byline">${escapeHtml(lead.source_name || "News source")} · ${escapeHtml(safeDate(lead.published_at || lead.collected_at))} · <a href="${escapeHtml(lead.url)}" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div></article><div class="top-side">${side || '<p class="loading-note">More headlines are on the way.</p>'}</div>`;
 }
 
 function render() {
@@ -196,6 +210,7 @@ function render() {
       `<span class="signal-pill signal-${escapeHtml(signal)}">${escapeHtml(signalLabel(signal))}</span>`
     ).join("");
     return `<article class="story">
+      ${renderStoryImage(event, "story-image-card")}
       <div class="story-meta"><span class="topic-pill">${escapeHtml(topic)}</span><span>${escapeHtml(published)}</span></div>
       ${projectBadges ? `<div class="project-row">${projectBadges}</div>` : ""}
       ${signalBadges ? `<div class="signal-row">${signalBadges}</div>` : ""}
