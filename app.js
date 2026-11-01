@@ -177,7 +177,9 @@ function renderTopStories(events) {
 
 function render() {
   const events = getFilteredEvents();
-  renderTopStories(events);\n  renderMarketPulse(events);
+  renderTopStories(events);
+  renderRadarPicks(events);
+  renderMarketPulse(events);
   $("#result-count").textContent = `${events.length} of ${state.events.length} stories`;
   $("#news-grid").innerHTML = events.map((event) => {
     const topic = (event.topics || ["other"])[0] || "other";
