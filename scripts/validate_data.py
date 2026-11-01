@@ -77,6 +77,8 @@ def validate_news() -> list[str]:
             errors.append(f"{label}.url must be HTTP(S)")
         if not isinstance(event.get("topics"), list):
             errors.append(f"{label}.topics must be a list")
+        if event.get("image_url") and not valid_http_url(event.get("image_url")):
+            errors.append(f"{label}.image_url must be HTTP(S) when present")
     return errors
 
 
