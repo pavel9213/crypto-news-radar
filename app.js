@@ -79,6 +79,8 @@ function escapeHtml(value) {
   })[char]);
 }
 
+function storyHref(event) { return `story.html?id=${encodeURIComponent(event.id || event.url || "")}`; }
+
 function renderStoryImage(event, variant = "") {
   const image = event.image_url
     ? `<img src="${escapeHtml(event.image_url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">`
@@ -164,10 +166,10 @@ function renderRadarPicks(events) {
     return `<article class="radar-pick">
       ${renderStoryImage(event, "story-image-pick")}
       <div class="radar-pick-rank"><span>RADAR PICK 0${index + 1}</span><span class="radar-pick-score">SIGNAL SCORE ${score}</span></div>
-      <h3><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></h3>
+      <h3><a href="${escapeHtml(storyHref(event))}">${escapeHtml(event.title)}</a></h3>
       ${event.summary ? `<p class="radar-pick-summary">${escapeHtml(event.summary)}</p>` : ""}
       <div class="radar-pick-signals">${badges}</div>
-      <div class="radar-pick-footer"><strong>${escapeHtml(event.source_name || "News source")}</strong><span>· ${trust}</span><span>· ${escapeHtml(safeDate(event.published_at || event.collected_at))}</span></div>
+      <div class="radar-pick-footer"><strong>${escapeHtml(event.source_name || "News source")}</strong><span>· ${trust}</span><span>· ${escapeHtml(safeDate(event.published_at || event.collected_at))}</span><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">Original ↗</a></div>
     </article>`;
   }).join("");
 }
@@ -184,9 +186,9 @@ function renderTopStories(events) {
   const leadSummary = lead.summary ? escapeHtml(lead.summary) : "Open the original report for the full story and source context.";
   const side = top.slice(1).map((event) => {
     const topic = (event.topics || ["Latest"])[0] || "Latest";
-    return `<article class="top-side-item">${renderStoryImage(event, "story-image-side")}<div class="top-side-copy"><span class="story-category">${escapeHtml(topic)}</span><h3><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></h3><p>${escapeHtml(event.source_name || "News source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</p></div></article>`;
+    return `<article class="top-side-item">${renderStoryImage(event, "story-image-side")}<div class="top-side-copy"><span class="story-category">${escapeHtml(topic)}</span><h3><a href="${escapeHtml(storyHref(event))}">${escapeHtml(event.title)}</a></h3><p>${escapeHtml(event.source_name || "News source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</p></div></article>`;
   }).join("");
-  host.innerHTML = `<article class="top-feature">${renderStoryImage(lead, "story-image-feature")}<span class="story-category">${escapeHtml(leadTopic)} · TOP STORY</span><h3><a href="${escapeHtml(lead.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(lead.title)}</a></h3><p>${leadSummary}</p><div class="top-byline">${escapeHtml(lead.source_name || "News source")} · ${escapeHtml(safeDate(lead.published_at || lead.collected_at))} · <a href="${escapeHtml(lead.url)}" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div></article><div class="top-side">${side || '<p class="loading-note">More headlines are on the way.</p>'}</div>`;
+  host.innerHTML = `<article class="top-feature">${renderStoryImage(lead, "story-image-feature")}<span class="story-category">${escapeHtml(leadTopic)} · TOP STORY</span><h3><a href="${escapeHtml(storyHref(lead))}">${escapeHtml(lead.title)}</a></h3><p>${leadSummary}</p><div class="top-byline">${escapeHtml(lead.source_name || "News source")} · ${escapeHtml(safeDate(lead.published_at || lead.collected_at))} · <a href="${escapeHtml(lead.url)}" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div></article><div class="top-side">${side || '<p class="loading-note">More headlines are on the way.</p>'}</div>`;
 }
 
 function render() {
@@ -214,7 +216,7 @@ function render() {
       <div class="story-meta"><span class="topic-pill">${escapeHtml(topic)}</span><span>${escapeHtml(published)}</span></div>
       ${projectBadges ? `<div class="project-row">${projectBadges}</div>` : ""}
       ${signalBadges ? `<div class="signal-row">${signalBadges}</div>` : ""}
-      <h3><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></h3>
+      <h3><a href="${escapeHtml(storyHref(event))}">${escapeHtml(event.title)}</a></h3>
       ${summary}
       <div class="story-footer"><span>${escapeHtml(event.source_name || "Unknown source")} <span class="trust-label ${trustClass}">${trustLabel}</span></span><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">Read source ↗</a></div>
     </article>`;
@@ -278,7 +280,7 @@ function renderProjectMonitor(sources) {
     const status = !connected ? "Official feed not connected" : healthy ? "Official feed operational" : source?.error ? "Source error" : "No recent stories";
     const statusClass = !connected ? "not-connected" : healthy ? "healthy" : source?.error ? "failed" : "warning";
     const latest = stories.slice(0, 2).map(event =>
-      `<li><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a><span>${escapeHtml(event.source_name || "Source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</span></li>`
+      `<li><a href="${escapeHtml(storyHref(event))}">${escapeHtml(event.title)}</a><span>${escapeHtml(event.source_name || "Source")} · ${escapeHtml(safeDate(event.published_at || event.collected_at))}</span></li>`
     ).join("");
     const feedNote = connected
       ? (source ? `${Number(source.items || 0)} items in latest collection · ${project.name === "INK" ? "Kraken official Ink category" : "official project source"}` : "Waiting for collector data")
