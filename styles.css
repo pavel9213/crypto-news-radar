@@ -54,3 +54,46 @@ footer{border-top:1px solid var(--ink);background:#fafafa}.footer-inner{display:
 .story-image-pick{height:132px;margin:0 0 13px}
 .story-image-card{height:145px;margin:-17px 0 13px}
 @media(max-width:650px){.story-image-feature{height:190px}.story-image-side{flex-basis:92px;height:68px;min-height:68px}.story-image-card{height:180px}}
+
+
+/* Dedicated story pages */
+.article-main{max-width:920px;padding-top:25px;padding-bottom:30px}
+.article-back{display:inline-block;margin:0 0 20px;color:var(--red);font-size:11px;font-weight:800;text-decoration:none}
+.article-content{border-top:3px solid var(--ink)}
+.article-kicker{display:flex;justify-content:space-between;gap:12px;padding:15px 0;color:var(--red);font-size:9px;font-weight:800;letter-spacing:.13em}
+.article-kicker span:last-child{color:#777}
+.article-tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 13px}
+.article-tag{padding:4px 7px;background:#f3f3f3;color:#666;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.article-project-tag{background:#fff2f2;color:var(--red)}
+.article-content h1{max-width:900px;margin:0 0 17px;font:800 clamp(31px,5.2vw,56px)/1.08 Manrope,sans-serif;letter-spacing:-.06em}
+.article-byline{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--line);color:#888;font-size:11px}
+.article-byline strong{color:#333}
+.article-hero-image{margin:0 0 25px}
+.article-hero-image img{display:block;width:100%;max-height:490px;object-fit:cover;background:#f1f1f1}
+.article-hero-image figcaption{margin-top:6px;color:#999;font-size:9px}
+.article-image-fallback{display:grid;place-items:center;min-height:250px;margin-bottom:25px;background:linear-gradient(135deg,#f4f4f4,#e5e5e5,#f8f8f8);color:#999}
+.article-image-fallback span{font:800 11px Manrope,sans-serif;letter-spacing:.2em}
+.article-summary{padding:20px 23px;border-left:3px solid var(--red);background:#f7f7f7}
+.article-summary>span,.article-source-box>div>span{color:var(--red);font-size:9px;font-weight:800;letter-spacing:.13em}
+.article-summary p{margin:8px 0 0;color:#333;font:500 17px/1.65 Manrope,sans-serif}
+.article-signals{margin:25px 0;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.article-signals h2{margin:0 0 10px;font:800 17px Manrope,sans-serif}
+.article-signals>div{display:flex;flex-wrap:wrap;gap:6px}
+.article-signals>p{margin:9px 0 0;color:#999;font-size:9px}
+.article-source-box{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:25px;padding:16px 18px;border:1px solid var(--line)}
+.article-source-box>div{display:grid;gap:4px}
+.article-source-box>div strong{font:800 16px Manrope,sans-serif}
+.article-source-box>a{padding:10px 13px;background:var(--red);color:#fff;font-size:10px;font-weight:800;text-decoration:none;white-space:nowrap}
+.article-source-box>a:hover{background:var(--red-dark)}
+.article-disclaimer{margin:14px 0 0;color:#999;font-size:9px;line-height:1.6}
+.related-section{padding:15px 0 40px}
+.related-stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.related-card{padding:13px 15px;border-right:1px solid var(--line)}
+.related-card:first-child{padding-left:0}
+.related-card:last-child{border-right:0}
+.related-card>span{color:var(--red);font-size:8px;font-weight:800;text-transform:uppercase}
+.related-card h3{margin:6px 0;font:700 14px/1.35 Manrope,sans-serif}
+.related-card h3 a{text-decoration:none}
+.related-card h3 a:hover{color:var(--red)}
+.related-card p{margin:0;color:#999;font-size:9px}
+@media(max-width:650px){.article-main{padding-top:18px}.article-content h1{font-size:34px}.article-image-fallback{min-height:180px}.article-summary{padding:15px}.article-summary p{font-size:14px}.article-source-box{align-items:flex-start;flex-direction:column}.related-stories{grid-template-columns:1fr}.related-card,.related-card:first-child{padding:12px 0;border-right:0;border-bottom:1px solid var(--line)}.related-card:last-child{border-bottom:0}}
