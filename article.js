@@ -71,7 +71,7 @@ function renderRelated(event, events) {
   }).filter(entry => entry.score > 0).sort((a, b) => b.score - a.score)
     .slice(0, 3).map(({ item }) => `<article class="related-card">
       <span>${escapeHtml((item.topics || ["Latest"])[0])}</span>
-      <h3><a href="story.html?id=${encodeURIComponent(item.id || "")}">${escapeHtml(item.title)}</a></h3>
+      <h3><a href="stories/${encodeURIComponent(item.id || "")}.html">${escapeHtml(item.title)}</a></h3>
       <p>${escapeHtml(item.source_name || "News source")} · ${escapeHtml(safeDate(item.published_at || item.collected_at))}</p>
     </article>`).join("");
 }
