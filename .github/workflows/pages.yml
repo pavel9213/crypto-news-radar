@@ -5,8 +5,12 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "story.html"
+      - "article.js"
       - "app.js"
       - "styles.css"
+      - "scripts/generate_seo.py"
+      - "tests/test_seo.py"
       - "data/**"
       - ".github/workflows/pages.yml"
   workflow_run:
@@ -34,7 +38,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site/data
-          cp index.html app.js styles.css _site/
+          cp index.html story.html article.js app.js styles.css _site/
           if [ -f data/news.json ]; then
             cp data/news.json _site/data/news.json
           else
@@ -42,6 +46,7 @@ jobs:
           fi
           if [ -f data/status.json ]; then cp data/status.json _site/data/status.json; fi
           if [ -f data/updated.json ]; then cp data/updated.json _site/data/updated.json; fi
+          python scripts/generate_seo.py --output _site
           touch _site/.nojekyll
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
