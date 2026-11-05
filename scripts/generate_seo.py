@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
+from email.utils import format_datetime
 import html
 import json
 import re
@@ -48,6 +50,73 @@ def iso_value(value: object) -> str:
         return parsed.isoformat()
     except ValueError:
         return ""
+
+
+def parse_datetime(value: object) -> datetime | None:
+    normalized = iso_value(value)
+    if not normalized:
+        return None
+    try:
+        parsed = datetime.fromisoformat(normalized)
+    except ValueError:
+        return None
+    return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
+
+
+def rss_date(value: object) -> str:
+    parsed = parse_datetime(value)
+    return format_datetime(parsed) if parsed else ""
+
+
+def rss_feed(events: list[dict]) -> bytes:
+    root = ET.Element("rss", {"version": "2.0"})
+    channel = ET.SubElement(root, "channel")
+    ET.SubElement(channel, "title").text = "Crypto News Radar"
+    ET.SubElement(channel, "link").text = SITE_URL
+    ET.SubElement(channel, "description").text = (
+        "Independent crypto news, blockchain updates, DeFi research and Web3 signals."
+    )
+    ET.SubElement(channel, "language").text = "en"
+    build_dates = [
+        parse_datetime(event.get("collected_at") or event.get("published_at"))
+        for event in events if isinstance(event, dict)
+    ]
+    build_dates = [value for value in build_dates if value]
+    if build_dates:
+        ET.SubElement(channel, "lastBuildDate").text = format_datetime(max(build_dates))
+
+    valid_events = [
+        event for event in events
+        if isinstance(event, dict) and ID_PATTERN.fullmatch(clean_text(event.get("id")))
+    ]
+    valid_events.sort(
+        key=lambda event: parse_datetime(event.get("published_at") or event.get("collected_at"))
+        or datetime.min.replace(tzinfo=timezone.utc),
+        reverse=True,
+    )
+
+    for event in valid_events[:50]:
+        story_id = clean_text(event.get("id"))
+        story_url = SITE_URL + "stories/" + quote(story_id, safe="") + ".html"
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = clean_text(event.get("title")) or "Crypto news update"
+        ET.SubElement(item, "link").text = story_url
+        ET.SubElement(item, "guid", {"isPermaLink": "true"}).text = story_url
+        published = rss_date(event.get("published_at") or event.get("collected_at"))
+        if published:
+            ET.SubElement(item, "pubDate").text = published
+        ET.SubElement(item, "description").text = clean_text(event.get("summary")) or make_description(event)
+        source = clean_text(event.get("source_name"))
+        original_url = safe_http_url(event.get("url"))
+        if source and original_url:
+            ET.SubElement(item, "source", {"url": original_url}).text = source
+        topics = event.get("topics") if isinstance(event.get("topics"), list) else []
+        for topic in topics:
+            cleaned_topic = clean_text(topic)
+            if cleaned_topic:
+                ET.SubElement(item, "category").text = cleaned_topic
+
+    return ET.tostring(root, encoding="utf-8", xml_declaration=True) + b"\\n"
 
 
 def article_html(event: dict) -> str:
@@ -196,6 +265,7 @@ def generate(output_dir: Path) -> tuple[int, int]:
     )
     ET.fromstring(sitemap)
     (output_dir / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    (output_dir / "feed.xml").write_bytes(rss_feed(events))
     (output_dir / "robots.txt").write_text(
         "User-agent: *\nAllow: /\n\nSitemap: " + SITE_URL + "sitemap.xml\n",
         encoding="utf-8",
@@ -208,7 +278,7 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=ROOT / "_site")
     args = parser.parse_args()
     count, urls = generate(args.output)
-    print(f"Generated {count} static story pages and a sitemap with {urls} URLs.")
+    print(f"Generated {count} static story pages, a sitemap with {urls} URLs, and an RSS feed.")
 
 
 if __name__ == "__main__":
