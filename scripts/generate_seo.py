@@ -116,7 +116,7 @@ def rss_feed(events: list[dict]) -> bytes:
             if cleaned_topic:
                 ET.SubElement(item, "category").text = cleaned_topic
 
-    return ET.tostring(root, encoding="utf-8", xml_declaration=True) + b"\\n"
+    return ET.tostring(root, encoding="utf-8", xml_declaration=True) + b"\n"
 
 
 def article_html(event: dict) -> str:
