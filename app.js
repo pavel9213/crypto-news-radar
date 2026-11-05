@@ -79,7 +79,7 @@ function escapeHtml(value) {
   })[char]);
 }
 
-function storyHref(event) { return `stories/${encodeURIComponent(event.id || "")}.html`; }
+function storyHref(event) { return `story.html?id=${encodeURIComponent(event.id || "")}`; }
 
 function renderStoryImage(event, variant = "") {
   const image = event.image_url
