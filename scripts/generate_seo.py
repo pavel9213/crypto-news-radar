@@ -189,6 +189,7 @@ def article_html(event: dict) -> str:
   <title>{e(title)} | Crypto News Radar</title>
   <meta name="description" content="{e(description)}">
   <link rel="canonical" href="{e(canonical)}">
+  <link rel="alternate" type="application/rss+xml" title="Crypto News Radar RSS" href="{SITE_URL}feed.xml">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Crypto News Radar">
   <meta property="og:title" content="{e(title)}">
