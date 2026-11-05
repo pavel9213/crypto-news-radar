@@ -44,6 +44,38 @@ class SeoGenerationTests(unittest.TestCase):
         self.assertIn('name="twitter:card" content="summary"', page)
         self.assertNotIn('property="og:image"', page)
 
+    def test_rss_feed_contains_recent_story_links_and_source_metadata(self):
+        feed = seo.rss_feed([
+            {
+                "id": "older",
+                "title": "Older story",
+                "summary": "Older summary",
+                "url": "https://example.org/older",
+                "source_name": "Example Source",
+                "topics": ["defi"],
+                "published_at": "2026-11-03T10:00:00+00:00",
+            },
+            {
+                "id": "newer",
+                "title": "Newer story & update",
+                "url": "https://example.org/newer",
+                "source_name": "News Desk",
+                "published_at": "2026-11-04T10:00:00+00:00",
+            },
+            {"id": "../invalid", "title": "Invalid story"},
+        ])
+        root = ET.fromstring(feed)
+        items = root.findall("./channel/item")
+        self.assertEqual(len(items), 2)
+        self.assertEqual(items[0].findtext("title"), "Newer story & update")
+        self.assertEqual(
+            items[0].findtext("link"),
+            "https://pavel9213.github.io/crypto-news-radar/stories/newer.html",
+        )
+        self.assertEqual(items[0].findtext("source"), "News Desk")
+        self.assertEqual(items[1].findtext("category"), "defi")
+        self.assertIn("lastBuildDate", [node.tag for node in root.find("channel")])
+
     def test_rejects_unsafe_story_ids(self):
         with self.assertRaises(ValueError):
             seo.article_html({"id": "../escape", "title": "Unsafe"})
