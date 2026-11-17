@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-16T20:25:38+00:00",
+  "generated_at": "2026-11-17T04:28:10+00:00",
   "event_count": 227,
   "source_count": 10,
   "sources": [
@@ -77,6 +77,384 @@
   ],
   "events": [
     {
+      "id": "e00dfcfe3a9d82890815",
+      "title": "Trezor customer data exposed in 3rd partner breach this year",
+      "url": "https://cointelegraph.com/news/trezor-customer-data-exposed-in-3rd-partner-breach-this-year",
+      "source_id": "cointelegraph",
+      "source_name": "Cointelegraph",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "regulation"
+      ],
+      "published_at": "2026-11-17T03:46:22+00:00",
+      "summary": "Trezor warned an attacker has been able to access customer names, phone numbers and delivery addresses linked to 27,000 orders from one of its shipping providers.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7KSMV6VXD8X0C6CPDG5WCNC/trezor.jpg"
+    },
+    {
+      "id": "bbc03045873a507bd3ce",
+      "title": "Hackers inject credit card, crypto-stealing malware into 178 major websites",
+      "url": "https://cointelegraph.com/news/hackers-inject-malware-into-178-major-websites",
+      "source_id": "cointelegraph",
+      "source_name": "Cointelegraph",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "regulation"
+      ],
+      "published_at": "2026-11-17T01:02:05+00:00",
+      "summary": "Ledger and Coinpass were among the businesses whose websites served malware designed to steal visitors’ crypto and credit card details, according to security researchers.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7KGB8P723WG4K1R3Q3WMM6J/hi-how-cybercriminals-use-youtube-and-github-to-spread-crypto-malware.jpg"
+    },
+    {
+      "id": "f259248791d2838832d5",
+      "title": "Nvidia shares fall 4% as board reportedly rules out Huang return",
+      "url": "https://cointelegraph.com/news/nvidia-shares-fall-4-as-board-reportedly-rules-out-huang-return",
+      "source_id": "cointelegraph",
+      "source_name": "Cointelegraph",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T23:50:41+00:00",
+      "summary": "The chipmaker’s board is reportedly focused on investigating Huang’s conduct, even as a petition calling for his reinstatement gathers more than 187,000 signatures.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7KABBJFAJNZZ9Y5F7TA19N8/ripping-paper-white-hands.jpg"
+    },
+    {
+      "id": "8bc29d96fec0663afd35",
+      "title": "Custodia Bank loses Supreme Court bid for direct Fed payment access",
+      "url": "https://cointelegraph.com/news/custodia-bank-loses-supreme-court-bid-for-direct-fed-payment-access",
+      "source_id": "cointelegraph",
+      "source_name": "Cointelegraph",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T22:54:57+00:00",
+      "summary": "The Supreme Court refused to hear Custodia Bank’s appeal, meaning a lower court ruling allowing the Fed to reject account applications will stand.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7K7K4XWRM18K351JQ17SMMQ/hi-traditional-bank-account-vs-bitcoin-custodial-storage.jpg"
+    },
+    {
+      "id": "944a1a0220003cf78e1e",
+      "title": "German lawmakers back crypto freezes outside criminal cases",
+      "url": "https://cointelegraph.com/news/german-lawmakers-back-crypto-freezes-outside-criminal-cases",
+      "source_id": "cointelegraph",
+      "source_name": "Cointelegraph",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T22:46:44+00:00",
+      "summary": "Customs authorities could hold “suspicious” assets for 30 days under the bill, with court oversight for extensions and disputed confiscation.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M236GTB6R3NKE0V3DBECZ26A/hi-here-is-why-germany-leads-the-crypto-friendly-countries-ranking3.jpg"
+    },
+    {
+      "id": "bd4147c5a5daa5206788",
+      "title": "Alibaba's Qwen 4 Max Leads China's AI Agent Race—But You Can't Download It",
+      "url": "https://decrypt.co/383395/alibaba-qwen-4-max-leads-china-ai-agent-race-cant-download-it",
+      "source_id": "decrypt",
+      "source_name": "Decrypt",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "research"
+      ],
+      "published_at": "2026-11-16T22:46:02+00:00",
+      "summary": "Alibaba's new flagship jumps ahead of Chinese rivals on agent and web design leaderboards, with cheaper API access. The closed model also previews the next generation of open Qwen releases.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/03/decrypt-style-alibaba-qwen-gID_7.png"
+    },
+    {
+      "id": "67e0ae76865c7f16b191",
+      "title": "Binance hack may push institutions to outside custody, FalconX exec says",
+      "url": "https://cointelegraph.com/news/binance-hack-institutional-crypto-custody-falconx",
+      "source_id": "cointelegraph",
+      "source_name": "Cointelegraph",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T22:19:41+00:00",
+      "summary": "FalconX’s Joshua Lim says the Binance hack could push institutions to keep crypto off exchanges and change how large investors trade in 2027.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7JYN3X9NPASHKCFA1BBHM7P/bank-building-hall-entrance-door-binance-2.png"
+    },
+    {
+      "id": "bcde4cf9463e5eaaefff",
+      "title": "Bitcoin Wallet Maker Trezor Says Customer Data Was Exposed Again",
+      "url": "https://decrypt.co/383397/bitcoin-wallet-trezor-third-party-breach-customer-data",
+      "source_id": "decrypt",
+      "source_name": "Decrypt",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "research"
+      ],
+      "published_at": "2026-11-16T22:18:03+00:00",
+      "summary": "A second Trezor shipping partner was breached in three months, exposing buyers' addresses and order details.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/10/trezor-safe-7-decrypt-style-gID_7.jpg"
+    },
+    {
+      "id": "458fdcffb7b7b6a29641",
+      "title": "Here’s what happened in crypto today",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today",
+      "source_id": "cointelegraph",
+      "source_name": "Cointelegraph",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T22:07:36+00:00",
+      "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
+    },
+    {
+      "id": "8ef0d2d2c80b69bcd41c",
+      "title": "Former Robinhood engineer pleads guilty to insider trading scheme on Hyperliquid",
+      "url": "https://www.coindesk.com/markets/2026/11/16/former-robinhood-engineer-pleads-guilty-to-insider-trading-scheme-on-hyperliquid",
+      "source_id": "coindesk",
+      "source_name": "CoinDesk",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T21:51:04+00:00",
+      "summary": "Huaisong Xiang admitted using confidential crypto listing information to make $125,523 trading perpetual futures on Hyperliquid.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/f11975329dd01123cc1f9509e592571e6e20430b-1500x1000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+    },
+    {
+      "id": "de276382a923f52370fd",
+      "title": "Bitcoin's $2 Billion Liquidation Weekend Leaves Traders Watching $60,000",
+      "url": "https://decrypt.co/383366/bitcoin-2-billion-liquidation-weekend-traders-watching-60000",
+      "source_id": "decrypt",
+      "source_name": "Decrypt",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "research"
+      ],
+      "published_at": "2026-11-16T21:46:03+00:00",
+      "summary": "Bitcoin fell near $62,100 as forced liquidations swept crypto markets. ETF withdrawals and a crowded options trade offer a closer look at the damage left behind.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/10/bitcoin-dollar-decrypt-style-gID_7.jpg"
+    },
+    {
+      "id": "bd760185aea189915cde",
+      "title": "Why Bitcoin’s June Low May Not Be the Bottom — $58K the Key Test",
+      "url": "https://bitcoinmagazine.com/videos/why-bitcoins-june-low-may-not-be-the-bottom-58k-the-key-test",
+      "source_id": "bitcoin-magazine",
+      "source_name": "Bitcoin Magazine",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "bitcoin",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T21:43:56+00:00",
+      "summary": "&#9654; Bitcoin Magazine Why Bitcoin’s June Low May Not Be the Bottom — $58K the Key Test Sean breaks down Bitcoin's MVRV on today's Chart of the Day. This post Why Bitcoin’s June Low May Not Be the Bottom — $58K the Key Test first appeared on Bitcoin Magazine and is written by Patrick Green .",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_checked_at": "2026-11-17T04:28:09+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/why-bitcoins-june-low-may-not-be-the-bottom-58k-the-key-test-vh17bWcjDQM.jpg"
+    },
+    {
+      "id": "95ffa0d82bc660ec38e6",
+      "title": "Bitcoin Price Holds Near $65,000 as Nvidia Turmoil Drags Nasdaq Down 2.5%",
+      "url": "https://bitcoinmagazine.com/markets/bitcoin-price-holds-near-65000-nvidia",
+      "source_id": "bitcoin-magazine",
+      "source_name": "Bitcoin Magazine",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "bitcoin",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T21:20:36+00:00",
+      "summary": "Bitcoin Magazine Bitcoin Price Holds Near $65,000 as Nvidia Turmoil Drags Nasdaq Down 2.5% Bitcoin price held near $65,000 on Monday afternoon, shrugging off a 2.5% Nasdaq slide as Nvidia's board ruled out bringing back Jensen Huang and the dollar hit a 19-month high. This post Bitcoin Price Holds Near $65,000 as Nvidia Turmoil Drags Nasdaq Down 2.5% first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_checked_at": "2026-11-17T04:28:09+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/10/Pics-23.jpg"
+    },
+    {
+      "id": "8916c8953d4e0cfc5058",
+      "title": "Hackers Redirected Bitcoin Miner Rewards via AI Attack, Luxor CEO Says",
+      "url": "https://decrypt.co/383392/hackers-redirected-bitcoin-miner-rewards-ai-attack-luxor",
+      "source_id": "decrypt",
+      "source_name": "Decrypt",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "research"
+      ],
+      "published_at": "2026-11-16T21:16:03+00:00",
+      "summary": "Luxor said hackers redirected hashrate from just over a dozen client accounts through its Commander tool, and its CEO blamed a “sophisticated AI-enabled vector.”",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/08/crime_hacker-gID_7.png"
+    },
+    {
+      "id": "f956961dd1fa7c9efedd",
+      "title": "Bitmine edges toward 5% of ETH supply as treasuries report buys amid market slump",
+      "url": "https://cointelegraph.com/markets/bitmine-nears-5-eth-supply-treasuries-report-buys-amid-market-slump",
+      "source_id": "cointelegraph",
+      "source_name": "Cointelegraph",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T20:45:47+00:00",
+      "summary": "Strategy, Strive, Bitmine and Cypherpunk disclosed fresh additions to their crypto treasuries, spanning Bitcoin, Ether and Zcash.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7JZ53YRDRJQGKMN9M3767RB/hi-10-public-companies-that-quietly-turned-their-balance-sheets-into-bitcoin-treasuries.png"
+    },
+    {
+      "id": "535af55267eaff7a20d8",
+      "title": "Senate Agriculture Committee to Hear Trump’s CFTC Nominees Tuesday",
+      "url": "https://bitcoinmagazine.com/news/cftc-nominees-senate-hearing-tuesday",
+      "source_id": "bitcoin-magazine",
+      "source_name": "Bitcoin Magazine",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "bitcoin",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T20:44:23+00:00",
+      "summary": "Bitcoin Magazine Senate Agriculture Committee to Hear Trump&#8217;s CFTC Nominees Tuesday The Senate Agriculture Committee will hear Nathan Anonick and Matthew Rowland on Tuesday, President Trump's bipartisan picks to join CFTC Chairman Michael Selig, currently the agency's only sitting commissioner. This post Senate Agriculture Committee to Hear Trump&#8217;s CFTC Nominees Tuesday first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_checked_at": "2026-11-17T04:28:09+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/02/Senate-Democrats-Press-DOJ-Treasury-to-Probe-Binance-Over-Trump-Ties-Iran-Sanctions-Allegations.jpg"
+    },
+    {
+      "id": "381d960e05deeca968a6",
+      "title": "Tom Lee Blames Nvidia and Anthropic IPO for Ethereum Plunge as Bitmine Buys the Dip",
+      "url": "https://decrypt.co/383364/tom-lee-blames-nvidia-anthropic-ipo-ethereum-plunge-bitmine-buys",
+      "source_id": "decrypt",
+      "source_name": "Decrypt",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "security",
+        "research"
+      ],
+      "published_at": "2026-11-16T20:36:03+00:00",
+      "summary": "The firm’s stash fell to $11.8 billion from $14.3 billion a week earlier as ETH slid 28% in two weeks, a “waterfall” drop chairman Tom Lee blames on Nvidia fallout and cash-raising ahead of Anthropic’s IPO.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/11/tom-lee-fundstrat-decrypt-style-02-gID_7.jpg"
+    },
+    {
+      "id": "fdcf835f738cf966dd6c",
+      "title": "Bitcoin risks falling below $60,000 as Nvidia earnings threaten to deepen crypto sell-off",
+      "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-risks-falling-below-usd60-000-as-nvidia-earnings-threaten-to-deepen-crypto-sell-off",
+      "source_id": "coindesk",
+      "source_name": "CoinDesk",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "blockchain",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T20:35:21+00:00",
+      "summary": "Rising bond yields, ETF outflows and forced selling are weighing on bitcoin as traders brace for more losses.",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/bb223eb7b2ddf393991cceaeddd92370f4d55e1d-6000x4000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
+    },
+    {
+      "id": "6239fa0c0c96b765af7f",
+      "title": "Rob Hamilton: The AI “Black Hole” is Pulling Liquidity Away from Bitcoin",
+      "url": "https://bitcoinmagazine.com/videos/rob-hamilton-the-ai-black-hole-is-pulling-liquidity-away-from-bitcoin",
+      "source_id": "bitcoin-magazine",
+      "source_name": "Bitcoin Magazine",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "bitcoin",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T20:35:17+00:00",
+      "summary": "&#9654; Bitcoin Magazine Rob Hamilton: The AI “Black Hole” is Pulling Liquidity Away from Bitcoin AnchorWatch CEO Rob Hamilton is bullish on Bitcoin in the long run, even as he watches liquidity get pulled toward the Anthropic IPO and the AI trade, which he compares to a black hole. This post Rob Hamilton: The AI “Black Hole” is Pulling Liquidity Away from Bitcoin first appeared on Bitcoin Magazine and is written by Patrick Green .",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_checked_at": "2026-11-17T04:28:09+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/rob-hamilton-the-ai-black-hole-is-pulling-liquidity-away-from-bitcoin-9EE3F91J1vo.jpg"
+    },
+    {
       "id": "04a35d5454ce4900795e",
       "title": "Boris Johnson says UK must lead blockchain development despite crypto doubts",
       "url": "https://cointelegraph.com/news/boris-johnson-uk-must-lead-blockchain-development-despite-crypto-doubts",
@@ -93,7 +471,7 @@
       "published_at": "2026-11-16T20:18:02+00:00",
       "summary": "Johnson was joined by Lord Ross Kempsell who called for regulators to work with industry participants to bring the UK to the forefront.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1KWG2BF4FVCFASCKG2BAG5D/peace-and-friendship-uk-1.jpg"
     },
     {
@@ -113,8 +491,28 @@
       "published_at": "2026-11-16T19:56:18+00:00",
       "summary": "The proposed standard aims to connect tokenized stockholders with corporate disclosures and voting materials across digital wallets, but would not create shareholder rights.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7JTN734VB6CHE3TCTHAYQMT/digital-bonds-on-blockchain-2.png"
+    },
+    {
+      "id": "2e36394a8a199b8f2f0d",
+      "title": "T. Rowe Price’s Blue Macellari: Institutions “Not Backing Away” From Bitcoin",
+      "url": "https://bitcoinmagazine.com/videos/t-rowe-prices-blue-macellari-institutions-not-backing-away-from-bitcoin",
+      "source_id": "bitcoin-magazine",
+      "source_name": "Bitcoin Magazine",
+      "source_trust": "media",
+      "language": "en",
+      "topics": [
+        "markets",
+        "bitcoin",
+        "regulation"
+      ],
+      "published_at": "2026-11-16T19:44:40+00:00",
+      "summary": "&#9654; Bitcoin Magazine T. Rowe Price’s Blue Macellari: Institutions “Not Backing Away” From Bitcoin For institutions, Blue Macellari says Bitcoin is no longer about whether to own it or whether it is real. This post T. Rowe Price’s Blue Macellari: Institutions “Not Backing Away” From Bitcoin first appeared on Bitcoin Magazine and is written by Patrick Green .",
+      "status": "unreviewed",
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_checked_at": "2026-11-17T04:28:09+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/t-rowe-prices-blue-macellari-institutions-not-backing-away-from-bitcoin-H5bi8hBMDTw.jpg"
     },
     {
       "id": "5c00bb2c5df931bf8ed6",
@@ -133,7 +531,7 @@
       "published_at": "2026-11-16T19:36:03+00:00",
       "summary": "Former White House crypto chief Patrick Witt said the Clarity Act \"lost against the clock,\" and regulators will now set the rules.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/patrick-witt-decrypt-style-gID_7.jpg"
     },
     {
@@ -152,9 +550,9 @@
       "published_at": "2026-11-16T19:17:14+00:00",
       "summary": "&#9654; Bitcoin Magazine $36B Wealth Firm Strategist: Bitcoin’s Supercycle Is “Still Intact” James Thorne, Chief Market Strategist at Wellington-Altus, tells BMTV that Bitcoin's super cycle is still intact after the drop from about 83,000 in mid-October to around 64,000. This post $36B Wealth Firm Strategist: Bitcoin’s Supercycle Is “Still Intact” first appeared on Bitcoin Magazine and is written by Patrick Green .",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:37+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/36b-wealth-firm-strategist-bitcoins-supercycle-is-still-intact-m7ygyYMe3mg.jpg"
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/36b-wealth-firm-strategist-bitcoins-supercycle-is-still-intact-m7ygyYMe3mg.jpg",
+      "image_checked_at": "2026-11-16T20:25:37+00:00"
     },
     {
       "id": "bd6858bbb70424204989",
@@ -173,7 +571,7 @@
       "published_at": "2026-11-16T19:05:02+00:00",
       "summary": "Trump would welcome Nvidia’s co-founder back. Altman, who survived his own CEO ouster, sympathizes but stops short of endorsing Huang’s comeback.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/01/decrypt-style-nvidia-jensen-huang-gID_7.png"
     },
     {
@@ -192,7 +590,7 @@
       "published_at": "2026-11-16T18:54:19+00:00",
       "summary": "The Commodity Futures Trading Commission directed platforms such as Kalshi to defy state bans, but the Democrats want it to reverse course, citing court orders.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/517205ce94265f162b37cb5aada496cfce6de2f9-6000x4000.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -212,7 +610,7 @@
       "published_at": "2026-11-16T18:36:44+00:00",
       "summary": "Federal Reserve Chair Kevin Warsh says staff are studying three possible economic futures for AI, ranging from widespread productivity gains to higher unemployment and a painful correction in technology stocks.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/09/federal-reserve-decrypt-style-02-gID_7.jpg"
     },
     {
@@ -231,9 +629,9 @@
       "published_at": "2026-11-16T18:15:00+00:00",
       "summary": "Bitcoin Magazine German Bundestag Lets Customs Freeze Crypto Over €100,000 Without a Criminal Case as the Bill Goes to the Bundesrat The Bundestag approved a bill that would let German customs freeze crypto and other assets over €100,000 of unclear origin without a criminal case. Permanent confiscation would still require a court, and the timing of the Bundesrat vote remains unclear. This post German Bundestag Lets Customs Freeze Crypto Over €100,000 Without a Criminal Case as the Bill Goes to the Bundesrat first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:37+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/German-Bundestag-Lets-Customs-Freeze-Crypto-Over-E100000-Without-a-Criminal-Case-as-the-Bill-Goes-to-the-Bundesrat.jpg"
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/German-Bundestag-Lets-Customs-Freeze-Crypto-Over-E100000-Without-a-Criminal-Case-as-the-Bill-Goes-to-the-Bundesrat.jpg",
+      "image_checked_at": "2026-11-16T20:25:37+00:00"
     },
     {
       "id": "9f7df79a580de4c8780b",
@@ -252,7 +650,7 @@
       "published_at": "2026-11-16T18:07:49+00:00",
       "summary": "Nvidia’s leadership upheaval and Texas permit restrictions sharpen the divide between miners with funded projects and those still seeking capital and approvals.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7JEWHRV64CGR31PRV4XXWS7/hi-the-power-in-energy-and-how-new-technologies-can-shift-bitcoin-ai.jpg"
     },
     {
@@ -272,7 +670,7 @@
       "published_at": "2026-11-16T18:06:03+00:00",
       "summary": "Nvidia shares tanked specularly last week amid the Jensen Huang scandal. Is it in for a major rebound? Here’s what the charts suggest.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/09/nvidia-logo-decrypt-style-01-gID_7.png"
     },
     {
@@ -292,7 +690,7 @@
       "published_at": "2026-11-16T17:49:13+00:00",
       "summary": "Zodiac’s co-founder said a likely compromised key and overly permissive wallet settings enabled the theft, rather than a flaw in its smart contracts.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7JKHE8AKT8EG64S6TQC9CZW/hi-why-spot-the-typo-is-no-longer-enough-for-crypto-security-1.png"
     },
     {
@@ -312,7 +710,7 @@
       "published_at": "2026-11-16T17:20:26+00:00",
       "summary": "The modest purchase lifted Strategy’s stash to 850,849 BTC as chairman Michael Saylor shrugged off a sharp downturn, posting that “this dip could use a little orange.”",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/strategy-logo-x-twitter-gID_7.png"
     },
     {
@@ -331,9 +729,9 @@
       "published_at": "2026-11-16T17:15:17+00:00",
       "summary": "&#9654; Bitcoin Magazine George Mekhail: Bitcoin’s Price Is a “Distraction” as Wall Street Quietly Accumulates Retail built Bitcoin, Wall Street laughed, and now Wall Street can't get enough of it. This post George Mekhail: Bitcoin’s Price Is a “Distraction” as Wall Street Quietly Accumulates first appeared on Bitcoin Magazine and is written by Patrick Green .",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:37+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/george-mekhail-bitcoins-price-is-a-distraction-as-wall-street-quietly-accumulates-uAvmynMSVhM.jpg"
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/george-mekhail-bitcoins-price-is-a-distraction-as-wall-street-quietly-accumulates-uAvmynMSVhM.jpg",
+      "image_checked_at": "2026-11-16T20:25:37+00:00"
     },
     {
       "id": "3c5d9533ae570dd340b8",
@@ -352,7 +750,7 @@
       "published_at": "2026-11-16T17:09:28+00:00",
       "summary": "The Solana trading platform unveiled a permissioned lending market, identity passport and issuer liquidity services at Breakpoint.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/kash-dhanda-jupiter-gID_7.jpg"
     },
     {
@@ -371,7 +769,7 @@
       "published_at": "2026-11-16T16:41:42+00:00",
       "summary": "The decentralized exchange blamed a leaked trading API key and said its smart contracts were unaffected, while investigators traced funds to Hyperliquid.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/df75194a14ee0137a319a24c95c7971dfac737a2-4896x3268.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -391,7 +789,7 @@
       "published_at": "2026-11-16T16:26:52+00:00",
       "summary": "Bitcoin and US equities saw pressure to start the week as traders weighed the impact of forthcoming Nvidia Q3 earnings and Anthropic’s IPO announcement.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7JHP4NCX2Y0XJ53GG2CQ9P5/article-covers-251323-bitcoin-market-enters-full-capitulation-price-dips-below-63k-1280x853.webp"
     },
     {
@@ -411,7 +809,7 @@
       "published_at": "2026-11-16T16:14:22+00:00",
       "summary": "Solana's 1.0 designation gives developers a common way to track network rules. Here's what it means for users and builders.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/solana-decrypt-style-01-gID_7.png"
     },
     {
@@ -431,7 +829,7 @@
       "published_at": "2026-11-16T16:11:31+00:00",
       "summary": "Executives from the U.S. settlement giant and Barclays told Solana's Breakpoint that adoption is early, but accelerating.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/barclays-dtcc-breakpoint-gID_7.jpg"
     },
     {
@@ -450,9 +848,9 @@
       "published_at": "2026-11-16T16:00:10+00:00",
       "summary": "Bitcoin Magazine Harvard Holds 3.04 Million Bitcoin ETF Shares Steady Harvard Management Company's latest 13F shows it still holds 3,044,612 shares of BlackRock's iShares Bitcoin Trust, unchanged since March, a stake now worth about $110.6 million after bitcoin's slide. This post Harvard Holds 3.04 Million Bitcoin ETF Shares Steady first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:37+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2025/11/Harvard-Endowments-Biggest-Public-Position-Is-Now-Bitcoin.jpg"
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2025/11/Harvard-Endowments-Biggest-Public-Position-Is-Now-Bitcoin.jpg",
+      "image_checked_at": "2026-11-16T20:25:37+00:00"
     },
     {
       "id": "33af947940f369285034",
@@ -470,7 +868,7 @@
       "published_at": "2026-11-16T15:54:11+00:00",
       "summary": "A central bank official reportedly said legitimate funds become tainted when moved into stablecoins, comparing the market to the informal \"dólar-cabo\" system.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/a010b6e8d5d9fab88360e6939414f5b12c6bf695-1920x1272.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -489,7 +887,7 @@
       "published_at": "2026-11-16T15:44:59+00:00",
       "summary": "German lawyers said a proposed law allowing the seizure of assets worth more than 100,000 euros could impose a burden of proof on crypto holders rather than the authorities.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/21123d64d51278ef35094d798bbbf4299d8fb1f9-1920x1150.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -508,9 +906,9 @@
       "published_at": "2026-11-16T15:24:11+00:00",
       "summary": "Bitcoin Magazine Supreme Court Ends Custodia Bank&#8217;s Fight for a Fed Master Account, Leaving the Fed Free to Deny Crypto Banks Access The Supreme Court denied Custodia Bank's petition in No. 26-62 on Monday, leaving in place a Tenth Circuit ruling that Federal Reserve Banks may reject even eligible applicants for master accounts. This post Supreme Court Ends Custodia Bank&#8217;s Fight for a Fed Master Account, Leaving the Fed Free to Deny Crypto Banks Access first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:38+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/Supreme-Court-Ends-Custodia-Banks-Fight-for-a-Fed-Master-Account-Leaving-the-Fed-Free-to-Deny-Crypto-Banks-Access.jpg"
+      "collected_at": "2026-11-17T04:28:07+00:00",
+      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/Supreme-Court-Ends-Custodia-Banks-Fight-for-a-Fed-Master-Account-Leaving-the-Fed-Free-to-Deny-Crypto-Banks-Access.jpg",
+      "image_checked_at": "2026-11-16T20:25:38+00:00"
     },
     {
       "id": "c4b526d4bba36fb3a5dd",
@@ -529,7 +927,7 @@
       "published_at": "2026-11-16T15:04:56+00:00",
       "summary": "The former UK prime minister told a Solana conference he backs blockchain but still doubts Bitcoin, months after calling it a Ponzi.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/boris-johnson-decrypt-style-gID_7.jpg"
     },
     {
@@ -549,32 +947,12 @@
       "published_at": "2026-11-16T14:55:46+00:00",
       "summary": "Zelle plans to use Solana for its ZelleUSD stablecoin and international payments, with confidential transfers designed to hide payment amounts.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7J2PYBEKD9SZX7YQXC7QW4N/network-with-transparent-logos.png"
     },
     {
-      "id": "dc5b3c31a998bf5f555c",
-      "title": "Hong Kong to License Crypto Dealers and Custodians by Year-End",
-      "url": "https://bitcoinmagazine.com/news/hong-kong-license-crypto-dealers-custodian",
-      "source_id": "bitcoin-magazine",
-      "source_name": "Bitcoin Magazine",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "bitcoin",
-        "regulation"
-      ],
-      "published_at": "2026-11-16T14:45:00+00:00",
-      "summary": "Bitcoin Magazine Hong Kong to License Crypto Dealers and Custodians by Year-End Financial Secretary Paul Chan said Hong Kong will introduce a bill by year-end to license crypto dealers, advisers, managers and custodians, after only two of 36 first-round stablecoin applicants received licenses in April. This post Hong Kong to License Crypto Dealers and Custodians by Year-End first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:38+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/Hong-Kong-to-License-Crypto-Dealers-and-Custodians-by-Year-End.jpg"
-    },
-    {
       "id": "b99b6e48a5757e8175ef",
-      "title": "Lighter pauses withdrawals after reported $10M account theft",
+      "title": "Lighter recovers $5M after $10M exploit linked to compromised API keys",
       "url": "https://cointelegraph.com/news/lighter-dex-pauses-withdrawals-10m-exploit",
       "source_id": "cointelegraph",
       "source_name": "Cointelegraph",
@@ -587,110 +965,10 @@
         "regulation"
       ],
       "published_at": "2026-11-16T14:19:50+00:00",
-      "summary": "Lighter has paused withdrawals after reporting a leaked trader API key, with Bubblemaps tracking $10.4 million withdrawn.",
+      "summary": "Lighter restored withdrawals after recovering approximately $5 million in USDC, while blockchain analysts traced $10.4 million in funds moved during the exploit.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7J8N3NZM3XQTBBET43XGEQG/hi-the-role-of-cryptocurrencies-in-the-rise-of-ransomware2-1.jpg"
-    },
-    {
-      "id": "c858b6e14456ec260530",
-      "title": "Sweden’s H100 Taps Coinbase Prime and Deribit for Its 3,506 Bitcoin Treasury as It Courts Family Offices",
-      "url": "https://bitcoinmagazine.com/news/h100-coinbase-prime-bitcoin-treasury",
-      "source_id": "bitcoin-magazine",
-      "source_name": "Bitcoin Magazine",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "bitcoin",
-        "regulation"
-      ],
-      "published_at": "2026-11-16T14:15:00+00:00",
-      "summary": "Bitcoin Magazine Sweden&#8217;s H100 Taps Coinbase Prime and Deribit for Its 3,506 Bitcoin Treasury as It Courts Family Offices H100 Group will use Coinbase Prime and Deribit for custody, trading and financing of its roughly 3,506 BTC, worth about $226 million, as it builds bitcoin services for family offices and wealthy investors. This post Sweden&#8217;s H100 Taps Coinbase Prime and Deribit for Its 3,506 Bitcoin Treasury as It Courts Family Offices first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:38+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/03/H100-Eyes-Strategic-Bitcoin-Acquisition-to-Triple-its-BTC-Holdings-and-Expand-Institutional-Scale.jpg"
-    },
-    {
-      "id": "c4a6450a5118b4ffea5f",
-      "title": "Strive (ASST) Buys 251 Bitcoin for $17.5 Million as Shares Drop 10% Premarket",
-      "url": "https://bitcoinmagazine.com/news/strive-buys-251-bitcoin-holdings-43404",
-      "source_id": "bitcoin-magazine",
-      "source_name": "Bitcoin Magazine",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "bitcoin",
-        "regulation"
-      ],
-      "published_at": "2026-11-16T13:55:00+00:00",
-      "summary": "Bitcoin Magazine Strive (ASST) Buys 251 Bitcoin for $17.5 Million as Shares Drop 10% Premarket Strive bought 251 bitcoin last week for $17.5 million at a $69,853 average, lifting holdings to 43,404 BTC, as shares dropped 9.5% premarket after bitcoin's weekend slide. This post Strive (ASST) Buys 251 Bitcoin for $17.5 Million as Shares Drop 10% Premarket first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:38+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/06/Strive-ASST-Adds-185-Million-in-Bitcoin-as-Holdings-Reach-19000-BTC.jpg"
-    },
-    {
-      "id": "ed5c9da9eba13853ede7",
-      "title": "Bitcoin Price Trades Near $64,000 After Weekend Plunge to $62,000",
-      "url": "https://bitcoinmagazine.com/markets/bitcoin-price-trades-near-64000-tech",
-      "source_id": "bitcoin-magazine",
-      "source_name": "Bitcoin Magazine",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "bitcoin",
-        "regulation"
-      ],
-      "published_at": "2026-11-16T13:42:14+00:00",
-      "summary": "Bitcoin Magazine Bitcoin Price Trades Near $64,000 After Weekend Plunge to $62,000 Bitcoin price traded near $64,000 on Monday morning after plunging to $62,000 over the weekend, as Nasdaq futures slid ahead of Nvidia's earnings and traders braced for a December Fed hike. This post Bitcoin Price Trades Near $64,000 After Weekend Plunge to $62,000 first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:38+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/Bitcoin-Price-Trades-Near-64000-After-Weekend-Plunge-Below-62000.jpg"
-    },
-    {
-      "id": "14f8b3f619c5a8b7b130",
-      "title": "Strategy (MSTR) Adds 485 Bitcoin for $33.4 Million as It Spends $228 Million Buying Back Preferred Stock",
-      "url": "https://bitcoinmagazine.com/news/strategy-mstr-adds-485-bitcoin-holdings",
-      "source_id": "bitcoin-magazine",
-      "source_name": "Bitcoin Magazine",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "bitcoin",
-        "regulation"
-      ],
-      "published_at": "2026-11-16T13:38:30+00:00",
-      "summary": "Bitcoin Magazine Strategy (MSTR) Adds 485 Bitcoin for $33.4 Million as It Spends $228 Million Buying Back Preferred Stock Strategy bought 485 bitcoin for $33.4 million at a $68,887 average, lifting holdings to 850,849 BTC, while spending $228.1 million buying back STRC preferred shares. This post Strategy (MSTR) Adds 485 Bitcoin for $33.4 Million as It Spends $228 Million Buying Back Preferred Stock first appeared on Bitcoin Magazine and is written by Micah Zimmerman .",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_checked_at": "2026-11-16T20:25:38+00:00",
-      "image_url": "https://bitcoinmagazine.com/wp-content/uploads/2026/03/Strategy-MSTR-Breaks-13-Week-Bitcoin-Buying-Streak-Holdings-Hold-at-762099-BTC.jpg"
-    },
-    {
-      "id": "458fdcffb7b7b6a29641",
-      "title": "Here’s what happened in crypto today",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today",
-      "source_id": "cointelegraph",
-      "source_name": "Cointelegraph",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "regulation"
-      ],
-      "published_at": "2026-11-16T13:31:49+00:00",
-      "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg"
     },
     {
       "id": "b592377b1ba1a11c29d6",
@@ -709,7 +987,7 @@
       "published_at": "2026-11-16T13:30:00+00:00",
       "summary": "AI agents are set to automate everyday banking tasks — but banks aren’t ready to give up control of the customer relationship just yet.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M77N5CQZH7NKG0SY1V5FFCPB/magazineai-agents-will-kill-the-web-as-we-know-it.png"
     },
     {
@@ -729,7 +1007,7 @@
       "published_at": "2026-11-16T13:29:11+00:00",
       "summary": "Strategy bought 485 Bitcoin for $33.4 million and spent $228.1 million repurchasing STRC preferred shares, largely funded by new common stock sales.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7J7K9K6T0PTX9XTZ5X8P8KY/trader-trading-strategy-strategyb.jpg"
     },
     {
@@ -749,7 +1027,7 @@
       "published_at": "2026-11-16T13:23:17+00:00",
       "summary": "Why is crypto selling off so hard over the past few weeks? CZ chimes in with his thoughts, while confirming he and Binance aren’t selling.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/06/Bitcoin-decrypt-style-27-gID_7.jpg"
     },
     {
@@ -769,7 +1047,7 @@
       "published_at": "2026-11-16T13:12:08+00:00",
       "summary": "The hardware wallet manufacturer says users can now read what they're approving on nine Solana apps, as it pitches its Atom device.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/01/ledger-flex-decrypt-style-01-gID_7.jpg"
     },
     {
@@ -788,7 +1066,7 @@
       "published_at": "2026-11-16T13:03:16+00:00",
       "summary": "The blockchain is getting a shared version number. Wallets, transactions and apps remain unchanged.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/54c0f3b41e62df4cdf774aab4c7d68c64e5e976c-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -808,7 +1086,7 @@
       "published_at": "2026-11-16T13:00:00+00:00",
       "summary": "Eligible users can access up to 1,000 USDC in credit against their Bitcoin, Ether or BNB for purchases via Binance Card or QR Pay.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7J07ZYWCJ0MH18HZT45S0TD/hi-which-cryptocurrency-is-the-most-usable-as-real-money-bitcoin.jpg"
     },
     {
@@ -827,7 +1105,7 @@
       "published_at": "2026-11-16T12:55:46+00:00",
       "summary": "CZ says Binance isn’t selling crypto and he has been buying. OKX founder Star Xu accuses him of misleading customers about the exchange’s role in successive October crashes.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/29d719a0d2a37836704e6c27126b7c3a61442f02-3000x1688.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -847,7 +1125,7 @@
       "published_at": "2026-11-16T12:54:51+00:00",
       "summary": "HKMA and Swift will explore linking Project Ensemble with Swift’s ledger for cross-border payments using tokenized deposits in multiple currencies.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7J398NA409DFNBP1NFSP0YW/blockchain-technology-takes-hold-swift-1.jpg"
     },
     {
@@ -866,7 +1144,7 @@
       "published_at": "2026-11-16T12:09:00+00:00",
       "summary": "The price action runs counter to a crypto-market view that a cooling AI trade would trigger a rotation into digital assets and spark a rally.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_checked_at": "2026-11-16T20:25:38+00:00"
     },
     {
@@ -885,7 +1163,7 @@
       "published_at": "2026-11-16T11:47:12+00:00",
       "summary": "Zero-knowledge proofs let each ledger verify the other leg was locked, so neither currency settled unless both did, with no shared ledger or intermediary.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/396fee9fa61b67f9e1e4910772815314cadeb26e-1920x1281.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -904,7 +1182,7 @@
       "published_at": "2026-11-16T11:03:14+00:00",
       "summary": "Bitcoin (BTC) is down 1.6% since midnight UTC at around $64,300, after falling to $62,100 on Sunday, its lowest since July 14, as traders await Nvidia earnings.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/99275e65a09f45a355f488dc07959ff17f416731-1920x1080.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -924,7 +1202,7 @@
       "published_at": "2026-11-16T10:49:12+00:00",
       "summary": "Project Simbolon aims to reduce the cost and time of cross-border settlement and promote common standards for payments and FX",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7HWN6S3QM8JYZVAE091TE12/hi-love-it-or-hate-it-cryptos-vibe-shift-is-now-imminent2.jpg"
     },
     {
@@ -944,7 +1222,7 @@
       "published_at": "2026-11-16T10:39:05+00:00",
       "summary": "Bitcoin traders awaited Nvidia Q3 earnings after BTC price selling pressure saw a dip below $62,000 at the weekend.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7HVW7XS4YT09R4XZ0NJ36S1/article-covers-154231-bitcoin-s-drop-below-62-k-shows-btc-price-remains-on-delicate-ground-960x640.webp"
     },
     {
@@ -964,7 +1242,7 @@
       "published_at": "2026-11-16T10:25:15+00:00",
       "summary": "A new law lets Germany's customs agency freeze assets worth more than €100,000 without a criminal case if their origin is in doubt.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Judge-decrypt-style-2-gID_7.png"
     },
     {
@@ -984,12 +1262,12 @@
       "published_at": "2026-11-16T09:54:55+00:00",
       "summary": "The Ethereum co-founder says proof aggregation could deliver a \"cryptographic proof singularity\" much sooner than developers expected.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/07/Vitalik-Buterin-DecryptStyle3-scaled-gID_7.jpg"
     },
     {
       "id": "81fbb02b5741d2b30217",
-      "title": "Live updates: Bitcoin holds near weekend lows as Nasdaq extends decline to more than 2%",
+      "title": "Live updates: Bitcoin trades near $65,000 as Nasdaq closes with 2.5% loss",
       "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide",
       "source_id": "coindesk",
       "source_name": "CoinDesk",
@@ -1003,7 +1281,7 @@
       "published_at": "2026-11-16T09:34:18+00:00",
       "summary": "Strategy and Strive might be the only buyers left in BTC, and each — constrained by weak stock prices — made only modest purchases last week.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/6285ca18b516e7f58992440d81dd86fe7a6f6759-1000x694.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1023,7 +1301,7 @@
       "published_at": "2026-11-16T09:25:01+00:00",
       "summary": "Huang has reportedly discussed a comeback with confidants, but Treasury Secretary Scott Bessent says Nvidia needs a \"dramatic shake-up.\"",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/jensen-huang-nvidia-elon-musk-gID_7.jpg"
     },
     {
@@ -1042,7 +1320,7 @@
       "published_at": "2026-11-16T09:23:07+00:00",
       "summary": "Your look at what’s coming in the week starting Nov. 16.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/abfc53cb8936b0ca235301bd25a7729a38804863-4928x3264.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1062,7 +1340,7 @@
       "published_at": "2026-11-16T08:50:50+00:00",
       "summary": "Ant International is the first customer to use the service, which lets clients transfer US dollar deposits between Singapore and the US.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7HQDZG97Z39GHB9PREQ9EAS/hi-open-finance-vs-decentralized-finance-dbs-bank.jpg"
     },
     {
@@ -1081,7 +1359,7 @@
       "published_at": "2026-11-16T08:46:00+00:00",
       "summary": "DBS and JPMorgan have connected their blockchain-based deposit networks, letting approved clients move tokenized U.S. dollars between Singapore and the U.S. at any time, including weekends.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/3733fe37d72e4e20a3f958e5caa214e522aaefb2-5184x3456.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1101,7 +1379,7 @@
       "published_at": "2026-11-16T08:27:39+00:00",
       "summary": "Harvard’s gold ETF share count rose nearly 20-fold in Q3, while Dartmouth kept its positions in Solana and Ether staking ETFs unchanged.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7HJNRJ2VQQN7Q5P88574B90/studentbitcoin-etfwoman.jpg"
     },
     {
@@ -1120,7 +1398,7 @@
       "published_at": "2026-11-16T08:18:03+00:00",
       "summary": "A proposed system would combine bulky digital signatures into a shared proof, helping protect wallets without making every payment much more expensive.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/fc25947f1bdd54e21669cfeb4f95b3a58f436d2c-1500x919.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1139,7 +1417,7 @@
       "published_at": "2026-11-16T07:51:15+00:00",
       "summary": "Luxor said just over a dozen customers were affected and will be reimbursed after their machines were redirected to another mining pool.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/24d3f69befbaee5d806b9369ad2fb160ee40d9e0-1900x1268.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1158,7 +1436,7 @@
       "published_at": "2026-11-16T06:27:42+00:00",
       "summary": "Toto Finance’s 22 million ADA treasury request expired Sunday with about 20 million ADA in favor, and none of Cardano’s seven constitutional committee members voted yes.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/a7ecc9b1c3dbe306ed510a4dfecc0218e9d5fdcb-1440x1080.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1177,7 +1455,7 @@
       "published_at": "2026-11-16T06:01:41+00:00",
       "summary": "The Wall Street Journal reported that the move aims to help the firms expand overseas and compete with global rivals, though nothing has been confirmed.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/728f1c4d7d3e3ad57795074a8f7602efad6c0fb7-5636x3170.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1197,7 +1475,7 @@
       "published_at": "2026-11-16T05:28:40+00:00",
       "summary": "Aster’s CEO attributed the extreme volatility to highly leveraged liquidations but said the exchange remained operational.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7HCTKP0DY9SJ6Z1XG7SGW4T/aquapark-falling-market-red.jpg"
     },
     {
@@ -1216,7 +1494,7 @@
       "published_at": "2026-11-16T05:01:17+00:00",
       "summary": "The $60,000 put has replaced the $100,000 call as bitcoin’s biggest options bet on Deribit, with $900 million in open interest after the recent slide.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/1faa0efcc61bdd97c1f9445e77972c18db9f5803-2608x903.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1236,7 +1514,7 @@
       "published_at": "2026-11-16T04:42:07+00:00",
       "summary": "The weakness came amid a wider sell-off in regional equity markets, with Japan’s Nikkei 225 down 2% and South Korea’s Kospi losing 2.6%.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7HAG95YKRDAYZ26YFMBK4VQ/stocks-1.jpg"
     },
     {
@@ -1256,7 +1534,7 @@
       "published_at": "2026-11-16T02:33:07+00:00",
       "summary": "Attackers redirected customers’ Bitcoin mining power through Luxor’s Commander platform over the weekend, prompting its CEO to issue a warning to crypto businesses.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1JT29BT8ARQ99J5C2455XSJ/hi-ai-is-now-paying-bitcoin-miners-more-than-mining-1.jpg"
     },
     {
@@ -1276,7 +1554,7 @@
       "published_at": "2026-11-15T23:47:45+00:00",
       "summary": "Silicon Valley executives are reportedly organizing a campaign to bring Huang back and are looking to gain White House support.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7GS2G61SYB3FQX1TYFRT8TR/nvidia-knock.jpg"
     },
     {
@@ -1296,7 +1574,7 @@
       "published_at": "2026-11-15T22:50:59+00:00",
       "summary": "Anchorage Digital data suggests the Bitcoin selloff is being driven by US investors. A “war room” has been set up by supporters to reinstate Nvidia boss Jensen Huang.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7GHDR0B3KQVHBYYPZ3528NV/jensen-in-flames.png"
     },
     {
@@ -1315,7 +1593,7 @@
       "published_at": "2026-11-15T19:30:00+00:00",
       "summary": "Prediction markets and polls largely aligned by the end of the 2026 election cycle, and both had notable misses.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/ada78f5ec4fd71c667ef42b2dfcc0255712c872e-1920x1080.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1335,7 +1613,7 @@
       "published_at": "2026-11-15T16:01:02+00:00",
       "summary": "From Goldman and Citi’s $270 million “Project Faro” to SoFi, Anchorage, Mastercard, Visa and Circle, traditional finance is racing to claim the onchain dollar once dominated by Tether and Circle.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/01/decrypt-style-wall-street-gID_7.png"
     },
     {
@@ -1355,7 +1633,7 @@
       "published_at": "2026-11-15T14:30:00+00:00",
       "summary": "With scalability, privacy tools and onchain liquidity improving, businesses may finally have the infrastructure to make enterprise blockchain work.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6ZMF6J25WASD4RQJDF0BRKT/hi-if-blockchain-is-the-door-to-the-future-of-finance-liquidity-is-the-key.jpg"
     },
     {
@@ -1375,7 +1653,7 @@
       "published_at": "2026-11-15T14:01:02+00:00",
       "summary": "Spot Bitcoin ETFs shed $185.4 million on Friday, their seventh straight day of outflows, pushing November losses to about $2.1 billion as Bitcoin fell toward $64,000.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/09/bitcoin-etf-decrypt-style-01-gID_7.jpg"
     },
     {
@@ -1394,7 +1672,7 @@
       "published_at": "2026-11-15T14:00:00+00:00",
       "summary": "With ascendent Democrats ready to pursue their own crypto and tech agendas next year, the final weeks of this session probably won't produce crypto surprises.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/fbc7e541d283d1ca139795169dd388c0890fdf2e-2854x1606.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1414,28 +1692,8 @@
       "published_at": "2026-11-15T10:23:17+00:00",
       "summary": "The global cryptocurrency market capitalization fell 4% to $2.26 trillion over 24 hours, while Ether and Solana posted double-digit weekly losses.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7FBMZXNH6CNG3W9M8RNBHCN/hi-meet-the-trader-who-lost-bitcoin-bear-market.jpg"
-    },
-    {
-      "id": "41c0f4a89211da1b1600",
-      "title": "Coinone warns of phishing, identity theft after customer data breach",
-      "url": "https://cointelegraph.com/news/coinone-data-breach-phishing-identity-theft-customer-information",
-      "source_id": "cointelegraph",
-      "source_name": "Cointelegraph",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "regulation"
-      ],
-      "published_at": "2026-11-15T08:07:58+00:00",
-      "summary": "The South Korean crypto exchange said potentially exposed information includes passwords, bank account numbers, national identification numbers and crypto wallet addresses.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7F3YVA7631KKAGKFRGDJWMH/coinone.png"
     },
     {
       "id": "18e99d5e1d6800ae2241",
@@ -1453,28 +1711,8 @@
       "published_at": "2026-11-15T07:00:00+00:00",
       "summary": "ECB President Christine Lagarde will step down from her post in February 2027, and none of the primary candidates to succeed her are great fans of crypto.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/26cccb22ec392aed75fa716d72a469596e1faf75-6048x4032.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-    },
-    {
-      "id": "649acbe06a359430a257",
-      "title": "RWA protocol stUSDT winds down 3 years after $2.3B TVL peak",
-      "url": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak",
-      "source_id": "cointelegraph",
-      "source_name": "Cointelegraph",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "regulation"
-      ],
-      "published_at": "2026-11-15T06:27:26+00:00",
-      "summary": "The stUSDT team did not disclose a reason for winding down the RWA protocol but assured holders that all underlying assets remain fully backed.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4STR9GPNQXV18RZ1XBHZJV9/hi-coinflares-exit-and-the-future-of-cloud-mining-3.jpg"
     },
     {
       "id": "55e65d1272956070593e",
@@ -1492,7 +1730,7 @@
       "published_at": "2026-11-15T02:50:57+00:00",
       "summary": "XRP tanked to its lowest level since November 2024 as ETF outflows and shrinking stablecoin supply add to pressure on crypto markets.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/f5ebb4afb940e3439b9bd9944fc26aaedb49540b-2213x1011.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1512,7 +1750,7 @@
       "published_at": "2026-11-14T18:01:02+00:00",
       "summary": "In a matter of days, the executive synonymous with the AI boom resigned after 33 years amid reports of affairs and suspected Chinese intelligence ties—sending Nvidia’s stock reeling and leaving the chipmaker leaderless.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/jensen-huang-nvidia-decrypt-style-05-gID_7.jpg"
     },
     {
@@ -1532,7 +1770,7 @@
       "published_at": "2026-11-14T17:01:02+00:00",
       "summary": "Four nonprofit advocacy groups want a California court to stop major AI developers from building stronger models, alleging their technology could cause catastrophic harm worldwide.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Justice-gID_7.png"
     },
     {
@@ -1551,7 +1789,7 @@
       "published_at": "2026-11-14T16:33:29+00:00",
       "summary": "\"They are now selling at the very price they wish they had taken advantage of three months ago,\" wrote James Check.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/d8413015947b8b9c56385e9b360930b006c68771-2280x1284.png?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1570,7 +1808,7 @@
       "published_at": "2026-11-14T16:33:23+00:00",
       "summary": "Decentralized Finance total value locked on MegaETH dropped significantly from over $245 million to $8.8 million.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/2cf1692a573ca1ba4ffb9090bf7fede6b3cb53e3-1920x1080.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
@@ -1590,46 +1828,8 @@
       "published_at": "2026-11-14T16:01:02+00:00",
       "summary": "Canton Network is a privacy-enabled blockchain built for banks and tokenized assets. Here's how it works and what Canton Coin (CC) does.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/canton-network-privacy-learn-gID_4-pID_6.png"
-    },
-    {
-      "id": "9c40265a02882984b4cc",
-      "title": "Kazakhstan plans tokenized government bonds in first quarter after $22 million note sale",
-      "url": "https://www.coindesk.com/business/2026/11/14/kazakhstan-plans-tokenized-government-bonds-in-first-quarter-after-usd22-million-note-sale",
-      "source_id": "coindesk",
-      "source_name": "CoinDesk",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "regulation"
-      ],
-      "published_at": "2026-11-14T15:38:27+00:00",
-      "summary": "The plan follows Kazakhstan's first sale of tokenized central bank notes as the country expands its crypto market.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/f848ee6dd7e6ff1afdc488982529261469645ec0-6708x4472.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
-    },
-    {
-      "id": "a29ec008e695a75028cc",
-      "title": "UK, Singapore, and Thailand central banks test cross-border FX settlement as stablecoins gain ground",
-      "url": "https://www.coindesk.com/policy/2026/11/14/uk-singapore-and-thailand-central-banks-test-cross-border-fx-settlement-as-stablecoins-gain-ground",
-      "source_id": "coindesk",
-      "source_name": "CoinDesk",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "regulation"
-      ],
-      "published_at": "2026-11-14T15:00:00+00:00",
-      "summary": "Project Meridian FX APAC said it demonstrated how transactions can be coordinated across conventional settlement systems and those built using blockchain technology.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://cdn.sanity.io/images/s3y3vcno/production/c3b2b5c1d4640f31fd55291b5060600217e305cb-1000x726.jpg?fm=jpg&w=800&h=450&crop=focalpoint&fit=clip"
     },
     {
       "id": "56ee52be9154114cc6e2",
@@ -1648,68 +1848,8 @@
       "published_at": "2026-11-14T14:01:02+00:00",
       "summary": "OpenAI’s new wallet lets AI agents buy products using ordinary cards, challenging crypto payment tools from Coinbase and Circle as companies compete to control everyday online shopping by autonomous software.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/07/ChatGPT-gID_7.jpg"
-    },
-    {
-      "id": "b3f7ad2762ce13d06dfb",
-      "title": "Microsoft confirms global outage resolved, rules out cyberattack",
-      "url": "https://cointelegraph.com/news/microsoft-365-outage-resolved-cyberattack-ruled-out",
-      "source_id": "cointelegraph",
-      "source_name": "Cointelegraph",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "regulation"
-      ],
-      "published_at": "2026-11-14T10:34:06+00:00",
-      "summary": "Microsoft attributed the outage to a network capacity upgrade issue, confirming that the disruption was unrelated to cyberattacks or AI agents.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M6X8JFEEG972QNHB7E2TQ63J/hi-the-rise-of-major-institutions-is-inevitable-microsoft.jpg"
-    },
-    {
-      "id": "46c436197c542b75d7f8",
-      "title": "MegaETH parent cuts 20% of staff amid restructuring, AI push",
-      "url": "https://cointelegraph.com/news/megaeth-parent-cuts-20-percent-staff-ai-push",
-      "source_id": "cointelegraph",
-      "source_name": "Cointelegraph",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "regulation"
-      ],
-      "published_at": "2026-11-14T08:12:30+00:00",
-      "summary": "MegaETH co-founder Shuyao Kong said the restructuring affected employees who helped build the project’s blockchain, wallet and ecosystem.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7CHQ8H5VMWGN9MBP9CQVNVC/layoffs-fired-human-resource-hr-leaving-quit-people-ai-2.jpg"
-    },
-    {
-      "id": "8b166661ca17c0c7f174",
-      "title": "Bitcoin ETFs shed $2.35B in 2 weeks, BlackRock’s losing streak hits 11",
-      "url": "https://cointelegraph.com/markets/bitcoin-etf-outflows-2-35-billion-blackrock-11-session-streak",
-      "source_id": "cointelegraph",
-      "source_name": "Cointelegraph",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "regulation"
-      ],
-      "published_at": "2026-11-14T06:33:13+00:00",
-      "summary": "US spot Bitcoin ETFs recorded $185.4 million in net outflows Friday, with BlackRock’s IBIT accounting for $143.5 million and Fidelity’s FBTC shedding $41.9 million.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M4FQAANP3H5Z0XYV77PNYB10/hi-will-the-blockchain-stop-leaks-of-crypto.jpg"
     },
     {
       "id": "84cf061394aa9830b796",
@@ -1728,48 +1868,8 @@
       "published_at": "2026-11-13T22:16:03+00:00",
       "summary": "Nvidia's board has reportedly approached Arm's chief executive as it searches for a replacement for Jensen Huang, while some employees are pushing to bring the chipmaker's founder back as CEO.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/nvidia-logo-decrypt-style-1-gID_7.png"
-    },
-    {
-      "id": "d105db7f3a4f16393776",
-      "title": "OpenAI launches AI payments in ChatGPT with Visa, Mastercard and Amex",
-      "url": "https://cointelegraph.com/news/openai-ai-payments-chatgpt-wallet-visa-mastercard-amex",
-      "source_id": "cointelegraph",
-      "source_name": "Cointelegraph",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "regulation"
-      ],
-      "published_at": "2026-11-13T22:01:03+00:00",
-      "summary": "OpenAI’s new payment wallet lets AI agents complete purchases using existing card networks, with plans to eventually allow preauthorized transactions.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7BD90N5TZ75ZZMC6V10AW2D/hi-what-is-elon-musk-and-openai.png"
-    },
-    {
-      "id": "3197b0005d7494900543",
-      "title": "Adam Back makes case for simpler security as Blockstream launches Bitcoin custody system",
-      "url": "https://cointelegraph.com/news/adam-back-simpler-security-blockstream-bitcoin-custody-system",
-      "source_id": "cointelegraph",
-      "source_name": "Cointelegraph",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "regulation"
-      ],
-      "published_at": "2026-11-13T21:49:27+00:00",
-      "summary": "Blockstream’s new custody system, developed with Thales, uses dedicated hardware for transaction signing as Adam Back advocates for offline security to reduce cyber risks.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:35+00:00",
-      "image_url": "https://s3-images.ctmedia.io/media/article-covers/2026/11/01M7BCCR5CYZHHWDA4BH24H4DA/portraitadam-back.png"
     },
     {
       "id": "849c6e5bb40eddbe34ed",
@@ -1788,7 +1888,7 @@
       "published_at": "2026-11-13T21:36:03+00:00",
       "summary": "A House Oversight staff memorandum, citing suspicious trades by officials, military personnel and clearance holders, recommends Congress weigh new limits on federal personnel betting on platforms like Kalshi and Polymarket.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/US-Capitol-decrypt-style-02-gID_7.png"
     },
     {
@@ -1808,7 +1908,7 @@
       "published_at": "2026-11-13T20:45:03+00:00",
       "summary": "Chinese data center projects are still being designed around restricted Nvidia processors, even as Beijing pushes domestic alternatives.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/11/China-USA-gID_7.jpg"
     },
     {
@@ -1828,7 +1928,7 @@
       "published_at": "2026-11-13T20:16:03+00:00",
       "summary": "The bank’s Q3 13F shows roughly $981 million across Bitcoin ETFs, Strategy and Coinbase—likely over $1 billion counting Robinhood and miners.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/jp-morgan-jamie-dimon-decrypt-style-01-gID_7.png"
     },
     {
@@ -1848,7 +1948,7 @@
       "published_at": "2026-11-13T19:36:03+00:00",
       "summary": "Two Bitcoin mining rewards from September 2010 moved minutes apart. The coins are worth nearly 1.15 million times their original market value.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/09/bitcoin-miners-decrypt-style-01-gID_7.jpg"
     },
     {
@@ -1868,7 +1968,7 @@
       "published_at": "2026-11-13T18:36:02+00:00",
       "summary": "The Federal Reserve is examining whether AI will lower prices or keep inflation elevated, a question that could shape interest rates and the outlook for crypto.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/08/Federal-Reserve-Bank-gID_7.jpg"
     },
     {
@@ -1888,7 +1988,7 @@
       "published_at": "2026-11-13T17:56:03+00:00",
       "summary": "The bipartisan slate—two Republicans and two Democrats, Trump’s first Democratic picks for either agency—would refill commissions that have driven crypto policy since the Clarity Act’s collapse.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/US-Capitol-decrypt-style-01-gID_7.png"
     },
     {
@@ -1908,7 +2008,7 @@
       "published_at": "2026-11-13T17:22:54+00:00",
       "summary": "Bitcoin is back near August levels as persistent inflation, growing expectations of another interest-rate hike and ETF withdrawals pressure prices.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/02/bitcoin-down-crash-decrypt-style-1-gID_7.jpg"
     },
     {
@@ -1928,7 +2028,7 @@
       "published_at": "2026-11-13T13:55:25+00:00",
       "summary": "Assessors visit in June 2027, months before full crypto rules take effect, leaving the UK to prove it can enforce against crypto laundering.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/02/rusi-royal-united-services-institute-decrypt-style-gID_7.jpg"
     },
     {
@@ -1948,7 +2048,7 @@
       "published_at": "2026-11-13T13:36:29+00:00",
       "summary": "Cardano's ADA token is down almost 95% from its all-time high, and investors don't seem to be happy that the roadmap is complete.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/07/cardano-decrypt-style-02-gID_7.png"
     },
     {
@@ -1968,7 +2068,7 @@
       "published_at": "2026-11-13T13:03:40+00:00",
       "summary": "Bitcoin fell all the way to $68,000 overnight and hit a new three-month low. But are there reasons for hope?",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/bitcoin-down-decrypt-style-gID_7.png"
     },
     {
@@ -1988,7 +2088,7 @@
       "published_at": "2026-11-13T11:58:47+00:00",
       "summary": "An internal post urging Nvidia's board to weigh staff sentiment has drawn more than 1,600 comments, including calls to reinstate Huang.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/01/decrypt-style-nvidia-jensen-huang-gID_7.png"
     },
     {
@@ -2008,7 +2108,7 @@
       "published_at": "2026-11-13T11:20:44+00:00",
       "summary": "BTC dropped 5% on Friday, falling below $69,000. Experts say it was triggered by a \"concentrated liquidation\" and \"weakening\" demand.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/09/Bitcoin-decrypt-style-24-gID_7.png"
     },
     {
@@ -2028,108 +2128,8 @@
       "published_at": "2026-11-13T10:55:54+00:00",
       "summary": "House panels requested December interviews with Huang and Nvidia's top lawyer as scrutiny shifts to Commerce's oversight of chip exports.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/jensen-huang-nvidia-decrypt-style-05-gID_7.jpg"
-    },
-    {
-      "id": "4998ecc3d6236ff03c5f",
-      "title": "Republican Senator Wants to Freeze AI Data Center Boom as Congress Pushes to Expand It",
-      "url": "https://decrypt.co/383206/republican-senator-freeze-ai-data-center-boom-congress-pushes-expand",
-      "source_id": "decrypt",
-      "source_name": "Decrypt",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "research"
-      ],
-      "published_at": "2026-11-12T22:36:02+00:00",
-      "summary": "Senator Josh Hawley wants a nationwide construction pause until households are protected from rising power bills, even as Congress advances legislation designed to accelerate America's already massive AI infrastructure buildout.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-11-gID_7.png"
-    },
-    {
-      "id": "4aa62c50fa82f4e2f585",
-      "title": "North Korea Stole $400 Million in Crypto Using Deepfake Video Calls, DOJ Says",
-      "url": "https://decrypt.co/383208/north-korea-stole-400-million-crypto-deepfake-video-calls",
-      "source_id": "decrypt",
-      "source_name": "Decrypt",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "research"
-      ],
-      "published_at": "2026-11-12T22:06:03+00:00",
-      "summary": "The FBI says the “FaceStealer” scheme uses prerecorded footage and AI deepfakes of trusted contacts to trick crypto workers into installing malware on video calls—as the DOJ also moves to seize $1.2 billion from the Binance hack.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/north-korea-lazarus-group-dprk-hacker-decrypt-style-02-gID_7.jpg"
-    },
-    {
-      "id": "9ce166ad3394aa9ed988",
-      "title": "Strategy Made $19.5 Billion in Profit. So Why Is MSCI Removing It From Stock Indexes?",
-      "url": "https://decrypt.co/383204/why-msci-removing-bitcoin-treasury-strategy-stock-indexes",
-      "source_id": "decrypt",
-      "source_name": "Decrypt",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "research"
-      ],
-      "published_at": "2026-11-12T21:26:03+00:00",
-      "summary": "Michael Saylor’s Bitcoin giant is being excluded from major investment benchmarks, raising questions about what qualifies as a business—and whether the decision could slow its Bitcoin buying.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/strategy-logo-x-twitter-gID_7.png"
-    },
-    {
-      "id": "fffe7bfbe682267dc412",
-      "title": "Why the Path to Quantum Resistance Runs Uphill for Bitcoin Wallet Makers",
-      "url": "https://decrypt.co/383201/why-path-quantum-resistance-runs-uphill-bitcoin-wallet",
-      "source_id": "decrypt",
-      "source_name": "Decrypt",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "research"
-      ],
-      "published_at": "2026-11-12T20:36:03+00:00",
-      "summary": "Trezor CTO Tomáš Sušánka explains the trade-offs of Bitcoin’s leading post-quantum signature scheme.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-19-gID_7.png"
-    },
-    {
-      "id": "b4c9738824f50e5e304c",
-      "title": "Who Is Colette Kress, Jensen Huang’s Successor as Nvidia CEO?",
-      "url": "https://decrypt.co/383189/who-colette-kress-jensen-huang-successor-nvidia-ceo",
-      "source_id": "decrypt",
-      "source_name": "Decrypt",
-      "source_trust": "media",
-      "language": "en",
-      "topics": [
-        "markets",
-        "blockchain",
-        "security",
-        "research"
-      ],
-      "published_at": "2026-11-12T18:55:03+00:00",
-      "summary": "Nvidia’s longtime finance chief inherits its first leadership transition in 33 years, bringing decades of technology experience and Wall Street credibility to a company facing a very public leadership test.",
-      "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
-      "image_url": "https://cdn.decrypt.co/wp-content/uploads/2026/11/colette-kress-nvidia-ceo-decrypt-style-gID_7.jpg"
     },
     {
       "id": "fa1f31dceba8531a0b01",
@@ -2147,7 +2147,7 @@
       "published_at": "2026-11-06T00:00:00+00:00",
       "summary": "Glamsterdam, the next update for Ethereum, is currently being tested on testnets. During these tests Chainsecurity has found a few projects that would be vulnerable after Glamsterdam since they rely on certain invariants. These invariants will be broken by EIP-8037 and EIP-8038 which rework how much gas is charged for...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-06T15:53:58+00:00"
     },
@@ -2166,7 +2166,7 @@
       "published_at": "2026-11-04T18:00:02+00:00",
       "summary": "NASA selected three companies on Wednesday to perform work to develop Ka-band space relay capability concepts that are compatible with current missions in space, ensuring service continuity for existing spacecraft without requiring modifications to their onboard systems. Through this work, NASA will aim to acquire end-to-end solutions that include space, ground, launch, operations, and integration [&#8230;]",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://www.nasa.gov/wp-content/uploads/2022/02/nasa_meatball_large.jpg",
       "image_checked_at": "2026-11-04T19:43:01+00:00"
     },
@@ -2185,7 +2185,7 @@
       "published_at": "2026-11-04T16:52:43+00:00",
       "summary": "NASA successfully demonstrated technology designed to help spacecraft autonomously navigate to safe landing sites on the Moon and on other planets. An Alta-X drone equipped with the agency’s Safe and Precise Landing – Integrated Capabilities Evolution (SPLICE) guidance, navigation, and control payload completed simulated lunar descent and landing maneuvers Aug. 27. The flight took place [&#8230;]",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://images-assets.nasa.gov/image/AFRC2026-0152-30/AFRC2026-0152-30~large.jpg",
       "image_checked_at": "2026-11-09T20:42:40+00:00"
     },
@@ -2204,7 +2204,7 @@
       "published_at": "2026-11-03T05:01:00+00:00",
       "summary": "Super Typhoon In-fa developed an unusually large eye, and the remnants of Typhoon Champi transitioned into an extratropical storm that targeted Alaska.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/the-pacific's-busy-storm-season/storminfa_epic_20261029_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "image_checked_at": "2026-11-03T06:43:54+00:00"
     },
@@ -2224,7 +2224,7 @@
       "published_at": "2026-11-03T00:00:00+00:00",
       "summary": "Public services increasingly rely on digital systems that enable institutions to collaborate across organizational and national boundaries. Such cooperation may involve government agencies verifying documents issued by other authorities, or humanitarian organizations coordinating assistance while safeguarding sensitive personal information. Yet technical interoperability alone does not resolve a more fundamental question:...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_d1805a5e41e5b947df38abbec662b443.jpg"
     },
     {
@@ -2242,7 +2242,7 @@
       "published_at": "2026-10-22T04:01:00+00:00",
       "summary": "Emissions on both sides of the island are unusually high as human-set fires spread in a landscape parched by drought.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/new-guinea-on-fire/papuanewguinea_vir_20261011_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "image_checked_at": "2026-11-01T18:54:57+00:00"
     },
@@ -2262,7 +2262,7 @@
       "published_at": "2026-10-22T00:00:00+00:00",
       "summary": "The Glamsterdam upgrade on Hoodi, previously scheduled for October 26, 2026 at 17:42:48 UTC (epoch 132,352), has been postponed. A new activation date has not been set. This update supersedes the schedule and activation instructions in the Hoodi testnet announcement....",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T18:54:57+00:00"
     },
@@ -2281,7 +2281,7 @@
       "published_at": "2026-10-21T12:17:58+00:00",
       "summary": "From orbit, today’s space-based laser instruments measure Earth’s forests and terrain one narrow line at a time. Between those lines are enormous gaps that include millions of acres of land scientists never directly measure. NASA’s CASALS instrument will blend machine learning with an ultra-compact lidar instrument to adaptively ‘sweep’ large swaths of Earth’s surface. This […]",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://assets.science.nasa.gov/content/dam/science/cds/science-enabling-technology/technology-highlights/2026/cyprus_swamp_regA_color_by_alt_pcd5_trajectory_G_60fps.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "image_checked_at": "2026-11-01T18:54:57+00:00"
     },
@@ -2300,7 +2300,7 @@
       "published_at": "2026-10-21T04:01:00+00:00",
       "summary": "The powerful low-pressure system formed over the North Atlantic out of the remnants of Hurricane Isaias.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/extratropical-cyclone-whips-past-iceland/icelandstorm_vir2_20261014_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "image_checked_at": "2026-11-01T18:54:57+00:00"
     },
@@ -2319,7 +2319,7 @@
       "published_at": "2026-10-20T18:11:33+00:00",
       "summary": "Destined for Mars and beyond, NASA’s Space Reactor-1 (SR-1) Freedom will be humanity’s first fission-powered spacecraft to travel outside Earth orbit. Announced during NASA’s “Ignition” event, this mission will demonstrate nuclear electric propulsion in deep space, and progress is underway on its key element: the nuclear power module. To expedite development of the spacecraft, NASA [&#8230;]",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://www.nasa.gov/wp-content/uploads/2026/10/sr-1-freedom-lmo-2.jpg",
       "image_checked_at": "2026-11-01T18:54:57+00:00"
     },
@@ -2339,7 +2339,7 @@
       "published_at": "2026-10-16T00:00:00+00:00",
       "summary": "Update — October 22, 2026: The October 26 Hoodi activation has been postponed, including the scheduled gas-limit increase to 200M. The schedule and activation instructions below have been superseded. See Glamsterdam on Hoodi Postponed for details and operator guidance. Following its activation on Sepolia on October 6, the Glamsterdam...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T18:54:58+00:00"
     },
@@ -2358,7 +2358,7 @@
       "published_at": "2026-10-15T04:01:00+00:00",
       "summary": "During El Niño, a cascade of fires across the tropics begins in equatorial Asia and continues in the central and eastern Amazon.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/fires-arrive-in-the-amazon-rainforest/amazofires_amo_20261012_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "image_checked_at": "2026-11-01T23:34:08+00:00"
     },
@@ -2377,7 +2377,7 @@
       "published_at": "2026-10-14T14:41:21+00:00",
       "summary": "If you’ve ever had your car start sluggishly, or not at all, on a particularly frigid winter morning, you know standard batteries do not like extreme cold. That’s why NASA researchers are working to develop a battery that could function in the brutal cold of the Moon’s South Pole, where nighttime temperatures plunge to minus [&#8230;]",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://www.nasa.gov/wp-content/uploads/2026/10/lrc-2026-ocio-p-03142.jpg",
       "image_checked_at": "2026-11-01T23:34:08+00:00"
     },
@@ -2396,7 +2396,7 @@
       "published_at": "2026-10-14T04:01:00+00:00",
       "summary": "Though it remained offshore, the storm lashed coastal areas with high winds and flooding—and produced remarkable rippling patterns in the upper atmosphere.",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/hurricane-simon-lurks-off-the-mexican-coast/hurricanesimon_vir2_20261011_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "image_checked_at": "2026-11-01T23:34:08+00:00"
     },
@@ -2416,7 +2416,7 @@
       "published_at": "2026-10-05T00:00:00+00:00",
       "summary": "The Ethereum Foundation's Trillion Dollar Security initiative has identified blind signing and transaction uncertainty as a user experience risk, and is exploring native transaction assertions as a next step to enforce a transaction’s final outcome, alongside Clear Signing. This post covers why a valid signature doesn't always guarantee the...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/posts/2026/accesslayer2.png"
     },
     {
@@ -2435,7 +2435,7 @@
       "published_at": "2026-10-01T00:00:00+00:00",
       "summary": "tl;dr: zkAPI lets you pay for a metered API without being known. Deposit credits into an Ethereum vault once, then authorize bounded usage with zero-knowledge proofs instead of an identity. The provider sees the requests, and the payment layer sees the spend. Neither learns the link between them. The...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/posts/2026/accesslayer.png"
     },
     {
@@ -2454,7 +2454,7 @@
       "published_at": "2026-09-28T00:00:00+00:00",
       "summary": "Glamsterdam follows the Fusaka upgrade, advancing Ethereum's L1 scaling roadmap with enshrined proposer-builder separation, block-level access lists, and changes to gas pricing that better reflect the cost of execution and state growth. The Glamsterdam network upgrade is scheduled to activate on Sepolia at epoch 353,024, slot 11,296,768 (October 6,...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T23:34:12+00:00"
     },
@@ -2474,7 +2474,7 @@
       "published_at": "2026-09-09T00:00:00+00:00",
       "summary": "Every year since January 2019, teams from the Ethereum Foundation have spent an afternoon or two on r/ethereum answering questions from the community. The format hasn’t really changed: one thread, technical debates, detailed explanations, and community members asking whatever is on their mind. By now it is a tradition, and...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/posts/2026/protocol-post-3.png"
     },
     {
@@ -2493,7 +2493,7 @@
       "published_at": "2026-09-07T00:00:00+00:00",
       "summary": "This is the EF Protocol cluster’s tier list for Hegotá. We evaluated the 62 EIPs proposed for inclusion, each with a tier and a short note on the grade. It is the first time the cluster has published one unified view rather than per-team opinions. Geth, of course, being...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/posts/2026/protocol-post-1.png"
     },
     {
@@ -2512,7 +2512,7 @@
       "published_at": "2026-09-07T00:00:00+00:00",
       "summary": "In May, the Protocol cluster welcomed a trio of new cluster coordinators and promised updates to follow. After months of settling in and aligning with contributors cluster-wide, across the EF and across the Ethereum ecosystem, we are now happy to share Protocol's priorities: what Protocol is for, the commitments...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/posts/2026/protocol-post-2.png"
     },
     {
@@ -2531,7 +2531,7 @@
       "published_at": "2026-08-24T00:00:00+00:00",
       "summary": "...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_558cc2161e0fdd518bbcc61368cd0368.png"
     },
     {
@@ -2550,7 +2550,7 @@
       "published_at": "2026-08-20T00:00:00+00:00",
       "summary": "better.codes, an open autoresearch challenge built by the Ethereum Foundation Formal Verification team in collaboration with Yukon and zkSecurity, is now live. better.codes takes a self-contained problem from the Proximity Prize research, formalized in Lean, and puts its soundness bound on a public leaderboard that anyone can push forward....",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T23:34:12+00:00"
     },
@@ -2570,7 +2570,7 @@
       "published_at": "2026-08-18T00:00:00+00:00",
       "summary": "Q2 2026 carried forward our focus on advancing Ethereum’s resilience and capabilities, supporting key work in zero-knowledge proofs, client diversity, formal verification, and open-source tooling. See the list below of the projects and ecosystem efforts supported this quarter as builders build and strengthen the network. Explore the full list...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_fd63dc334e72e1c2885cb7969adc1faf.jpg"
     },
     {
@@ -2589,7 +2589,7 @@
       "published_at": "2026-08-17T00:00:00+00:00",
       "summary": "tl;dr: Meet Platåberget: Glamsterdam's (Gloas + Amsterdam) early testing ground open to public participation. This upgrade comes with breaking changes for application developers. Notably, any tool that relies on a hardcapped maximum gas limit (think wallets, indexers and gas estimators) will break and needs to be updated. Please use this...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/posts/2026/plataberget.webp"
     },
     {
@@ -2608,7 +2608,7 @@
       "published_at": "2026-08-05T00:00:00+00:00",
       "summary": "The Ethereum Foundation’s Trillion Dollar Security (1TS) initiative is proud to announce a grant allocation to Freedom of the Press Foundation (FPF) to support the continued development of WEBCAT. WEBCAT is an open source tool that lets browsers verify that code served by an enrolled website matches what its developers...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T23:34:12+00:00"
     },
@@ -2628,7 +2628,7 @@
       "published_at": "2026-07-29T00:00:00+00:00",
       "summary": "We are pleased to share that pcaversaccio (pc) has joined the Ethereum Foundation Board. pc is a long time contributor to the Ethereum ecosystem, a co-founder and lead of SEAL 911, and has been a member of the EF's Silviculture Society, which provides informal counsel to EF aimed at...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_1b9690e36ff9d806d7645288a806e10e.png"
     },
     {
@@ -2647,7 +2647,7 @@
       "published_at": "2026-07-14T00:00:00+00:00",
       "summary": "Devcon 8 tickets are live! 🇮🇳 This November, the Ethereum community will gather in Mumbai for a more focused and intimate Devcon. Devcon gathers minds from across Ethereum and beyond: builders, researchers, maintainers, organizers, and anyone curious about the future of open technology. Across four days, you can...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_8ecdef046d526e026f90ca3c38b34c2c.png"
     },
     {
@@ -2666,7 +2666,7 @@
       "published_at": "2026-07-09T00:00:00+00:00",
       "summary": "Notes from the Ethereum Foundation's Protocol Security team on running coordinated AI agents against real protocol code, including how we organize the work, what holds up under scrutiny, and what client teams and security researchers can take from it. This post stands on its own; later posts will go deeper...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_1308f6baa08e4ef93223642f77ca329f.jpg"
     },
     {
@@ -2685,7 +2685,7 @@
       "published_at": "2026-07-01T00:00:00+00:00",
       "summary": "Current global shifts clearly signal a critical need for shared, neutral digital public infrastructure outside the control of any single centralized actor. As a public, programmable network designed to operate without reliance on any single party, Ethereum was built to address precisely these needs. Today, the Ethereum Foundation Global...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_8584695c96f9a8856689d22eed9cec78.png"
     },
     {
@@ -2704,7 +2704,7 @@
       "published_at": "2026-06-23T00:00:00+00:00",
       "summary": "Today, the EF is changing shape, concluding a months-long process of reorganization as part of the implementation of the Mandate and the Treasury Management Policy. We come out of this process with the structure, activities, and people necessary for execution on the critical tasks ahead of us, but also...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_558cc2161e0fdd518bbcc61368cd0368.png"
     },
     {
@@ -2723,7 +2723,7 @@
       "published_at": "2026-05-12T00:00:00+00:00",
       "summary": "An Ethereum Working Group consisting of wallet developers, security firms and the Ethereum Foundation’s Trillion Dollar Security Initiative today launched an open standard designed to end blind signing — a structural flaw that has contributed to billions in user losses, including the Bybit hack. Ethereum Foundation’s Trillion Dollar Security Initiative...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T23:34:12+00:00"
     },
@@ -2743,7 +2743,7 @@
       "published_at": "2026-05-11T00:00:00+00:00",
       "summary": "A semi-regular gathering of Ethereum core devs from various client teams, or interop, recently took place in Svalbard, Norway. Over the week-long event, teams focused on hardening and preparation for the next upgrade, Glamsterdam. Several important milestones came out of the week, including: 200M gas limit floor established:...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_270c7c873d5994bd4e47958030e3599c.png"
     },
     {
@@ -2762,7 +2762,7 @@
       "published_at": "2026-05-02T00:00:00+00:00",
       "summary": "This past week, just over 100 Ethereum core contributors gathered above the Arctic Circle — in Longyearbyen, Svalbard — for the Soldøgn Interop: a week of intense work on the Glamsterdam network upgrade. Soldøgn followed last year's Berlinterop, but returned to the format used by Amphora 🏺, [Edelweiss 🏔️](https://blog.ethereum.org/2023/02/07/edelweiss-interop-recap...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://notes.ethereum.org/_uploads/B17NArz0Zg.jpg"
     },
     {
@@ -2781,7 +2781,7 @@
       "published_at": "2026-04-30T00:00:00+00:00",
       "summary": "TL;DR: 📝 Applications for EPF7 are open until May 13 🔎 Review the program details for EPF7 🎙️ An introductory town hall will be held on May 6 at 1500 UTC We are excited to announce that applications are now open for the seventh cohort of the [Ethereum...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_c50eca66747ace2cabf26db67a00de83.png"
     },
     {
@@ -2800,7 +2800,7 @@
       "published_at": "2026-04-29T00:00:00+00:00",
       "summary": "Q1 2026 continued our focus on strengthening Ethereum’s foundations, with sustained investment in core domains like cryptography, zero-knowledge proofs, security, and protocol research. See the list below of the projects and ecosystem efforts we supported this quarter as builders advance critical infrastructure, tools, and research across the network. Explore...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_fd63dc334e72e1c2885cb7969adc1faf.jpg"
     },
     {
@@ -2819,7 +2819,7 @@
       "published_at": "2026-04-16T00:00:00+00:00",
       "summary": "In late 2024, the Ethereum Foundation, together with Secureum, The Red Guild, and Security Alliance (SEAL), launched the ETH Rangers Program, an initiative to provide stipends for individuals doing public goods security work in the Ethereum ecosystem. The goal of the program was straightforward: to fund independent efforts that...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T23:34:12+00:00"
     },
@@ -2839,7 +2839,7 @@
       "published_at": "2026-04-10T00:00:00+00:00",
       "summary": "Ethereum's All Core Developer calls can be a lot to keep up with, so this \"Checkpoint\" series aims for periodic high-level updates, depending on what's happening in core development. See the previous update here. !image...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_9a721d102a66685eba4b944119d345f8.jpg"
     },
     {
@@ -2858,7 +2858,7 @@
       "published_at": "2026-03-23T00:00:00+00:00",
       "summary": "*The North Star of the Platform team is for Ethereum to scale as a cohesive system and enable confident adoption by all users. This post is intended to share our perspective on the L1 \\ L2 relationship, the roles of each layer, and how we (as an ecosystem) are leveraging...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_b0065dd9b949a11badbef9a4c8d51aeb.jpg"
     },
     {
@@ -2877,7 +2877,7 @@
       "published_at": "2026-03-13T00:00:00+00:00",
       "summary": "Dearest Friends, Today we are publishing the EF Mandate, a document that serves as part constitution, part manifesto, and part guide for the Ethereum Foundation. It is written primarily for the EF itself: to be clear about what we are here to do, the principles by which we...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_3b3943b70ed8ab0b09f7a3b0328fc98e.png"
     },
     {
@@ -2896,7 +2896,7 @@
       "published_at": "2026-02-27T00:00:00+00:00",
       "summary": "The commons called. It wants a runway. Every so often, in the blockchain world’s usual cycle of funding scares, a team maintaining a widely used open source public good declares mayday. Libp2p is a core infrastructure stack that powers multiple Ethereum clients (among others) and a large part of...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T23:34:12+00:00"
     },
@@ -2916,7 +2916,7 @@
       "published_at": "2026-02-24T00:00:00+00:00",
       "summary": "The Ethereum Foundation has begun staking a portion of its treasury, in line with its Treasury Policy announced last year. Approximately 70,000 ETH is being staked with rewards directed back to the EF treasury....",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T23:34:13+00:00"
     },
@@ -2936,7 +2936,7 @@
       "published_at": "2026-02-23T00:00:00+00:00",
       "summary": "DeFi isn't a speculative bet on the future. It's the inevitable evolution of finance, driven by a fundamental truth: financial autonomy is a right, not a privilege. And it's been a critical driver of Ethereum's growth and adoption. We want to see DeFi thrive, but we're opinionated about what...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_116f124710089285c27f8aa61cacb960.png"
     },
     {
@@ -2955,7 +2955,7 @@
       "published_at": "2026-02-18T00:00:00+00:00",
       "summary": "We introduced Protocol last June which organized our work around three strategic initiatives: Scale L1, Scale Blobs, and Improve UX. A lot has happened since then! In this post, we want to share what we accomplished last year, how our thinking has evolved, and where Protocol is headed in 2026....",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_270c7c873d5994bd4e47958030e3599c.png"
     },
     {
@@ -2974,7 +2974,7 @@
       "published_at": "2026-02-17T00:00:00+00:00",
       "summary": "Platform is a new team inside the EF with one goal: Deliver the strongest possible Ethereum platform, where L1 and L2s are best positioned to support users, apps, and all organizations building on Ethereum. This requires improving the L1 \\ L2 relationship, so that we grow as a mutually...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_83f7261d7ab310511251a956f3930f05.jpg"
     },
     {
@@ -2993,7 +2993,7 @@
       "published_at": "2026-02-17T00:00:00+00:00",
       "summary": "tl;dr: Ethereum Protocol Studies returns for 2026 with new content tracks in cryptography, lean consensus and zkEVM, plus a new self-paced learning platform. The program kicks off February 23rd. Visit epf.wiki to get started. Ethereum Protocol Studies (EPS) is back. Since launching as a 10-week study group ahead of...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_90861cf71a023ade96e2cc7fb49b82e1.png"
     },
     {
@@ -3012,7 +3012,7 @@
       "published_at": "2026-02-13T00:00:00+00:00",
       "summary": "Today, we are announcing a transition in the executive leadership team at the Ethereum Foundation. After extensive contributions to the Foundation’s mission and operations, Tomasz Stańczak has decided to step down from his role as Co-Executive Director. The Foundation’s Board has appointed Bastian Aue to serve as interim Co-Executive Director,...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T23:34:13+00:00"
     },
@@ -3032,7 +3032,7 @@
       "published_at": "2026-02-13T00:00:00+00:00",
       "summary": "tl;dr I am stepping down from my co-ED role at the EF at the end of February 2026. Bastian Aue is taking over the co-ED role alongside Hsiao-Wei. The future is bright for builders, for Ethereum, for the EF, and for me....",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_be6cab3b391500de08002adcf32a472e.jpg"
     },
     {
@@ -3051,7 +3051,7 @@
       "published_at": "2026-02-05T00:00:00+00:00",
       "summary": "The EF's Academic Secretariat team is proud to announce the launch of the inaugural PhD Fellowship Program, a pioneering initiative aimed at empowering and expanding the frontiers of Ethereum-related academic research, by supporting Ethereum-related academic work led by PhD students....",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_7fcfd8aba69c0ff3335945801ca4d335.png"
     },
     {
@@ -3070,7 +3070,7 @@
       "published_at": "2026-02-03T00:00:00+00:00",
       "summary": "During Devconnect Buenos Aires, the Ethereum Foundation and Secureum TrustX brought together Ethereum security practitioners for Trillion Dollar Security Day, a focused event exploring what it would take to securely support a trillion-dollar Ethereum economy. The event brought together around eighty participants from across the Ethereum Security Ecosystem—spanning Infrastructure,...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://blog.ethereum.org/images/eth-org.jpeg",
       "image_checked_at": "2026-11-01T23:34:13+00:00"
     },
@@ -3090,7 +3090,7 @@
       "published_at": "2026-01-27T00:00:00+00:00",
       "summary": "Q4 2025 closed out the year with exciting growth across the ecosystem! Dive into the projects and community initiatives we supported this quarter and see what our grantees have been building:...",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:36+00:00",
+      "collected_at": "2026-11-17T04:28:07+00:00",
       "image_url": "https://storage.googleapis.com/ethereum-hackmd/upload_fd63dc334e72e1c2885cb7969adc1faf.jpg"
     },
     {
@@ -3109,7 +3109,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/77940375d0897efebbc18021a8a885a3588daea6-1600x900.jpg",
       "image_checked_at": "2026-11-12T18:16:33+00:00"
     },
@@ -3129,7 +3129,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/4c087f1f1466e3369866a09fc495c53c6e58c083-1920x1080.png",
       "image_checked_at": "2026-11-02T05:57:29+00:00"
     },
@@ -3149,7 +3149,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/d84dfade23eab4f2b590000425fdce95ea60747a-1200x720.jpg",
       "image_checked_at": "2026-11-02T05:57:30+00:00"
     },
@@ -3169,7 +3169,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/279ed59265fb66dec79938baf65b9247756e503f-1600x900.png",
       "image_checked_at": "2026-11-02T05:57:31+00:00"
     },
@@ -3189,7 +3189,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/350cb0c66a8184ac089d2781a51941378e9d2f9f-1600x900.jpg",
       "image_checked_at": "2026-11-01T23:34:13+00:00"
     },
@@ -3209,7 +3209,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/0050c0c06d9360c97c6ae2d4785f5eb2b22350a7-1600x900.jpg",
       "image_checked_at": "2026-11-02T05:57:32+00:00"
     },
@@ -3229,7 +3229,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/6ca9364cec4fccee87b35ff038a511c13bb9a64c-1920x1080.png",
       "image_checked_at": "2026-11-02T05:57:33+00:00"
     },
@@ -3249,7 +3249,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/3450cda9ffc24786a3192682096701acf3e0a2d7-1920x1080.jpg",
       "image_checked_at": "2026-11-02T05:57:35+00:00"
     },
@@ -3269,7 +3269,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/354ee1dce8fc9178c922f37edfcf14e4cf62ff3e-1920x1080.jpg",
       "image_checked_at": "2026-11-02T05:57:36+00:00"
     },
@@ -3289,7 +3289,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:08+00:00",
       "image_url": "https://soneium.org/cms-images/a405b64e01037f1e5ccbed676390bc71b78f8a5a-1920x1080.jpg",
       "image_checked_at": "2026-11-02T05:57:37+00:00"
     },
@@ -3309,7 +3309,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/denim/cover.jpg",
       "image_checked_at": "2026-11-05T23:36:59+00:00"
     },
@@ -3329,7 +3329,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/base-batches-004-cohort/cover.jpg",
       "image_checked_at": "2026-11-03T21:45:58+00:00"
     },
@@ -3349,7 +3349,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/cobalt/cover.jpg",
       "image_checked_at": "2026-11-02T05:57:40+00:00"
     },
@@ -3369,7 +3369,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/request-for-builders-tokenized-stocks/cover.jpg",
       "image_checked_at": "2026-11-02T05:57:40+00:00"
     },
@@ -3389,7 +3389,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/b20-tokenized-stocks-on-base/cover.jpg",
       "image_checked_at": "2026-11-02T05:57:40+00:00"
     },
@@ -3409,7 +3409,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/tokenized-stocks/cover.jpg",
       "image_checked_at": "2026-11-02T05:57:40+00:00"
     },
@@ -3429,7 +3429,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/introducing-base-batches-004/cover.jpg",
       "image_checked_at": "2026-11-02T05:57:40+00:00"
     },
@@ -3449,7 +3449,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/making-aws-nitro-validation-feasible-onchain/cover.jpg",
       "image_checked_at": "2026-11-02T05:57:40+00:00"
     },
@@ -3469,7 +3469,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/native-account-abstraction/cover.jpg",
       "image_checked_at": "2026-11-02T05:57:40+00:00"
     },
@@ -3489,7 +3489,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/request-for-builders-1/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:39+00:00"
     },
@@ -3509,7 +3509,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/postmortem-june-25th-block-production-outage/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:39+00:00"
     },
@@ -3529,7 +3529,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/introducing-base-beryl/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:39+00:00"
     },
@@ -3549,7 +3549,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/the-agentic-economy-is-here/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:39+00:00"
     },
@@ -3569,7 +3569,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/base-mcp/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:40+00:00"
     },
@@ -3589,7 +3589,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/multiproofs-on-base/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:40+00:00"
     },
@@ -3609,7 +3609,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/introducing-base-azul/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:40+00:00"
     },
@@ -3629,7 +3629,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/introducing-base-batches-003-2/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:40+00:00"
     },
@@ -3649,7 +3649,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/2026-mission-vision-and-strategy/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:41+00:00"
     },
@@ -3669,7 +3669,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/next-chapter-for-base-chain-1/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:41+00:00"
     },
@@ -3689,7 +3689,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/builder-codes-and-erc-8021-fixing-onchain-attribution/cover.jpg",
       "image_checked_at": "2026-11-02T15:43:42+00:00"
     },
@@ -3709,7 +3709,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/base-verify/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:47+00:00"
     },
@@ -3729,7 +3729,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/bridging-assets-to-base/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:48+00:00"
     },
@@ -3749,7 +3749,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/base-app-prefetching-at-scale/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:48+00:00"
     },
@@ -3769,7 +3769,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/baseapp/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:48+00:00"
     },
@@ -3789,7 +3789,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/engineering-the-base-solana-bridge/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:48+00:00"
     },
@@ -3809,7 +3809,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/1-step-crypto-payments/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:48+00:00"
     },
@@ -3829,7 +3829,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/base-solana-bridge/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:48+00:00"
     },
@@ -3849,7 +3849,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/glamsterdam-proposals/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:49+00:00"
     },
@@ -3869,7 +3869,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/scaling-base-with-benchmarking/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:49+00:00"
     },
@@ -3889,7 +3889,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/scaling-base-doubling-capacity-in-30-days/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:49+00:00"
     },
@@ -3909,7 +3909,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/introducing-onchaintestkit/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:49+00:00"
     },
@@ -3929,7 +3929,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/y-combinator-request-for-onchain-startups/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:49+00:00"
     },
@@ -3949,7 +3949,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/the-state-of-base-at-basecamp-2025/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:49+00:00"
     },
@@ -3969,7 +3969,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/flashblocks-deep-dive/cover.jpg",
       "image_checked_at": "2026-11-02T23:28:49+00:00"
     },
@@ -3989,7 +3989,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/benchmarking-zkp-systems/cover.jpg",
       "image_checked_at": "2026-11-03T06:43:54+00:00"
     },
@@ -4009,7 +4009,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/basenames-ensip-19/cover.jpg",
       "image_checked_at": "2026-11-03T06:43:54+00:00"
     },
@@ -4029,7 +4029,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/free-security-reviews/cover.jpg",
       "image_checked_at": "2026-11-03T06:43:54+00:00"
     },
@@ -4049,7 +4049,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/a-new-day-one/cover.jpg",
       "image_checked_at": "2026-11-03T06:43:54+00:00"
     },
@@ -4069,7 +4069,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/base-account-sdk/cover.jpg",
       "image_checked_at": "2026-11-03T06:43:54+00:00"
     },
@@ -4089,7 +4089,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://base.org/images/blog/jpmorgan-is-moving-onchain-on-base/cover.jpg",
       "image_checked_at": "2026-11-03T06:43:55+00:00"
     },
@@ -4109,7 +4109,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/322Wg4kR5eFwQAASkSqem0/6c6b0291d980ab97ba2063c13b97af57/cover-F2eT4BENkRoWKScf8zIh.png",
       "image_checked_at": "2026-11-03T06:43:55+00:00"
     },
@@ -4129,7 +4129,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2rQ7XlXfk0WdQTrrjOMXWR/fd6dababc5c769eb4f56d8385bd6b579/Linea_Achieves_100_mGas_Throughput_Blog.png",
       "image_checked_at": "2026-11-03T06:43:55+00:00"
     },
@@ -4149,7 +4149,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/6Q1bPskKhRw4LWwB0I3211/a1bdc7cbf1651a7d2700930ae03cd001/linea_consortium_member_profiles_blog_2x.webp",
       "image_checked_at": "2026-11-03T06:43:55+00:00"
     },
@@ -4169,7 +4169,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/475bIVzMSlwV0uvjx7dszC/8437449325cfff243097157525a026d5/phylax_live_on_linea_blog.webp",
       "image_checked_at": "2026-11-03T06:43:55+00:00"
     },
@@ -4189,7 +4189,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2KSvpOma4VFDJtRWMl2jXV/12e0fde1db4b8032869820efd80b82b3/Where_Ethereum_Wins.png",
       "image_checked_at": "2026-11-03T06:43:56+00:00"
     },
@@ -4209,7 +4209,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2KSvpOma4VFDJtRWMl2jXV/12e0fde1db4b8032869820efd80b82b3/Where_Ethereum_Wins.png",
       "image_checked_at": "2026-11-03T06:43:56+00:00"
     },
@@ -4229,7 +4229,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2KSvpOma4VFDJtRWMl2jXV/12e0fde1db4b8032869820efd80b82b3/Where_Ethereum_Wins.png",
       "image_checked_at": "2026-11-03T06:43:56+00:00"
     },
@@ -4249,7 +4249,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2KSvpOma4VFDJtRWMl2jXV/12e0fde1db4b8032869820efd80b82b3/Where_Ethereum_Wins.png",
       "image_checked_at": "2026-11-03T16:12:51+00:00"
     },
@@ -4269,7 +4269,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2KSvpOma4VFDJtRWMl2jXV/12e0fde1db4b8032869820efd80b82b3/Where_Ethereum_Wins.png",
       "image_checked_at": "2026-11-03T16:12:51+00:00"
     },
@@ -4289,7 +4289,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2KSvpOma4VFDJtRWMl2jXV/12e0fde1db4b8032869820efd80b82b3/Where_Ethereum_Wins.png",
       "image_checked_at": "2026-11-03T16:12:52+00:00"
     },
@@ -4309,7 +4309,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2kuOwdWs2Q0OPjowPr4JnQ/11069b4a984885584c97033865687f77/LINEA__1_.png",
       "image_checked_at": "2026-11-03T16:12:52+00:00"
     },
@@ -4329,7 +4329,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/1lV3Cl0owF5a83sUyLf0oy/0db31f0c7e50f29275b462d38875d42e/image__2_.png",
       "image_checked_at": "2026-11-03T16:12:52+00:00"
     },
@@ -4349,7 +4349,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/5TYZF7tyUTPLT3bhLEPM0Q/473775e9fa7e618a694e1856a0b68107/Linea_LFDT_2.png",
       "image_checked_at": "2026-11-03T16:12:53+00:00"
     },
@@ -4369,7 +4369,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2FkU9wdTgqGCnuDOVfqYV3/9bd2b7588eeb246703a48822a3ae5c41/Small_Fields_Blog__1_.png",
       "image_checked_at": "2026-11-03T16:12:53+00:00"
     },
@@ -4389,7 +4389,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/PQHa73jroYhxgEsgNw6T7/c6242a32faf22c3333637b3cc65d4df1/eip_7702_blog.webp",
       "image_checked_at": "2026-11-03T16:12:53+00:00"
     },
@@ -4409,7 +4409,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/5xoMhf6PzrbgxhqsATvwUn/e4a81d5fc14a6c28b0685f7e4deabcb2/cleaned2.png",
       "image_checked_at": "2026-11-03T16:12:54+00:00"
     },
@@ -4429,7 +4429,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/6EGjkjRkSGpWH0KZhZ2JMh/2684db4ba3ef76dd509b011d8ab31401/RISC-V.png",
       "image_checked_at": "2026-11-03T16:12:54+00:00"
     },
@@ -4449,7 +4449,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/4cU1qDgIfvAQUZVZrrnzbm/0978cbc1766a95f7dc2ce3ffa553f9c7/Linea_Yield_Boost_Blog__1_.png",
       "image_checked_at": "2026-11-03T16:12:54+00:00"
     },
@@ -4469,7 +4469,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/7IxpoMxL265E8jWzxFS0kK/35b2751c71229e40cf3de81ced553794/cover-H3N0nP90Y8WATCwVbN7v.png",
       "image_checked_at": "2026-11-03T21:45:59+00:00"
     },
@@ -4489,7 +4489,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2KSvpOma4VFDJtRWMl2jXV/12e0fde1db4b8032869820efd80b82b3/Where_Ethereum_Wins.png",
       "image_checked_at": "2026-11-03T21:45:59+00:00"
     },
@@ -4509,7 +4509,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://images.ctfassets.net/64upluvbiuck/2KSvpOma4VFDJtRWMl2jXV/12e0fde1db4b8032869820efd80b82b3/Where_Ethereum_Wins.png",
       "image_checked_at": "2026-11-03T21:45:59+00:00"
     },
@@ -4530,7 +4530,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://blog.kraken.com/wp-content/uploads/2026/04/Blog-13-2.png",
       "image_checked_at": "2026-11-03T21:45:59+00:00"
     },
@@ -4551,7 +4551,7 @@
       "published_at": null,
       "summary": "",
       "status": "unreviewed",
-      "collected_at": "2026-11-16T20:25:37+00:00",
+      "collected_at": "2026-11-17T04:28:09+00:00",
       "image_url": "https://blog.kraken.com/wp-content/uploads/2024/10/image-6.png",
       "image_checked_at": "2026-11-03T21:45:59+00:00"
     }
